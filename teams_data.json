@@ -1,0 +1,597 @@
+{
+  "last_updated": "2026-05-27",
+  "metro": "Detroit / Windsor",
+  "teams": [
+    {
+      "id": "red-wings",
+      "name": "Detroit Red Wings",
+      "league": "NHL",
+      "venue": "Little Caesars Arena, Detroit",
+      "season_ends": "April (or May/June if playoff run)",
+      "historical_sales": [
+        {
+          "year": 2010,
+          "date": "May 21–22",
+          "notes": "Friday STH preview, Saturday public"
+        }
+      ],
+      "predicted_window": {
+        "start": "05-15",
+        "end": "06-15",
+        "confidence": "low"
+      },
+      "notes": "Annual sale documented but recent dates not publicized publicly. Watch @DetroitRedWings and @shophockeytown.",
+      "watch_urls": [
+        "https://www.nhl.com/redwings/news",
+        "https://www.instagram.com/shophockeytown/"
+      ],
+      "search_queries": [
+        "Detroit Red Wings equipment sale 2026",
+        "Red Wings annual equipment sale Little Caesars",
+        "shophockeytown equipment sale"
+      ],
+      "watch_links": [
+        {"label": "Red Wings News", "url": "https://www.nhl.com/redwings/news"},
+        {"label": "Shop Hockeytown", "url": "https://www.instagram.com/shophockeytown/"}
+      ]
+    },
+    {
+      "id": "toledo-walleye",
+      "name": "Toledo Walleye",
+      "league": "ECHL",
+      "venue": "Huntington Center, Toledo",
+      "season_ends": "April (regular season); playoffs into May/June",
+      "historical_sales": [
+        {
+          "year": 2023,
+          "date": "June (Saturday)",
+          "notes": "Equipment sale at Swamp Shop"
+        },
+        {
+          "year": 2024,
+          "date": "June 1",
+          "notes": "Equipment sale event"
+        },
+        {
+          "year": 2025,
+          "date": "July 12",
+          "notes": "Saturday at Swamp Shop, 10am–12pm"
+        }
+      ],
+      "predicted_window": {
+        "start": "06-01",
+        "end": "07-20",
+        "confidence": "high"
+      },
+      "notes": "Most reliable schedule — annual sale, late June through mid-July. Drifted later in 2025. Window opens June 1. 2025-26 season ended May 19 (lost to Fort Wayne Komets 4-2 in ECHL Central Division Finals).",
+      "watch_urls": [
+        "https://www.toledowalleye.com/news",
+        "https://www.toledowalleye.com/"
+      ],
+      "search_queries": [
+        "Toledo Walleye equipment sale 2026",
+        "Walleye Swamp Shop equipment sale"
+      ],
+      "latest_news": {
+        "summary": "Season over — lost to Fort Wayne Komets 4-2 in ECHL Central Division Finals (final game May 19). Postseason fan celebration held May 21 at Hensville Park. Window opens June 1. No sale announced yet.",
+        "news_html": "Season over — lost to Fort Wayne Komets 4-2 in ECHL Central Division Finals (final game May 19). Postseason fan celebration held May 21 at Hensville Park. <strong>Window opens June 1.</strong> No sale announced yet.",
+        "url": "https://www.toledowalleye.com/news/2026/05/playoff-regular-season-memories-live-on-at-walleye-postseason-celebration",
+        "detected_at": "2026-05-24",
+        "is_announcement": false,
+        "source": "toledowalleye.com"
+      },
+      "watch_links": [
+        {"label": "Walleye News", "url": "https://www.toledowalleye.com/news"},
+        {"label": "Walleye.com", "url": "https://www.toledowalleye.com/"}
+      ]
+    },
+    {
+      "id": "windsor-spitfires",
+      "name": "Windsor Spitfires",
+      "league": "OHL",
+      "venue": "WFCU Centre, Windsor, ON",
+      "season_ends": "Late March (regular); playoffs through May",
+      "historical_sales": [
+        {
+          "year": 2016,
+          "date": "Spring — Saturday with mini-camp",
+          "notes": "Mini-camp + equipment + Spits Gear blowout combined"
+        },
+        {
+          "year": "Recent",
+          "date": "Late May (Tue–Sat)",
+          "notes": "Multi-day gear sale at The Crease / Blades, often around spring mini-camp"
+        }
+      ],
+      "predicted_window": {
+        "start": "05-15",
+        "end": "06-20",
+        "confidence": "medium"
+      },
+      "notes": "Spring mini-camp + gear sale is the typical pattern. Watch for July equipment sale announcement too.",
+      "watch_urls": [
+        "https://windsorspitfires.com/",
+        "https://chl.ca/ohl-spitfires/",
+        "https://www.facebook.com/WindsorSpitfiresHockey/"
+      ],
+      "search_queries": [
+        "Windsor Spitfires equipment sale 2026",
+        "Spits Gear sale",
+        "Spitfires mini camp equipment"
+      ],
+      "latest_news": {
+        "summary": "Social media posts (X/Twitter + Facebook, ~May 9–10, 2026) promoted a Saturday gear sale, 9AM–Noon — jerseys, equipment clearance, merch. Sale likely already occurred. Watch for additional summer sale.",
+        "url": "https://www.facebook.com/WindsorSpitfiresHockey/posts/get-your-gear-this-saturday-900am-to-noon-jerseys-equipment-clearance-merch-and-/1094758292697689/",
+        "detected_at": "2026-05-15",
+        "is_announcement": false,
+        "source": "Windsor Spitfires Facebook/X"
+      },
+      "watch_links": [
+        {"label": "Spitfires.com", "url": "https://windsorspitfires.com/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/WindsorSpitfiresHockey/"}
+      ]
+    },
+    {
+      "id": "saginaw-spirit",
+      "name": "Saginaw Spirit",
+      "league": "OHL",
+      "venue": "Dow Event Center, Saginaw, MI",
+      "season_ends": "Late March; playoffs through May",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "05-01",
+        "end": "07-15",
+        "confidence": "low"
+      },
+      "notes": "Season ended April 2, 2026 (eliminated by Kitchener in Round 1). Facebook posts indexed by Google (~May 2026) suggest an end-of-year sale may have occurred or been announced — not yet confirmed.",
+      "watch_urls": [
+        "https://chl.ca/ohl-spirit/",
+        "https://www.facebook.com/spirithockey/"
+      ],
+      "search_queries": [
+        "Saginaw Spirit equipment sale 2026",
+        "Saginaw Spirit gear sale"
+      ],
+      "latest_news": {
+        "summary": "Facebook posts indexed ~May 2026 suggest the End of Year Sale has already occurred. Season ended April 2 (eliminated by Kitchener, Round 1). Exact date unconfirmed.",
+        "url": "https://www.facebook.com/spirithockey/",
+        "detected_at": "2026-05-22",
+        "is_announcement": false,
+        "source": "Spirit Facebook"
+      },
+      "watch_links": [
+        {"label": "Spirit CHL", "url": "https://chl.ca/ohl-spirit/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/spirithockey/"}
+      ]
+    },
+    {
+      "id": "flint-firebirds",
+      "name": "Flint Firebirds",
+      "league": "OHL",
+      "venue": "Dort Financial Center, Flint, MI",
+      "season_ends": "Late March; playoffs through May",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "05-01",
+        "end": "07-15",
+        "confidence": "low"
+      },
+      "notes": "No documented public equipment sale on record — monitor Bird's Nest and team socials.",
+      "watch_urls": [
+        "https://chl.ca/ohl-firebirds/",
+        "https://www.officialbirdsnest.com/",
+        "https://www.facebook.com/FlintFirebirds/"
+      ],
+      "search_queries": [
+        "Flint Firebirds equipment sale 2026",
+        "Flint Firebirds Bird's Nest sale"
+      ],
+      "watch_links": [
+        {"label": "Bird's Nest", "url": "https://www.officialbirdsnest.com/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/FlintFirebirds/"}
+      ]
+    },
+    {
+      "id": "sarnia-sting",
+      "name": "Sarnia Sting",
+      "league": "OHL",
+      "venue": "Progressive Auto Sales Arena, Sarnia, ON",
+      "season_ends": "Late March; playoffs through May",
+      "historical_sales": [
+        {
+          "year": 2018,
+          "date": "May 5",
+          "notes": "Saturday equipment sale at The Honeypot, 10am–3pm"
+        },
+        {
+          "year": 2024,
+          "date": "June 10–13, June 24–27",
+          "notes": "Honeypot Summer Sale (apparel-leaning), 4–8pm"
+        }
+      ],
+      "predicted_window": {
+        "start": "05-01",
+        "end": "06-30",
+        "confidence": "medium"
+      },
+      "notes": "Look for both dedicated equipment sale (Saturday in May) and Honeypot Summer Sale (June).",
+      "watch_urls": [
+        "https://chl.ca/ohl-sting/",
+        "https://sarniasting.com/"
+      ],
+      "search_queries": [
+        "Sarnia Sting equipment sale 2026",
+        "Sarnia Sting Honeypot summer sale"
+      ],
+      "latest_news": {
+        "summary": "Google-indexed URL suggested a May 28–29, 2026 sale but as of May 27 (day before), URL redirects to homepage — no social media confirmation. Date unconfirmed; sale may have been postponed or cancelled.",
+        "news_label": "⚠ Watch Closely — Date Unconfirmed",
+        "news_warn": true,
+        "news_html": "A Google-indexed URL (sarniasting.com/article/equipment-sale-may-28-29) suggested a <strong>May 28–29, 2026</strong> sale. As of May 27 (day before), the URL still redirects to the Sting homepage — no confirmation found. Do <strong>not</strong> make the drive without verifying on Sting Facebook, X, or Instagram first.",
+        "detected_display": "Originally detected: 2026-05-18 • Status updated: 2026-05-27",
+        "extra_sources": [
+          {"label": "X/Twitter", "url": "https://x.com/StingHockey"}
+        ],
+        "url": "https://sarniasting.com/article/equipment-sale-may-28-29",
+        "detected_at": "2026-05-27",
+        "is_announcement": false,
+        "source": "Sting Facebook"
+      },
+      "watch_links": [
+        {"label": "sarniasting.com", "url": "https://sarniasting.com/"},
+        {"label": "Facebook", "url": "https://www.facebook.com/sarniastingohl/"},
+        {"label": "X/Twitter", "url": "https://x.com/StingHockey"}
+      ]
+    },
+    {
+      "id": "usa-ntdp",
+      "name": "USA Hockey NTDP",
+      "league": "USHL",
+      "venue": "USA Hockey Arena, Plymouth, MI",
+      "season_ends": "April",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "04-15",
+        "end": "06-30",
+        "confidence": "low"
+      },
+      "notes": "No documented public equipment sale — players move on each year so equipment turnover happens but rarely public. Worth monitoring.",
+      "watch_urls": [
+        "https://www.usahockeyntdp.com/",
+        "https://www.usahockeyarena.com/",
+        "https://www.facebook.com/USAHockeyArena/"
+      ],
+      "search_queries": [
+        "USA Hockey NTDP equipment sale 2026",
+        "USA Hockey Arena Plymouth equipment sale"
+      ],
+      "watch_links": [
+        {"label": "NTDP.com", "url": "https://www.usahockeyntdp.com/"},
+        {"label": "USA Hockey Arena", "url": "https://www.usahockeyarena.com/"}
+      ]
+    },
+    {
+      "id": "michigan",
+      "name": "Michigan Wolverines",
+      "league": "NCAA (Big Ten)",
+      "venue": "Yost Ice Arena, Ann Arbor",
+      "season_ends": "March/April (Frozen Four)",
+      "historical_sales": [
+        {
+          "year": 2024,
+          "date": "September 2",
+          "notes": "Hockey gear listed on UM Property Disposition (purchased by Nic)"
+        },
+        {
+          "year": 2025,
+          "date": "October 22",
+          "notes": "Hockey gear listed on UM Property Disposition (purchased by Nic)"
+        }
+      ],
+      "predicted_window": {
+        "start": "08-25",
+        "end": "11-05",
+        "confidence": "medium"
+      },
+      "notes": "UM doesn't run a public sale event. Surplus hockey gear gets listed on UM Property Disposition (dispo.umich.edu/sporting-goods) — typically late summer / early fall. Window has varied ~50 days between confirmed years (9/2/24, 10/22/25).",
+      "watch_urls": [
+        "https://dispo.umich.edu/sporting-goods.html",
+        "https://mgoblue.com/sports/mens-ice-hockey",
+        "https://mdenshop.com/collections/michigan-wolverines-hockey"
+      ],
+      "search_queries": [
+        "dispo.umich.edu hockey",
+        "Michigan Property Disposition hockey gear",
+        "umich surplus hockey equipment"
+      ],
+      "hist_label": "Historical Sales (UM Dispo)",
+      "latest_news": {
+        "summary": "2026-05-27: 4 hockey items detected on UM Property Disposition: Hockey Cage (silver), Renfrew Tape Split Roll (14/24mm white), Nike Hockey Pants (Small +1\" navy), Shortside Hockey Tape Cloth (black 1.5\"x540\"). Pages may already be sold — UM Dispo listings are ephemeral.",
+        "news_html": "<strong>2026-05-27:</strong> 4 hockey items newly indexed on UM Dispo — <a href=\"https://dispo.umich.edu/sporting-goods/hockey-cage-silver-colored.html\" target=\"_blank\">Hockey Cage (silver)</a>, <a href=\"https://dispo.umich.edu/sporting-goods/renfrew-hockey-tape-split-roll-14-24mm-white-1-5-x394.html\" target=\"_blank\">Renfrew Tape Split Roll (14/24mm white)</a>, <a href=\"https://dispo.umich.edu/sporting-goods/nike-hockey-pants-small-1-navy-blue.html\" target=\"_blank\">Nike Hockey Pants (Small +1&quot; navy)</a>, <a href=\"https://dispo.umich.edu/sporting-goods/shortside-603222-hockey-tape-cloth-black-1-5-x540.html\" target=\"_blank\">Shortside Hockey Tape Cloth (black 1.5&quot;×540&quot;)</a>. Pages returned empty — may already be sold. Previous: Renfrew Tape Case (30-roll blue, 2026-05-26) — sold same day. 2026-05-13: Hockey Cage, Nike Pants, 4orte Bag — all sold within 1 day. UM Dispo listings are ephemeral; monitor year-round.",
+        "url": "https://dispo.umich.edu/sporting-goods/hockey-cage-silver-colored.html",
+        "detected_at": "2026-05-27",
+        "is_announcement": true,
+        "source": "UM Property Disposition"
+      },
+      "watch_links": [
+        {"label": "UM Dispo — Sporting Goods", "url": "https://dispo.umich.edu/sporting-goods.html"}
+      ]
+    },
+    {
+      "id": "michigan-state",
+      "name": "Michigan State Spartans",
+      "league": "NCAA (Big Ten)",
+      "venue": "Munn Ice Arena, East Lansing",
+      "season_ends": "March/April",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "01-01",
+        "end": "12-31",
+        "confidence": "low"
+      },
+      "window_display": "Year-round (monitor MSU Surplus)",
+      "notes": "MSU doesn't run a dedicated hockey sale, but MSU Surplus Store cycles items into 'Sporting Goods' and 'Athletic Apparel' categories. Hockey gear hasn't been confirmed there yet — Nic hasn't seen it personally — but Surplus does carry ice skates and athletic apparel. Worth watching as inventory rotates.",
+      "watch_urls": [
+        "https://msusurplusstore.com/collections/sporting-goods",
+        "https://msusurplusstore.com/collections/athletic-apparel",
+        "https://msuspartans.com/sports/mens-ice-hockey",
+        "https://msusurplusstore.com/"
+      ],
+      "search_queries": [
+        "msusurplusstore hockey",
+        "MSU Surplus Store Spartan hockey gear",
+        "Michigan State Surplus hockey"
+      ],
+      "latest_news": {
+        "summary": "CCM Black Figure 8 Ice Skates (Men's Size 12) and ASICS Gel-Hockey Neo 3 field hockey shoes (sizes 9 & 10) were live on MSU Surplus as of 2026-05-14. Both pages empty as of 2026-05-22 — items likely sold. Watch for next rotation.",
+        "url": "https://msusurplusstore.com/products/ccm-black-figure-8-ice-skates-mens-size-12",
+        "detected_at": "2026-05-14",
+        "is_announcement": false,
+        "source": "MSU Surplus"
+      },
+      "watch_links": [
+        {"label": "Sporting Goods", "url": "https://msusurplusstore.com/collections/sporting-goods"},
+        {"label": "Athletic Apparel", "url": "https://msusurplusstore.com/collections/athletic-apparel"}
+      ]
+    },
+    {
+      "id": "western-michigan",
+      "name": "Western Michigan Broncos",
+      "league": "NCAA (NCHC)",
+      "venue": "Lawson Arena, Kalamazoo",
+      "season_ends": "March/April",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "04-15",
+        "end": "06-30",
+        "confidence": "low"
+      },
+      "notes": "NCAA — no documented public equipment sales. Reigning 2025 national champion, so may have special memorabilia events post-title run.",
+      "watch_urls": [
+        "https://wmubroncos.com/sports/mens-ice-hockey",
+        "https://shopwmubroncos.com/"
+      ],
+      "search_queries": [
+        "Western Michigan hockey equipment sale 2026",
+        "Lawson Arena equipment sale",
+        "WMU Broncos gear sale"
+      ],
+      "watch_links": [
+        {"label": "WMU Hockey", "url": "https://wmubroncos.com/sports/mens-ice-hockey"},
+        {"label": "Shop WMU", "url": "https://shopwmubroncos.com/"}
+      ]
+    },
+    {
+      "id": "bowling-green",
+      "name": "Bowling Green Falcons",
+      "league": "NCAA (CCHA)",
+      "venue": "Slater Family Ice Arena, Bowling Green, OH",
+      "season_ends": "March (CCHA playoffs)",
+      "historical_sales": [
+        {
+          "year": 2025,
+          "date": "March 22",
+          "notes": "CCHA Playoff-themed auction with LiveSource (online auction, not in-person)"
+        }
+      ],
+      "predicted_window": {
+        "start": "03-15",
+        "end": "05-15",
+        "confidence": "medium"
+      },
+      "notes": "Auctions through LiveSource, online not in-person. Earlier season-end than the pro/junior teams. Predicted window now past for 2026 — no 2026 auction found.",
+      "watch_urls": [
+        "https://bgsufalcons.com/sports/mens-ice-hockey",
+        "https://www.bgsu.edu/ice-arena/newlove-pro-shop.html"
+      ],
+      "search_queries": [
+        "Bowling Green Falcons hockey equipment sale 2026",
+        "BGSU hockey auction LiveSource"
+      ],
+      "watch_links": [
+        {"label": "BGSU Hockey", "url": "https://bgsufalcons.com/sports/mens-ice-hockey"}
+      ]
+    },
+    {
+      "id": "grand-rapids-griffins",
+      "name": "Grand Rapids Griffins",
+      "league": "AHL",
+      "venue": "Van Andel Arena, Grand Rapids, MI",
+      "season_ends": "April; playoffs through June",
+      "historical_sales": [
+        {
+          "year": 2025,
+          "date": "April 4",
+          "notes": "Annual team equipment sale — sticks, pants, jerseys, helmets, shoulder pads, some game-worn"
+        },
+        {
+          "year": 2026,
+          "date": "April 10",
+          "notes": "Annual Team Equipment Sale at Van Andel Arena banquet rooms, 6pm to end of 2nd period. Sticks, pants, jerseys, and more. Required game ticket to enter."
+        }
+      ],
+      "predicted_window": {
+        "start": "03-25",
+        "end": "05-15",
+        "confidence": "high"
+      },
+      "notes": "Red Wings' AHL affiliate. Annual sale in March/April — earlier than pro/junior pattern. 2026 sale confirmed April 10. Griffins eliminated May 22, 2026 by Chicago Wolves in AHL Central Division Finals — season fully over. No post-playoff equipment sale announced yet.",
+      "latest_news": {
+        "summary": "2026 Annual Team Equipment Sale held April 10, 2026 — now past. Griffins eliminated May 22 by Chicago Wolves in AHL Central Division Finals. No post-playoff sale announced.",
+        "news_html": "2026 Annual Team Equipment Sale was <strong>April 10, 2026</strong> — now past. Griffins eliminated May 22 by Chicago Wolves in Game 5 of AHL Central Division Finals. Season over. No post-playoff sale announced.",
+        "url": "https://griffinshockey.com/news/griffins-to-host-fan-appreciation-night-michigan-lottery-million-dollar-giveaway",
+        "detected_at": "2026-05-22",
+        "is_announcement": false,
+        "source": ""
+      },
+      "watch_urls": [
+        "https://griffinshockey.com/news",
+        "https://griffins-zone.com/"
+      ],
+      "watch_links": [
+        {"label": "Griffins News", "url": "https://griffinshockey.com/news"},
+        {"label": "Griffins Zone", "url": "https://griffins-zone.com/"}
+      ],
+      "search_queries": [
+        "Grand Rapids Griffins equipment sale",
+        "Griffins annual team equipment sale Van Andel"
+      ]
+    },
+    {
+      "id": "london-knights",
+      "name": "London Knights",
+      "league": "OHL",
+      "venue": "Canada Life Place (Budweiser Gardens), London, ON",
+      "season_ends": "Late March; playoffs / Memorial Cup through May/June",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "05-15",
+        "end": "07-15",
+        "confidence": "low"
+      },
+      "notes": "Marquee OHL franchise. No documented public equipment sale found — monitor anyway given size of franchise. Eliminated in OHL Round 1 by Soo Greyhounds.",
+      "watch_urls": [
+        "https://chl.ca/ohl-knights/",
+        "https://www.canadalifeplace.com/events/category/london-knights"
+      ],
+      "search_queries": [
+        "London Knights equipment sale",
+        "London Knights gear sale Budweiser Gardens"
+      ],
+      "watch_links": [
+        {"label": "Knights Armoury", "url": "https://londonknights.ca/"},
+        {"label": "CHL page", "url": "https://chl.ca/ohl-knights/"}
+      ]
+    },
+    {
+      "id": "kalamazoo-wings",
+      "name": "Kalamazoo Wings",
+      "league": "ECHL",
+      "venue": "Wings Event Center, Kalamazoo, MI",
+      "season_ends": "April; playoffs through May/June",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "05-15",
+        "end": "07-15",
+        "confidence": "low"
+      },
+      "notes": "ECHL — typical late-spring/early-summer pattern. No documented past sale, but Hockey Services (local pro shop, 6958 W Main St) carries their gear and is worth watching.",
+      "watch_urls": [
+        "https://kwings.com/",
+        "https://www.hockeyservices.com/product-category/k-wings/"
+      ],
+      "search_queries": [
+        "Kalamazoo Wings equipment sale",
+        "K-Wings gear sale used"
+      ],
+      "watch_links": [
+        {"label": "K-Wings.com", "url": "https://kwings.com/"},
+        {"label": "Hockey Services", "url": "https://www.hockeyservices.com/product-category/k-wings/"}
+      ]
+    },
+    {
+      "id": "cleveland-monsters",
+      "name": "Cleveland Monsters",
+      "league": "AHL",
+      "venue": "Rocket Mortgage FieldHouse, Cleveland, OH",
+      "season_ends": "April; playoffs through June",
+      "historical_sales": [],
+      "predicted_window": {
+        "start": "04-15",
+        "end": "06-30",
+        "confidence": "low"
+      },
+      "notes": "Blue Jackets' AHL affiliate. No documented past sale, but AHL teams typically run them — worth monitoring.",
+      "watch_urls": [
+        "https://clevelandmonsters.com/news",
+        "https://www.rocketmortgagefieldhouse.com/teams/detail/cleveland-monsters"
+      ],
+      "search_queries": [
+        "Cleveland Monsters equipment sale",
+        "Monsters AHL gear sale"
+      ],
+      "latest_news": {
+        "summary": "Season ended May 24, 2026 — lost to Toronto Marlies 3-2 in Game 5 of AHL North Division Finals (Easton Cowan winner with 11 seconds left). Equipment sale window open. No sale announced yet.",
+        "url": "https://www.wkyc.com/article/sports/hockey/toronto-marlies-stun-monsters-final-minute-end-clevelands-season-game-5-north-division-finals/95-e14022f4-1b6d-4399-b665-1604dcc9d931",
+        "detected_at": "2026-05-25",
+        "is_announcement": false,
+        "source": "Monsters News"
+      },
+      "watch_links": [
+        {"label": "Monsters News", "url": "https://clevelandmonsters.com/news"}
+      ]
+    }
+  ],
+  "meta_sources": [
+    {
+      "id": "sports2k-pro-equipment-sales",
+      "name": "Sports2K — Pro Equipment Sales forum",
+      "url": "https://www.sports2k.com/forum/index.php?/forum/6-pro-equipment-sales/",
+      "notes": "Community-driven forum where users post sale announcements as they break. 230+ historical threads. Often surfaces sales before team press releases."
+    },
+    {
+      "id": "umich-property-disposition",
+      "name": "U-M Property Disposition — Sporting Goods",
+      "url": "https://dispo.umich.edu/sporting-goods.html",
+      "team_id": "michigan",
+      "notes": "Michigan-only — UM surplus office lists used hockey gear here, typically late summer/early fall. Items rotate, sometimes only listed for a few days.",
+      "match_keywords": [
+        "hockey",
+        "skate",
+        "stick",
+        "helmet",
+        "puck",
+        "ice"
+      ]
+    },
+    {
+      "id": "msu-surplus-sporting-goods",
+      "name": "MSU Surplus Store — Sporting Goods",
+      "url": "https://msusurplusstore.com/collections/sporting-goods",
+      "team_id": "michigan-state",
+      "notes": "Michigan State surplus inventory. Hockey gear unconfirmed but inventory rotates — currently lists ice skates among other items.",
+      "match_keywords": [
+        "hockey",
+        "skate",
+        "stick",
+        "helmet",
+        "puck",
+        "ice",
+        "Spartan"
+      ]
+    },
+    {
+      "id": "msu-surplus-athletic-apparel",
+      "name": "MSU Surplus Store — Athletic Apparel",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel",
+      "team_id": "michigan-state",
+      "notes": "Michigan State athletic apparel surplus — may include team jerseys, practice gear.",
+      "match_keywords": [
+        "hockey",
+        "Spartan hockey",
+        "jersey",
+        "practice"
+      ]
+    }
+  ]
+}
