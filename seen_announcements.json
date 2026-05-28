@@ -4,6 +4,11 @@
       "title": "Sarnia Sting Equipment Sale May 28-29, 2026",
       "url": "https://sarniasting.com/article/equipment-sale-may-28-29",
       "detected_at": "2026-05-18"
+    },
+    {
+      "title": "Sarnia Sting Equipment and Clothing Sale — June 21, 2026",
+      "url": "https://sarniasting.com/sting-equipment-and-clothing-sale",
+      "detected_at": "2026-05-28"
     }
   ],
   "michigan": [
@@ -31,6 +36,18 @@
       "title": "Shortside Hockey Tape Cloth Black 1.5\"x540\" — UM Property Disposition",
       "url": "https://dispo.umich.edu/sporting-goods/shortside-603222-hockey-tape-cloth-black-1-5-x540.html",
       "detected_at": "2026-05-27"
+    }
+  ],
+  "michigan-state": [
+    {
+      "title": "Bauer Gray MSU Hockey Jersey Youth Size Medium/Large — MSU Surplus Store",
+      "url": "https://msusurplusstore.com/products/bauer-gray-msu-hockey-jersey-youth-size-medium-large",
+      "detected_at": "2026-05-28"
+    },
+    {
+      "title": "White Munnsters MSU Hockey Jersey Unisex Size XL — MSU Surplus Store",
+      "url": "https://msusurplusstore.com/products/white-munnsters-msu-hockey-jersey-unisex-size-xl",
+      "detected_at": "2026-05-28"
     }
   ]
 }
