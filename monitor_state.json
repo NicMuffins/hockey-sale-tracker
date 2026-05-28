@@ -1,0 +1,151 @@
+{
+  "last_monitored": "2026-05-28",
+  "run_count": 1,
+  "teams": [
+    {
+      "id": "red-wings",
+      "name": "Detroit Red Wings",
+      "league": "NHL",
+      "predicted_window": {"start": "05-15", "end": "06-15"},
+      "search_query": "Detroit Red Wings equipment sale 2026",
+      "tier": "low"
+    },
+    {
+      "id": "toledo-walleye",
+      "name": "Toledo Walleye",
+      "league": "ECHL",
+      "predicted_window": {"start": "06-01", "end": "07-20"},
+      "search_query": "Toledo Walleye equipment sale 2026",
+      "tier": "high"
+    },
+    {
+      "id": "windsor-spitfires",
+      "name": "Windsor Spitfires",
+      "league": "OHL",
+      "predicted_window": {"start": "05-15", "end": "06-20"},
+      "search_query": "Windsor Spitfires equipment sale 2026",
+      "tier": "medium"
+    },
+    {
+      "id": "saginaw-spirit",
+      "name": "Saginaw Spirit",
+      "league": "OHL",
+      "predicted_window": {"start": "05-01", "end": "07-15"},
+      "search_query": "Saginaw Spirit equipment sale 2026",
+      "tier": "low"
+    },
+    {
+      "id": "flint-firebirds",
+      "name": "Flint Firebirds",
+      "league": "OHL",
+      "predicted_window": {"start": "05-01", "end": "07-15"},
+      "search_query": "Flint Firebirds equipment sale 2026",
+      "tier": "low"
+    },
+    {
+      "id": "sarnia-sting",
+      "name": "Sarnia Sting",
+      "league": "OHL",
+      "predicted_window": {"start": "05-01", "end": "06-30"},
+      "search_query": "Sarnia Sting equipment sale 2026",
+      "tier": "medium"
+    },
+    {
+      "id": "usa-ntdp",
+      "name": "USA Hockey NTDP",
+      "league": "USHL",
+      "predicted_window": {"start": "04-15", "end": "06-30"},
+      "search_query": "USA Hockey NTDP equipment sale 2026",
+      "tier": "low"
+    },
+    {
+      "id": "michigan",
+      "name": "Michigan Wolverines",
+      "league": "NCAA (Big Ten)",
+      "predicted_window": {"start": "08-25", "end": "11-05"},
+      "search_query": "dispo.umich.edu hockey",
+      "tier": "medium"
+    },
+    {
+      "id": "michigan-state",
+      "name": "Michigan State Spartans",
+      "league": "NCAA (Big Ten)",
+      "predicted_window": {"start": "01-01", "end": "12-31"},
+      "search_query": "msusurplusstore hockey",
+      "tier": "low"
+    },
+    {
+      "id": "western-michigan",
+      "name": "Western Michigan Broncos",
+      "league": "NCAA (NCHC)",
+      "predicted_window": {"start": "04-15", "end": "06-30"},
+      "search_query": "Western Michigan hockey equipment sale 2026",
+      "tier": "low"
+    },
+    {
+      "id": "bowling-green",
+      "name": "Bowling Green Falcons",
+      "league": "NCAA (CCHA)",
+      "predicted_window": {"start": "03-15", "end": "05-15"},
+      "search_query": "Bowling Green Falcons hockey equipment sale 2026",
+      "tier": "medium"
+    },
+    {
+      "id": "grand-rapids-griffins",
+      "name": "Grand Rapids Griffins",
+      "league": "AHL",
+      "predicted_window": {"start": "03-25", "end": "05-15"},
+      "search_query": "Grand Rapids Griffins equipment sale",
+      "tier": "high"
+    },
+    {
+      "id": "london-knights",
+      "name": "London Knights",
+      "league": "OHL",
+      "predicted_window": {"start": "05-15", "end": "07-15"},
+      "search_query": "London Knights equipment sale",
+      "tier": "low"
+    },
+    {
+      "id": "kalamazoo-wings",
+      "name": "Kalamazoo Wings",
+      "league": "ECHL",
+      "predicted_window": {"start": "05-15", "end": "07-15"},
+      "search_query": "Kalamazoo Wings equipment sale",
+      "tier": "low"
+    },
+    {
+      "id": "cleveland-monsters",
+      "name": "Cleveland Monsters",
+      "league": "AHL",
+      "predicted_window": {"start": "04-15", "end": "06-30"},
+      "search_query": "Cleveland Monsters equipment sale",
+      "tier": "low"
+    }
+  ],
+  "meta_sources": [
+    {
+      "id": "sports2k-pro-equipment-sales",
+      "name": "Sports2K — Pro Equipment Sales forum",
+      "search_query": "site:sports2k.com/forum \"equipment sale\" Detroit OR Windsor OR Toledo OR \"Grand Rapids\" OR Kalamazoo OR Cleveland OR Flint OR Saginaw OR \"Ann Arbor\""
+    },
+    {
+      "id": "umich-property-disposition",
+      "name": "U-M Property Disposition — Sporting Goods",
+      "team_id": "michigan",
+      "search_query": "site:dispo.umich.edu hockey OR skate OR stick OR helmet OR jersey OR pants"
+    },
+    {
+      "id": "msu-surplus-sporting-goods",
+      "name": "MSU Surplus Store — Sporting Goods",
+      "team_id": "michigan-state",
+      "search_query": "site:msusurplusstore.com/collections/sporting-goods hockey OR skate OR stick OR helmet OR ice"
+    },
+    {
+      "id": "msu-surplus-athletic-apparel",
+      "name": "MSU Surplus Store — Athletic Apparel",
+      "team_id": "michigan-state",
+      "search_query": "site:msusurplusstore.com/collections/athletic-apparel hockey OR \"Spartan hockey\" OR jersey"
+    }
+  ]
+}
