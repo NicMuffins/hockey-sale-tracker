@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-05-28",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -224,18 +224,14 @@
         "Sarnia Sting Honeypot summer sale"
       ],
       "latest_news": {
-        "summary": "Google-indexed URL suggested a May 28–29, 2026 sale but as of May 27 (day before), URL redirects to homepage — no social media confirmation. Date unconfirmed; sale may have been postponed or cancelled.",
-        "news_label": "⚠ Watch Closely — Date Unconfirmed",
-        "news_warn": true,
-        "news_html": "A Google-indexed URL (sarniasting.com/article/equipment-sale-may-28-29) suggested a <strong>May 28–29, 2026</strong> sale. As of May 27 (day before), the URL still redirects to the Sting homepage — no confirmation found. Do <strong>not</strong> make the drive without verifying on Sting Facebook, X, or Instagram first.",
-        "detected_display": "Originally detected: 2026-05-18 • Status updated: 2026-05-27",
-        "extra_sources": [
-          {"label": "X/Twitter", "url": "https://x.com/StingHockey"}
-        ],
-        "url": "https://sarniasting.com/article/equipment-sale-may-28-29",
-        "detected_at": "2026-05-27",
-        "is_announcement": false,
-        "source": "Sting Facebook"
+        "summary": "Confirmed: Equipment & Clothing Sale Sunday June 21, 2026, 9AM–Noon inside the Sting dressing room at SSEC. Pro stock sticks, skates, gloves, helmets, goalie equipment, pants, practice jerseys, socks, team apparel. Cash only.",
+        "news_label": "✅ Sale Confirmed — June 21",
+        "news_warn": false,
+        "news_html": "<strong>Confirmed:</strong> Equipment & Clothing Sale <strong>Sunday, June 21, 2026, 9AM–Noon</strong> inside the Sting dressing room at SSEC. Items: pro stock sticks, skates, gloves, helmets, goalie equipment, pants, practice jerseys, game/practice socks, team-issued apparel. <strong>Cash only.</strong> Note: earlier May 28–29 URL was unconfirmed and redirected to homepage.",
+        "url": "https://sarniasting.com/sting-equipment-and-clothing-sale",
+        "detected_at": "2026-05-28",
+        "is_announcement": true,
+        "source": "sarniasting.com"
       },
       "watch_links": [
         {"label": "sarniasting.com", "url": "https://sarniasting.com/"},
@@ -343,11 +339,12 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "CCM Black Figure 8 Ice Skates (Men's Size 12) and ASICS Gel-Hockey Neo 3 field hockey shoes (sizes 9 & 10) were live on MSU Surplus as of 2026-05-14. Both pages empty as of 2026-05-22 — items likely sold. Watch for next rotation.",
-        "url": "https://msusurplusstore.com/products/ccm-black-figure-8-ice-skates-mens-size-12",
-        "detected_at": "2026-05-14",
-        "is_announcement": false,
-        "source": "MSU Surplus"
+        "summary": "2026-05-28: 2 MSU hockey jerseys on MSU Surplus — Bauer Gray MSU Hockey Jersey (Youth M/L) and White Munnsters MSU Hockey Jersey (Unisex XL). Ephemeral listings — may sell quickly. Previous: CCM ice skates and ASICS field hockey shoes from 2026-05-14, both sold.",
+        "news_html": "<strong>2026-05-28:</strong> 2 MSU hockey jerseys newly listed on MSU Surplus — <a href=\"https://msusurplusstore.com/products/bauer-gray-msu-hockey-jersey-youth-size-medium-large\" target=\"_blank\">Bauer Gray MSU Hockey Jersey (Youth M/L)</a> and <a href=\"https://msusurplusstore.com/products/white-munnsters-msu-hockey-jersey-unisex-size-xl\" target=\"_blank\">White Munnsters MSU Hockey Jersey (Unisex XL)</a>. MSU Surplus listings are ephemeral — may sell same day. Previous: CCM Figure 8 Ice Skates (Men's 12) and ASICS field hockey shoes from 2026-05-14, both sold.",
+        "url": "https://msusurplusstore.com/products/bauer-gray-msu-hockey-jersey-youth-size-medium-large",
+        "detected_at": "2026-05-28",
+        "is_announcement": true,
+        "source": "MSU Surplus Store"
       },
       "watch_links": [
         {"label": "Sporting Goods", "url": "https://msusurplusstore.com/collections/sporting-goods"},
