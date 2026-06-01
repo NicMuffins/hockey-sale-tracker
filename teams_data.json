@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28",
+  "last_updated": "2026-06-01",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -282,14 +282,20 @@
           "year": 2025,
           "date": "October 22",
           "notes": "Hockey gear listed on UM Property Disposition (purchased by Nic)"
+        },
+        {
+          "year": 2026,
+          "date": "May (ongoing)",
+          "notes": "Items appearing on UM Dispo since May 13 — hockey cage, pants, tape. Main gear dump expected imminently."
         }
       ],
       "predicted_window": {
-        "start": "08-25",
+        "start": "06-01",
         "end": "11-05",
         "confidence": "medium"
       },
-      "notes": "UM doesn't run a public sale event. Surplus hockey gear gets listed on UM Property Disposition (dispo.umich.edu/sporting-goods) — typically late summer / early fall. Window has varied ~50 days between confirmed years (9/2/24, 10/22/25).",
+      "window_display": "Monitored year-round via UM Dispo",
+      "notes": "UM doesn't run a public sale event. Surplus hockey gear gets listed on UM Property Disposition (dispo.umich.edu/sporting-goods). Historically peaked late summer/fall (9/2/24, 10/22/25), but items began appearing in May 2026 — main gear dump may arrive any time. UM Dispo is checked daily by the monitor regardless of window.",
       "watch_urls": [
         "https://dispo.umich.edu/sporting-goods.html",
         "https://mgoblue.com/sports/mens-ice-hockey",
@@ -551,7 +557,7 @@
       "name": "U-M Property Disposition — Sporting Goods",
       "url": "https://dispo.umich.edu/sporting-goods.html",
       "team_id": "michigan",
-      "notes": "Michigan-only — UM surplus office lists used hockey gear here, typically late summer/early fall. Items rotate, sometimes only listed for a few days.",
+      "notes": "Michigan-only — UM surplus office lists used hockey gear here. Checked daily by the monitor year-round, regardless of Michigan's predicted window. Items are ephemeral — can appear and sell within hours. Main gear dumps have historically hit in late summer/fall, but 2026 items began appearing in May.",
       "match_keywords": [
         "hockey",
         "skate",
