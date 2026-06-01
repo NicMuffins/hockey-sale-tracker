@@ -1,0 +1,36 @@
+name: Hockey Sale Monitor
+
+on:
+  schedule:
+    # 10am EDT (UTC-4) daily — runs on GitHub's servers regardless of whether
+    # your computer is on. Adjust the hour if EDT/EST clock changes matter to you.
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+    # Adds a "Run workflow" button in the Actions tab for on-demand runs.
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # required so the job can commit state files back to the repo
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run monitor
+        env:
+          GITHUB_TOKEN:       ${{ secrets.GITHUB_TOKEN }}
+          TAVILY_API_KEY:     ${{ secrets.TAVILY_API_KEY }}
+          GMAIL_USER:         ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python monitor.py
