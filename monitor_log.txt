@@ -3,3 +3,4 @@
 2026-06-01 | run_count=3 | tier=partial | teams_searched=3 | sales_found=0
 2026-06-01 | run_count=4 | tier=full | teams_searched=12 | sales_found=0
 2026-06-02 | run_count=5 | tier=partial | teams_searched=3 | sales_found=0
+2026-06-02 | run_count=6 | tier=partial | teams_searched=3 | sales_found=0
