@@ -5,3 +5,4 @@
 2026-06-02 | run_count=5 | tier=partial | teams_searched=3 | sales_found=0
 2026-06-02 | run_count=6 | tier=partial | teams_searched=3 | sales_found=0
 2026-06-03 | run_count=7 | tier=full | teams_searched=12 | sales_found=0
+2026-06-03 | run_count=8 | tier=partial | teams_searched=3 | sales_found=0
