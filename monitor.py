@@ -3,7 +3,7 @@
 monitor.py — Hockey Sale Tracker (GitHub Actions edition)
 Runs on GitHub's servers on a daily schedule. No computer required.
 
-Reads monitor_state.json for tier/run logic.
+Searches all teams whose sale window is active or upcoming.
 Only reads/writes teams_data.json when a new find is recorded.
 Sends Gmail alerts via SMTP app password.
 """
@@ -165,8 +165,9 @@ nicmuffins.github.io/hockey-sale-tracker/</a></p>'''
     print(f'  📧 Alert sent for {team_name}')
 
 
-def send_daily_summary(today: str, run_count: int, tier_label: str,
-                       teams_searched: list[dict], finds_by_team: dict):
+def send_daily_summary(today: str, run_count: int,
+                       teams_searched: list[dict], skipped_teams: list[dict],
+                       finds_by_team: dict):
     """Send a daily digest email — always, regardless of finds."""
     sales_found = sum(len(v) for v in finds_by_team.values())
 
@@ -178,6 +179,14 @@ def send_daily_summary(today: str, run_count: int, tier_label: str,
         f'{"✅ " + str(len(finds_by_team[t["id"]])) + " find(s)" if t["id"] in finds_by_team else "—"}'
         f'</td></tr>'
         for t in teams_searched
+    )
+
+    # Skipped teams (window past)
+    skipped_rows = ''.join(
+        f'<tr style="color:#aaa"><td style="padding:3px 8px">{t["name"]}</td>'
+        f'<td style="padding:3px 8px">{t.get("league","")}</td>'
+        f'<td style="padding:3px 8px">window closed</td></tr>'
+        for t in skipped_teams
     )
 
     # Finds detail (if any)
@@ -196,7 +205,7 @@ def send_daily_summary(today: str, run_count: int, tier_label: str,
 
     html = f'''
 <h2 style="margin-bottom:4px">🏒 Hockey Sale Monitor — Daily Summary</h2>
-<p style="color:#888;margin-top:0">{today} &nbsp;|&nbsp; Run #{run_count} &nbsp;|&nbsp; Tier: {tier_label}</p>
+<p style="color:#888;margin-top:0">{today} &nbsp;|&nbsp; Run #{run_count}</p>
 
 {finds_section}
 
@@ -209,7 +218,7 @@ def send_daily_summary(today: str, run_count: int, tier_label: str,
       <th style="padding:4px 8px">Result</th>
     </tr>
   </thead>
-  <tbody>{team_rows}</tbody>
+  <tbody>{team_rows}{skipped_rows}</tbody>
 </table>
 
 <p style="font-size:12px;color:#888;margin-top:20px">
@@ -240,26 +249,28 @@ def main():
     today = date.today().isoformat()
     print(f'\n=== Hockey Sale Monitor — {today} ===')
 
-    # Step 1 — Load state (never load teams_data.json at startup)
+    # Step 1 — Load state
     ms_txt,   ms_sha   = gh_get('monitor_state.json')
     seen_txt, seen_sha = gh_get('seen_announcements.json')
     log_txt,  log_sha  = gh_get('monitor_log.txt')
     ms   = json.loads(ms_txt)
     seen = json.loads(seen_txt)
 
-    run_count  = ms.get('run_count', 0)
-    full_run   = (run_count % 3 == 0)
-    tier_label = 'full' if full_run else 'partial'
-    print(f'run_count={run_count}  tier={tier_label}')
+    run_count = ms.get('run_count', 0)
+    print(f'run_count={run_count}')
 
-    # Step 2 — Determine teams to search
+    # Step 2 — Determine teams to search (all with active/upcoming windows)
     team_lookup = {t['id']: t for t in ms['teams']}
     to_search = [
         t for t in ms['teams']
         if window_status(t.get('predicted_window')) not in ('past', 'waiting')
-        and (full_run or t['tier'] != 'low')
     ]
-    print(f'Teams: {[t["id"] for t in to_search]}')
+    skipped = [
+        t for t in ms['teams']
+        if window_status(t.get('predicted_window')) in ('past', 'waiting')
+    ]
+    print(f'Teams to search: {[t["id"] for t in to_search]}')
+    print(f'Teams skipped (window closed/waiting): {[t["id"] for t in skipped]}')
 
     # Step 3 — Collect known URLs
     seen_urls: set[str] = {
@@ -367,13 +378,13 @@ def main():
         'monitor_state.json',
         json.dumps(ms, indent=2, ensure_ascii=False),
         ms_sha,
-        f'monitor: state update {today} (run_count={run_count + 1}, tier={tier_label})',
+        f'monitor: state update {today} (run_count={run_count + 1})',
     )
     print(f'  Committed monitor_state.json (run_count={run_count + 1})')
 
     # Step 7 — Append to log
     log_line = (
-        f'{today} | run_count={run_count + 1} | tier={tier_label}'
+        f'{today} | run_count={run_count + 1}'
         f' | teams_searched={len(to_search)} | sales_found={sales_found}\n'
     )
     gh_put(
@@ -386,7 +397,7 @@ def main():
 
     # Step 8 — Always send daily summary email
     try:
-        send_daily_summary(today, run_count + 1, tier_label, to_search, finds_by_team)
+        send_daily_summary(today, run_count + 1, to_search, skipped, finds_by_team)
     except Exception as e:
         print(f'  ⚠ summary email error: {e}')
 
