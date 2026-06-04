@@ -165,6 +165,76 @@ nicmuffins.github.io/hockey-sale-tracker/</a></p>'''
     print(f'  📧 Alert sent for {team_name}')
 
 
+def send_daily_summary(today: str, run_count: int, tier_label: str,
+                       teams_searched: list[dict], finds_by_team: dict):
+    """Send a daily digest email — always, regardless of finds."""
+    sales_found = sum(len(v) for v in finds_by_team.values())
+
+    # Teams searched table
+    team_rows = ''.join(
+        f'<tr><td style="padding:3px 8px">{t["name"]}</td>'
+        f'<td style="padding:3px 8px;color:#888">{t.get("league","")}</td>'
+        f'<td style="padding:3px 8px;text-align:center">'
+        f'{"✅ " + str(len(finds_by_team[t["id"]])) + " find(s)" if t["id"] in finds_by_team else "—"}'
+        f'</td></tr>'
+        for t in teams_searched
+    )
+
+    # Finds detail (if any)
+    if finds_by_team:
+        find_items = ''.join(
+            f'<li style="margin-bottom:10px">'
+            f'<strong>{f["team_name"]}</strong> — '
+            f'<a href="{f["url"]}">{f["title"]}</a><br>'
+            f'<span style="color:#666;font-size:12px">{f["snippet"]}</span></li>'
+            for items in finds_by_team.values()
+            for f in items
+        )
+        finds_section = f'<h3 style="color:#c0392b">🚨 New finds ({sales_found})</h3><ul style="padding-left:18px">{find_items}</ul>'
+    else:
+        finds_section = '<p style="color:#27ae60">✅ Nothing new found — no sales announced yet.</p>'
+
+    html = f'''
+<h2 style="margin-bottom:4px">🏒 Hockey Sale Monitor — Daily Summary</h2>
+<p style="color:#888;margin-top:0">{today} &nbsp;|&nbsp; Run #{run_count} &nbsp;|&nbsp; Tier: {tier_label}</p>
+
+{finds_section}
+
+<h3>Teams searched ({len(teams_searched)})</h3>
+<table style="border-collapse:collapse;font-size:13px">
+  <thead>
+    <tr style="background:#f0f0f0">
+      <th style="padding:4px 8px;text-align:left">Team</th>
+      <th style="padding:4px 8px;text-align:left">League</th>
+      <th style="padding:4px 8px">Result</th>
+    </tr>
+  </thead>
+  <tbody>{team_rows}</tbody>
+</table>
+
+<p style="font-size:12px;color:#888;margin-top:20px">
+Dashboard: <a href="https://nicmuffins.github.io/hockey-sale-tracker/">nicmuffins.github.io/hockey-sale-tracker/</a>
+</p>
+'''
+
+    subject = (
+        f'🏒 Hockey monitor: {sales_found} new find(s) — {today}'
+        if sales_found else
+        f'🏒 Hockey monitor: ran OK, nothing new — {today}'
+    )
+
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = subject
+    msg['From']    = GMAIL_USER
+    msg['To']      = ALERT_TO
+    msg.attach(MIMEText(html, 'html'))
+
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465) as s:
+        s.login(GMAIL_USER, GMAIL_PASS)
+        s.sendmail(GMAIL_USER, ALERT_TO, msg.as_string())
+    print(f'  📧 Daily summary sent')
+
+
 # ── Main ──────────────────────────────────────────────────────────────────────
 def main():
     today = date.today().isoformat()
@@ -283,7 +353,7 @@ def main():
         )
         print('  Committed teams_data.json')
 
-        # Send email alerts
+        # Send individual alert emails per team
         for team_id, items in finds_by_team.items():
             try:
                 send_alert(items[0]['team_name'], items[0]['team_league'], items)
@@ -313,6 +383,13 @@ def main():
         f'monitor: log {today}',
     )
     print(f'  Logged: {log_line.strip()}')
+
+    # Step 8 — Always send daily summary email
+    try:
+        send_daily_summary(today, run_count + 1, tier_label, to_search, finds_by_team)
+    except Exception as e:
+        print(f'  ⚠ summary email error: {e}')
+
     print('=== Done ===\n')
 
 
