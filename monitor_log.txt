@@ -7,3 +7,4 @@
 2026-06-03 | run_count=7 | tier=full | teams_searched=12 | sales_found=0
 2026-06-03 | run_count=8 | tier=partial | teams_searched=3 | sales_found=0
 2026-06-04 | run_count=9 | tier=partial | teams_searched=3 | sales_found=0
+2026-06-04 | run_count=10 | teams_searched=13 | sales_found=0
