@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-monitor.py — Hockey Sale Tracker (GitHub Actions edition)
+monitor.py â Hockey Sale Tracker (GitHub Actions edition)
 Runs on GitHub's servers on a daily schedule. No computer required.
 
 Searches all teams whose sale window is active or upcoming.
@@ -18,7 +18,7 @@ from email.mime.text import MIMEText
 
 import requests
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# ââ Config ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 REPO       = 'NicMuffins/hockey-sale-tracker'
 BRANCH     = 'main'
 ALERT_TO   = 'noknic@gmail.com'
@@ -36,7 +36,7 @@ GH_HEADERS = {
 }
 
 
-# ── GitHub helpers ────────────────────────────────────────────────────────────
+# ââ GitHub helpers ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 def gh_get(path: str) -> tuple[str, str]:
     """Fetch a repo file. Returns (text, sha)."""
     r = requests.get(
@@ -67,7 +67,7 @@ def gh_put(path: str, text: str, sha: str, message: str) -> str:
     return r.json()['content']['sha']
 
 
-# ── Search ────────────────────────────────────────────────────────────────────
+# ââ Search ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 def tavily_search(query: str) -> list[dict]:
     """Run a Tavily web search. Returns list of result dicts."""
     r = requests.post(
@@ -84,7 +84,7 @@ def tavily_search(query: str) -> list[dict]:
     return r.json().get('results', [])
 
 
-# ── Window status ─────────────────────────────────────────────────────────────
+# ââ Window status âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 def window_status(pw: dict | None) -> str:
     if not pw:
         return 'active'
@@ -104,12 +104,14 @@ def window_status(pw: dict | None) -> str:
         return 'active'
 
 
-# ── Result evaluation ─────────────────────────────────────────────────────────
+# ââ Result evaluation âââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 SALE_KEYWORDS = [
     'equipment sale', 'gear sale', 'equipment and clothing sale',
     'pro stock', 'game-used', 'game used', 'used equipment',
     'jersey sale', 'stick sale', 'skate sale', 'annual sale',
     'end of year sale', 'end-of-year sale',
+    'end of season sale', 'end-of-season sale',
+    'season-end sale', 'clearance sale', 'locker room sale',
 ]
 SKIP_DOMAINS = [
     'sidelineswap.com', 'ebay.com', 'fanatics.com', 'amazon.com',
@@ -137,7 +139,7 @@ def is_find(result: dict) -> bool:
     return any(kw in combined for kw in SALE_KEYWORDS)
 
 
-# ── Email ─────────────────────────────────────────────────────────────────────
+# ââ Email âââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 def send_alert(team_name: str, league: str, finds: list[dict]):
     rows = ''.join(
         f'<li style="margin-bottom:10px">'
@@ -154,7 +156,7 @@ Dashboard (auto-refreshes):
 nicmuffins.github.io/hockey-sale-tracker/</a></p>'''
 
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = f'🏒 Hockey sale alert: {team_name}'
+    msg['Subject'] = f'ð Hockey sale alert: {team_name}'
     msg['From']    = GMAIL_USER
     msg['To']      = ALERT_TO
     msg.attach(MIMEText(html, 'html'))
@@ -162,13 +164,13 @@ nicmuffins.github.io/hockey-sale-tracker/</a></p>'''
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as s:
         s.login(GMAIL_USER, GMAIL_PASS)
         s.sendmail(GMAIL_USER, ALERT_TO, msg.as_string())
-    print(f'  📧 Alert sent for {team_name}')
+    print(f'  ð§ Alert sent for {team_name}')
 
 
 def send_daily_summary(today: str, run_count: int,
                        teams_searched: list[dict], skipped_teams: list[dict],
                        finds_by_team: dict):
-    """Send a daily digest email — always, regardless of finds."""
+    """Send a daily digest email â always, regardless of finds."""
     sales_found = sum(len(v) for v in finds_by_team.values())
 
     # Teams searched table
@@ -176,7 +178,7 @@ def send_daily_summary(today: str, run_count: int,
         f'<tr><td style="padding:3px 8px">{t["name"]}</td>'
         f'<td style="padding:3px 8px;color:#888">{t.get("league","")}</td>'
         f'<td style="padding:3px 8px;text-align:center">'
-        f'{"✅ " + str(len(finds_by_team[t["id"]])) + " find(s)" if t["id"] in finds_by_team else "—"}'
+        f'{"â " + str(len(finds_by_team[t["id"]])) + " find(s)" if t["id"] in finds_by_team else "â"}'
         f'</td></tr>'
         for t in teams_searched
     )
@@ -193,18 +195,18 @@ def send_daily_summary(today: str, run_count: int,
     if finds_by_team:
         find_items = ''.join(
             f'<li style="margin-bottom:10px">'
-            f'<strong>{f["team_name"]}</strong> — '
+            f'<strong>{f["team_name"]}</strong> â '
             f'<a href="{f["url"]}">{f["title"]}</a><br>'
             f'<span style="color:#666;font-size:12px">{f["snippet"]}</span></li>'
             for items in finds_by_team.values()
             for f in items
         )
-        finds_section = f'<h3 style="color:#c0392b">🚨 New finds ({sales_found})</h3><ul style="padding-left:18px">{find_items}</ul>'
+        finds_section = f'<h3 style="color:#c0392b">ð¨ New finds ({sales_found})</h3><ul style="padding-left:18px">{find_items}</ul>'
     else:
-        finds_section = '<p style="color:#27ae60">✅ Nothing new found — no sales announced yet.</p>'
+        finds_section = '<p style="color:#27ae60">â Nothing new found â no sales announced yet.</p>'
 
     html = f'''
-<h2 style="margin-bottom:4px">🏒 Hockey Sale Monitor — Daily Summary</h2>
+<h2 style="margin-bottom:4px">ð Hockey Sale Monitor â Daily Summary</h2>
 <p style="color:#888;margin-top:0">{today} &nbsp;|&nbsp; Run #{run_count}</p>
 
 {finds_section}
@@ -227,9 +229,9 @@ Dashboard: <a href="https://nicmuffins.github.io/hockey-sale-tracker/">nicmuffin
 '''
 
     subject = (
-        f'🏒 Hockey monitor: {sales_found} new find(s) — {today}'
+        f'ð Hockey monitor: {sales_found} new find(s) â {today}'
         if sales_found else
-        f'🏒 Hockey monitor: ran OK, nothing new — {today}'
+        f'ð Hockey monitor: ran OK, nothing new â {today}'
     )
 
     msg = MIMEMultipart('alternative')
@@ -241,15 +243,15 @@ Dashboard: <a href="https://nicmuffins.github.io/hockey-sale-tracker/">nicmuffin
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as s:
         s.login(GMAIL_USER, GMAIL_PASS)
         s.sendmail(GMAIL_USER, ALERT_TO, msg.as_string())
-    print(f'  📧 Daily summary sent')
+    print(f'  ð§ Daily summary sent')
 
 
-# ── Main ──────────────────────────────────────────────────────────────────────
+# ââ Main ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 def main():
     today = date.today().isoformat()
-    print(f'\n=== Hockey Sale Monitor — {today} ===')
+    print(f'\n=== Hockey Sale Monitor â {today} ===')
 
-    # Step 1 — Load state
+    # Step 1 â Load state
     ms_txt,   ms_sha   = gh_get('monitor_state.json')
     seen_txt, seen_sha = gh_get('seen_announcements.json')
     log_txt,  log_sha  = gh_get('monitor_log.txt')
@@ -259,7 +261,7 @@ def main():
     run_count = ms.get('run_count', 0)
     print(f'run_count={run_count}')
 
-    # Step 2 — Determine teams to search (all with active/upcoming windows)
+    # Step 2 â Determine teams to search (all with active/upcoming windows)
     team_lookup = {t['id']: t for t in ms['teams']}
     to_search = [
         t for t in ms['teams']
@@ -272,14 +274,14 @@ def main():
     print(f'Teams to search: {[t["id"] for t in to_search]}')
     print(f'Teams skipped (window closed/waiting): {[t["id"] for t in skipped]}')
 
-    # Step 3 — Collect known URLs
+    # Step 3 â Collect known URLs
     seen_urls: set[str] = {
         e['url']
         for entries in seen.values()
         for e in entries
     }
 
-    # Step 4 — Search and evaluate
+    # Step 4 â Search and evaluate
     finds_by_team: dict[str, list[dict]] = {}
 
     def record(team_id: str, team_name: str, team_league: str, result: dict):
@@ -294,7 +296,7 @@ def main():
             'team_name':    team_name,
             'team_league':  team_league,
         })
-        print(f'    ✅ {url}')
+        print(f'    â {url}')
 
     # Per-team searches
     for team in to_search:
@@ -306,7 +308,7 @@ def main():
             for r in tavily_search(q):
                 record(team['id'], team['name'], team['league'], r)
         except Exception as e:
-            print(f'  ⚠ search error: {e}')
+            print(f'  â  search error: {e}')
 
     # Meta-source searches (always run)
     for meta in ms.get('meta_sources', []):
@@ -317,12 +319,12 @@ def main():
             for r in tavily_search(meta['search_query']):
                 record(team_id, t.get('name', team_id), t.get('league', ''), r)
         except Exception as e:
-            print(f'  ⚠ search error: {e}')
+            print(f'  â  search error: {e}')
 
     sales_found = sum(len(v) for v in finds_by_team.values())
     print(f'\nNew finds: {sales_found}')
 
-    # Step 5 — Commit finds (only if any)
+    # Step 5 â Commit finds (only if any)
     if finds_by_team:
         # Update seen_announcements.json
         for team_id, items in finds_by_team.items():
@@ -349,7 +351,7 @@ def main():
             primary = items[0]
             extras  = [{'label': f['title'][:60], 'url': f['url']} for f in items[1:]]
             td_map[team_id]['latest_news'] = {
-                'summary':         f'{len(items)} new find(s) — {primary["title"]}',
+                'summary':         f'{len(items)} new find(s) â {primary["title"]}',
                 'url':             primary['url'],
                 'detected_at':     today,
                 'is_announcement': True,
@@ -369,9 +371,9 @@ def main():
             try:
                 send_alert(items[0]['team_name'], items[0]['team_league'], items)
             except Exception as e:
-                print(f'  ⚠ email error ({team_id}): {e}')
+                print(f'  â  email error ({team_id}): {e}')
 
-    # Step 6 — Always update monitor_state.json
+    # Step 6 â Always update monitor_state.json
     ms['run_count']      = run_count + 1
     ms['last_monitored'] = today
     gh_put(
@@ -382,7 +384,7 @@ def main():
     )
     print(f'  Committed monitor_state.json (run_count={run_count + 1})')
 
-    # Step 7 — Append to log
+    # Step 7 â Append to log
     log_line = (
         f'{today} | run_count={run_count + 1}'
         f' | teams_searched={len(to_search)} | sales_found={sales_found}\n'
@@ -395,11 +397,11 @@ def main():
     )
     print(f'  Logged: {log_line.strip()}')
 
-    # Step 8 — Always send daily summary email
+    # Step 8 â Always send daily summary email
     try:
         send_daily_summary(today, run_count + 1, to_search, skipped, finds_by_team)
     except Exception as e:
-        print(f'  ⚠ summary email error: {e}')
+        print(f'  â  summary email error: {e}')
 
     print('=== Done ===\n')
 
