@@ -47,8 +47,8 @@
       "name": "Flint Firebirds",
       "league": "OHL",
       "predicted_window": {
-        "start": "05-01",
-        "end": "07-15"
+        "start": "07-01",
+        "end": "07-31"
       },
       "search_query": "Flint Firebirds equipment sale 2026"
     },
@@ -127,7 +127,7 @@
       "name": "London Knights",
       "league": "OHL",
       "predicted_window": {
-        "start": "05-15",
+        "start": "06-01",
         "end": "07-15"
       },
       "search_query": "London Knights equipment sale"
@@ -156,24 +156,24 @@
   "meta_sources": [
     {
       "id": "sports2k-pro-equipment-sales",
-      "name": "Sports2K — Pro Equipment Sales forum",
+      "name": "Sports2K â Pro Equipment Sales forum",
       "search_query": "site:sports2k.com/forum \"equipment sale\" Detroit OR Windsor OR Toledo OR \"Grand Rapids\" OR Kalamazoo OR Cleveland OR Flint OR Saginaw OR \"Ann Arbor\""
     },
     {
       "id": "umich-property-disposition",
-      "name": "U-M Property Disposition — Sporting Goods",
+      "name": "U-M Property Disposition â Sporting Goods",
       "team_id": "michigan",
       "search_query": "site:dispo.umich.edu hockey OR skate OR stick OR helmet OR jersey OR pants"
     },
     {
       "id": "msu-surplus-sporting-goods",
-      "name": "MSU Surplus Store — Sporting Goods",
+      "name": "MSU Surplus Store â Sporting Goods",
       "team_id": "michigan-state",
       "search_query": "site:msusurplusstore.com/collections/sporting-goods hockey OR skate OR stick OR helmet OR ice"
     },
     {
       "id": "msu-surplus-athletic-apparel",
-      "name": "MSU Surplus Store — Athletic Apparel",
+      "name": "MSU Surplus Store â Athletic Apparel",
       "team_id": "michigan-state",
       "search_query": "site:msusurplusstore.com/collections/athletic-apparel hockey OR \"Spartan hockey\" OR jersey"
     }
