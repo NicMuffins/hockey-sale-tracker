@@ -91,6 +91,11 @@
       "title": "Three-(3)-Bauer-Hockey-Gloves - Dispo Direct - University of Michigan",
       "url": "https://dispo.umich.edu/three-3-bauer-hockey-gloves.html",
       "detected_at": "2026-06-15"
+    },
+    {
+      "title": "Tex-Style-Hockey-Skate-Laces-108\"-Waxed-White-Pattern-108\"",
+      "url": "https://dispo.umich.edu/tex-style-hockey-skate-laces-108-waxed-white-pattern-108.html",
+      "detected_at": "2026-06-16"
     }
   ],
   "michigan-state": [
@@ -172,6 +177,16 @@
       "title": "Score helmets, sticks, and more at our equipment sale",
       "url": "https://www.toledowalleye.com/news/2025/06/score-helmets-sticks-and-more-at-our-equipment-sale-saturday-july-12",
       "detected_at": "2026-06-15"
+    },
+    {
+      "title": "Add to your collection at this Saturday's Walleye equipment sale | Toledo Walleye",
+      "url": "https://www.toledowalleye.com/news/2023/06/add-to-your-collection-at-this-saturday-s-walleye-equipment-sale",
+      "detected_at": "2026-06-16"
+    },
+    {
+      "title": "End of Season Event | Toledo Walleye",
+      "url": "https://www.toledowalleye.com/events/2024/05/30/end-of-season-event",
+      "detected_at": "2026-06-16"
     }
   ],
   "windsor-spitfires": [
@@ -189,6 +204,11 @@
       "title": "SPITS GEAR SALE THIS WEEK! - Windsor Spitfires",
       "url": "https://chl.ca/ohl-spitfires/spits-gear-on-sale-this-week",
       "detected_at": "2026-06-15"
+    },
+    {
+      "title": "MINI-CAMP, EQUIPMENT & SPITS GEAR SALE SATURDAY - Windsor Spitfires",
+      "url": "https://chl.ca/ohl-spitfires/2016-mini-camp-used-equipment-and-spits-gear-blowout-saturday",
+      "detected_at": "2026-06-16"
     }
   ],
   "saginaw-spirit": [
@@ -232,6 +252,18 @@
       "title": "Vegas Golden Knights to Host Battle-Worn Authentics Equipment ...",
       "url": "https://www.nhl.com/goldenknights/news/vegas-golden-knights-to-host-battle-worn-authentics-equipment-sale-on-july-23",
       "detected_at": "2026-06-15"
+    },
+    {
+      "title": "KNIGHTS ANNUAL DRESSING ROOM SALE MAY 7-9 - London Knights",
+      "url": "https://chl.ca/ohl-knights/knights-annual-dressing-room-sale-may-7-9",
+      "detected_at": "2026-06-16"
+    }
+  ],
+  "cleveland-monsters": [
+    {
+      "title": "Equipment Sale 2026 Our 2026 Equipment Sale will ...",
+      "url": "https://www.instagram.com/p/DZen6PVuQBb",
+      "detected_at": "2026-06-16"
     }
   ]
 }
