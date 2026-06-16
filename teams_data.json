@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-15",
+  "last_updated": "2026-06-16",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -104,15 +104,15 @@
         "Walleye Swamp Shop equipment sale"
       ],
       "latest_news": {
-        "summary": "2 new find(s) â Equipment Sale",
-        "url": "https://www.toledowalleye.com/events/2024/06/01/equipment-sale",
-        "detected_at": "2026-06-15",
+        "summary": "2 new find(s) â Add to your collection at this Saturday's Walleye equipment sale | Toledo Walleye",
+        "url": "https://www.toledowalleye.com/news/2023/06/add-to-your-collection-at-this-saturday-s-walleye-equipment-sale",
+        "detected_at": "2026-06-16",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "Score helmets, sticks, and more at our equipment sale",
-            "url": "https://www.toledowalleye.com/news/2025/06/score-helmets-sticks-and-more-at-our-equipment-sale-saturday-july-12"
+            "label": "End of Season Event | Toledo Walleye",
+            "url": "https://www.toledowalleye.com/events/2024/05/30/end-of-season-event"
           }
         ]
       },
@@ -162,21 +162,11 @@
         "Spitfires mini camp equipment"
       ],
       "latest_news": {
-        "summary": "3 new find(s) â Hey Spits Fans! Our end of season sale is Saturday June 13th 2026 ...",
-        "url": "https://x.com/SpitsHockey/status/2057497398478327909",
-        "detected_at": "2026-06-15",
+        "summary": "1 new find(s) â MINI-CAMP, EQUIPMENT & SPITS GEAR SALE SATURDAY - Windsor Spitfires",
+        "url": "https://chl.ca/ohl-spitfires/2016-mini-camp-used-equipment-and-spits-gear-blowout-saturday",
+        "detected_at": "2026-06-16",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Hey Spits Fans! Our end of season sale is Saturday June 13th",
-            "url": "https://www.instagram.com/p/DYm3gcRRvc6"
-          },
-          {
-            "label": "SPITS GEAR SALE THIS WEEK! - Windsor Spitfires",
-            "url": "https://chl.ca/ohl-spitfires/spits-gear-on-sale-this-week"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
@@ -424,37 +414,11 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "7 new find(s) â Bauer-Hockey-Pants-Medium-+-1\"-Blue-56529 - Dispo Direct",
-        "url": "https://dispo.umich.edu/bauer-hockey-pants-medium-1-blue-56529.html",
-        "detected_at": "2026-06-15",
+        "summary": "1 new find(s) â Tex-Style-Hockey-Skate-Laces-108\"-Waxed-White-Pattern-108\"",
+        "url": "https://dispo.umich.edu/tex-style-hockey-skate-laces-108-waxed-white-pattern-108.html",
+        "detected_at": "2026-06-16",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "U-M Bauer Hockey Shell (No Girdle) Small Navy Blue - Dispo D",
-            "url": "https://dispo.umich.edu/bauer-hockey-shell-no-girdle-small-navy-blue.html"
-          },
-          {
-            "label": "Shortside-603222-Hockey-Tape-Cloth-Black - Dispo Direct",
-            "url": "https://dispo.umich.edu/shortside-603222-hockey-tape-cloth-black.html"
-          },
-          {
-            "label": "Bauer-Left-Handed-Ag5nt-Hockey-Stick-B105815 - Dispo Direct",
-            "url": "https://dispo.umich.edu/bauer-left-handed-ag5nt-hockey-stick-b105815.html"
-          },
-          {
-            "label": "Ten-(10)-Various-Bauer-Vapor-Hyperlite-Hockey-Sticks - Dispo",
-            "url": "https://dispo.umich.edu/ten-10-various-bauer-vapor-hyperlite-hockey-sticks.html"
-          },
-          {
-            "label": "U-M-4orte-Hockey-Team-Bag - Dispo Direct",
-            "url": "https://dispo.umich.edu/u-m-4orte-hockey-team-bag.html"
-          },
-          {
-            "label": "Three-(3)-Bauer-Hockey-Gloves - Dispo Direct - University of",
-            "url": "https://dispo.umich.edu/three-3-bauer-hockey-gloves.html"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
@@ -678,21 +642,11 @@
         }
       ],
       "latest_news": {
-        "summary": "3 new find(s) â London - Tomorrow is our equipment sale at Canada Life Place ...",
-        "url": "https://www.facebook.com/londonknights/photos/tomorrow-is-our-equipment-sale-at-canada-life-place-featuring-some-special-guest/1484895339599393",
-        "detected_at": "2026-06-15",
+        "summary": "1 new find(s) â KNIGHTS ANNUAL DRESSING ROOM SALE MAY 7-9 - London Knights",
+        "url": "https://chl.ca/ohl-knights/knights-annual-dressing-room-sale-may-7-9",
+        "detected_at": "2026-06-16",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "2026 Memorial Day Hockey Gear Sale - Inline Warehouse",
-            "url": "https://www.inlinewarehouse.com/2026_Memorial_Day_Hockey_Gear_Sale/catpage-26HZHMD.html"
-          },
-          {
-            "label": "Vegas Golden Knights to Host Battle-Worn Authentics Equipmen",
-            "url": "https://www.nhl.com/goldenknights/news/vegas-golden-knights-to-host-battle-worn-authentics-equipment-sale-on-july-23"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       }
     },
     {
@@ -749,11 +703,11 @@
         "Monsters AHL gear sale"
       ],
       "latest_news": {
-        "summary": "Season ended May 24, 2026 — lost to Toronto Marlies 3-2 in Game 5 of AHL North Division Finals (Easton Cowan winner with 11 seconds left). Equipment sale window open. No sale announced yet.",
-        "url": "https://www.wkyc.com/article/sports/hockey/toronto-marlies-stun-monsters-final-minute-end-clevelands-season-game-5-north-division-finals/95-e14022f4-1b6d-4399-b665-1604dcc9d931",
-        "detected_at": "2026-05-25",
-        "is_announcement": false,
-        "source": "Monsters News"
+        "summary": "1 new find(s) â Equipment Sale 2026 Our 2026 Equipment Sale will ...",
+        "url": "https://www.instagram.com/p/DZen6PVuQBb",
+        "detected_at": "2026-06-16",
+        "is_announcement": true,
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
