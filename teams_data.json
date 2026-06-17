@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-16",
+  "last_updated": "2026-06-17",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -453,31 +453,23 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "6 new find(s) â Antiques & Collectibles - MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/collectible-antique/msu-collectible",
-        "detected_at": "2026-06-15",
+        "summary": "4 new find(s) - Products – tagged \"MSU Collectible\"",
+        "url": "https://msusurplusstore.com/collections/all/msu-collectible",
+        "detected_at": "2026-06-17",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "White Munnsters MSU Hockey Jersey Unisex Size L",
-            "url": "https://msusurplusstore.com/products/white-munnsters-msu-hockey-jersey-unisex-size-l"
-          },
-          {
             "label": "Products – Page 288 - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/all?page=288&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InRpdGxlIiwic3YiOiJMb3Qgb2YgNiBWaW50YWdlIE5hbmN5IERyZXcgMTk0MC02MHMgTWF0dGUgUGljdHVyZSBDb3ZlcnMgQmx1ZSBNdWx0aSBFUFMgSEMiLCJkIjoiZiIsInVpZCI6NzYyOTA4MDg4NzM0NCwibCI6MTIsIm8iOjAsInIiOiJDUCJ9.dsdHOKI7-rrLtF5qM-F_iUNoyCzCLTCkNOctiavFoLU"
+            "url": "https://msusurplusstore.com/collections/all?page=288&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InRpdGxlIiwic3YiOiJMb3Qgb2YgSmFwYW4gUG9zdGNhcmRzIGFuZCBUcmF2ZWwgRXBoZW1lcmEiLCJkIjoiYiIsInVpZCI6NzYxOTY3MjkzMjQwMCwibCI6MTIsIm8iOjAsInIiOiJDUCJ9.IbYqr8zTkcalrk0hhn3VXHmTsiTvDIBJjOQM9TROcwo"
           },
           {
-            "label": "Sporting Goods - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/sporting-goods/category-report_sporting-goods"
+            "label": "Sporting Goods – Page 14 – MSU Surplus Store",
+            "url": "https://msusurplusstore.com/collections/sporting-goods?page=14"
           },
           {
-            "label": "Sporting Goods – Page 3 - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/sporting-goods?page=3"
-          },
-          {
-            "label": "Athletic Apparel – Page 7 – MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/athletic-apparel?page=7"
+            "label": "Athletic Apparel - MSU Surplus Store",
+            "url": "https://msusurplusstore.com/collections/athletic-apparel"
           }
         ]
       },
@@ -642,11 +634,17 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) â KNIGHTS ANNUAL DRESSING ROOM SALE MAY 7-9 - London Knights",
-        "url": "https://chl.ca/ohl-knights/knights-annual-dressing-room-sale-may-7-9",
-        "detected_at": "2026-06-16",
+        "summary": "2 new find(s) - Annual Knights Dressing Room Sale to Run May 7th-9th - OurSports Central",
+        "url": "https://www.oursportscentral.com/services/releases/annual-knights-dressing-room-sale-to-run-may-7th-9th/n-4962477",
+        "detected_at": "2026-06-17",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "Just a quick reminder the Battle-Worn Authentics Equipment S",
+            "url": "https://www.instagram.com/p/C8m2ekfPliZ?hl=en"
+          }
+        ]
       }
     },
     {
