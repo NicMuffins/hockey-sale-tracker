@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-18",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -104,17 +104,11 @@
         "Walleye Swamp Shop equipment sale"
       ],
       "latest_news": {
-        "summary": "2 new find(s) â Add to your collection at this Saturday's Walleye equipment sale | Toledo Walleye",
-        "url": "https://www.toledowalleye.com/news/2023/06/add-to-your-collection-at-this-saturday-s-walleye-equipment-sale",
-        "detected_at": "2026-06-16",
+        "summary": "1 new find(s) - News | Toledo Walleye",
+        "url": "https://www.toledowalleye.com/news?page=43",
+        "detected_at": "2026-06-18",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "End of Season Event | Toledo Walleye",
-            "url": "https://www.toledowalleye.com/events/2024/05/30/end-of-season-event"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
@@ -201,9 +195,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) â Saginaw Spirit (@saginawspirit) - Instagram",
-        "url": "https://www.instagram.com/saginawspirit?hl=en",
-        "detected_at": "2026-06-15",
+        "summary": "1 new find(s) - Grab Your Piece of Spirit Gear at the Spirit Equipment Sale - CHL",
+        "url": "https://chl.ca/ohl-spirit/grab-your-piece-of-spirit-gear-at-the-spirit-equipment-sale",
+        "detected_at": "2026-06-18",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -297,25 +291,11 @@
         "Sarnia Sting Honeypot summer sale"
       ],
       "latest_news": {
-        "summary": "4 new find(s) â 2024 Honeypot Summer Sale Kicks off Tonight! - Sarnia Sting",
-        "url": "https://chl.ca/ohl-sting/article/2024-honeypot-summer-sale-kicks-off-tonight",
-        "detected_at": "2026-06-15",
+        "summary": "1 new find(s) - EQUIPMENT SALE 2026 - general sale 10am-4pm - Instagram",
+        "url": "https://www.instagram.com/p/DY2EEUGHPBB",
+        "detected_at": "2026-06-18",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Sting Equipment Sale - Sarnia Sting - Canadian Hockey League",
-            "url": "https://chl.ca/ohl-sting/sting-equipment-sale"
-          },
-          {
-            "label": "Sarnia Sting - The Annual Sarnia Sting Equipment Sale is...",
-            "url": "https://www.facebook.com/sarniastingohl/posts/the-annual-sarnia-sting-equipment-sale-is-setthursday-june-1st-from-5pm-8pm-in-t/576024277975925"
-          },
-          {
-            "label": "OFFICIAL OUTFITTERS OF THE SARNIA STING ... - Instagram",
-            "url": "https://www.instagram.com/p/DOoN7hbk5Cr"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
