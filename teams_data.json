@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-18",
+  "last_updated": "2026-06-19",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -156,9 +156,9 @@
         "Spitfires mini camp equipment"
       ],
       "latest_news": {
-        "summary": "1 new find(s) â MINI-CAMP, EQUIPMENT & SPITS GEAR SALE SATURDAY - Windsor Spitfires",
-        "url": "https://chl.ca/ohl-spitfires/2016-mini-camp-used-equipment-and-spits-gear-blowout-saturday",
-        "detected_at": "2026-06-16",
+        "summary": "1 new find(s) - Spits Gear | FAQ",
+        "url": "https://www.spitsgear.com/faq",
+        "detected_at": "2026-06-19",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -394,9 +394,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) â Tex-Style-Hockey-Skate-Laces-108\"-Waxed-White-Pattern-108\"",
-        "url": "https://dispo.umich.edu/tex-style-hockey-skate-laces-108-waxed-white-pattern-108.html",
-        "detected_at": "2026-06-16",
+        "summary": "1 new find(s) - Bauer-Profile-2-Hockey-Cage-Large-Black - Dispo Direct",
+        "url": "https://dispo.umich.edu/sporting-goods/bauer-profile-2-hockey-cage-large-black-227821-0.html",
+        "detected_at": "2026-06-19",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -433,25 +433,11 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "4 new find(s) - Products – tagged \"MSU Collectible\"",
-        "url": "https://msusurplusstore.com/collections/all/msu-collectible",
-        "detected_at": "2026-06-17",
+        "summary": "1 new find(s) - Products – Page 278 - MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/all?page=278&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InByb2R1Y3RfdGl0bGUiLCJzdiI6IkxvdCBvZiAzNCBWaW50YWdlIFBvbGl0aWNhbCBidXR0b25zIFwiU3R1ZGVudHMgZm9yIENob2ljZVwiIiwiZCI6ImIiLCJ1aWQiOjc2NDEwMzc4NjUwMDgsImwiOjEyLCJvIjowLCJyIjoiQ1AiLCJ2IjoxfQ.6eNtEv8EfzIilIpMBOq_he8s4bdUQyp34EtGkidNMqA",
+        "detected_at": "2026-06-19",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Products – Page 288 - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/all?page=288&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InRpdGxlIiwic3YiOiJMb3Qgb2YgSmFwYW4gUG9zdGNhcmRzIGFuZCBUcmF2ZWwgRXBoZW1lcmEiLCJkIjoiYiIsInVpZCI6NzYxOTY3MjkzMjQwMCwibCI6MTIsIm8iOjAsInIiOiJDUCJ9.IbYqr8zTkcalrk0hhn3VXHmTsiTvDIBJjOQM9TROcwo"
-          },
-          {
-            "label": "Sporting Goods – Page 14 – MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/sporting-goods?page=14"
-          },
-          {
-            "label": "Athletic Apparel - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/athletic-apparel"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
