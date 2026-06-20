@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-19",
+  "last_updated": "2026-06-20",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -245,17 +245,11 @@
         }
       ],
       "latest_news": {
-        "summary": "2 new find(s) â New/used equipment + extra sale items - BOGO all apparel/jerseys ...",
-        "url": "https://www.instagram.com/reel/DManIdmO5Lw",
-        "detected_at": "2026-06-15",
+        "summary": "1 new find(s) - Flint Firebirds on Instagram",
+        "url": "https://www.instagram.com/p/DZu348dEupd",
+        "detected_at": "2026-06-20",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "New/used equipment + extra sale items - BOGO all apparel/jer",
-            "url": "https://www.facebook.com/FlintFirebirds/videos/%EF%B8%8Fsummer-sale%EF%B8%8F-newused-equipment-extra-sale-items-bogo-all-appareljerseys-in-the-/30697848213164479"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       }
     },
     {
