@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-20",
+  "last_updated": "2026-06-21",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -104,9 +104,9 @@
         "Walleye Swamp Shop equipment sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - News | Toledo Walleye",
-        "url": "https://www.toledowalleye.com/news?page=43",
-        "detected_at": "2026-06-18",
+        "summary": "1 new find(s) - ‼️END OF YEAR EQUIPMENT SALE‼️ When: July 12, 10 a.m. ...",
+        "url": "https://x.com/ToledoWalleye/status/1938335217309168101",
+        "detected_at": "2026-06-21",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -388,9 +388,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - Bauer-Profile-2-Hockey-Cage-Large-Black - Dispo Direct",
-        "url": "https://dispo.umich.edu/sporting-goods/bauer-profile-2-hockey-cage-large-black-227821-0.html",
-        "detected_at": "2026-06-19",
+        "summary": "1 new find(s) - Nike-Hockey-Pants-Medium-Navy-Blue - Dispo Direct",
+        "url": "https://dispo.umich.edu/nike-hockey-pants-medium-navy-blue.html",
+        "detected_at": "2026-06-21",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
