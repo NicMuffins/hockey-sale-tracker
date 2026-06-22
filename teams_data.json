@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-21",
+  "last_updated": "2026-06-22",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -195,9 +195,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Grab Your Piece of Spirit Gear at the Spirit Equipment Sale - CHL",
-        "url": "https://chl.ca/ohl-spirit/grab-your-piece-of-spirit-gear-at-the-spirit-equipment-sale",
-        "detected_at": "2026-06-18",
+        "summary": "1 new find(s) - Saginaw - Facebook",
+        "url": "https://www.facebook.com/spirithockey/photos/the-saginaw-spirit-will-host-their-annual-equipment-sale-on-saturday-january-27t/1579170508802810",
+        "detected_at": "2026-06-22",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
