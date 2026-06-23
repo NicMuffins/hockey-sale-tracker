@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-22",
+  "last_updated": "2026-06-23",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -104,9 +104,9 @@
         "Walleye Swamp Shop equipment sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - ‼️END OF YEAR EQUIPMENT SALE‼️ When: July 12, 10 a.m. ...",
-        "url": "https://x.com/ToledoWalleye/status/1938335217309168101",
-        "detected_at": "2026-06-21",
+        "summary": "1 new find(s) - Our End of Year Equipment Sale is coming up on July 12 Score ...",
+        "url": "https://www.facebook.com/walleye/posts/our-end-of-year-equipment-sale-is-coming-up-on-july-12-score-helmets-sticks-jers/1338088624989457",
+        "detected_at": "2026-06-23",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
