@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23",
+  "last_updated": "2026-06-24",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -427,9 +427,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Products – Page 278 - MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/all?page=278&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InByb2R1Y3RfdGl0bGUiLCJzdiI6IkxvdCBvZiAzNCBWaW50YWdlIFBvbGl0aWNhbCBidXR0b25zIFwiU3R1ZGVudHMgZm9yIENob2ljZVwiIiwiZCI6ImIiLCJ1aWQiOjc2NDEwMzc4NjUwMDgsImwiOjEyLCJvIjowLCJyIjoiQ1AiLCJ2IjoxfQ.6eNtEv8EfzIilIpMBOq_he8s4bdUQyp34EtGkidNMqA",
-        "detected_at": "2026-06-19",
+        "summary": "1 new find(s) - Products – Page 304 - MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/all?page=304",
+        "detected_at": "2026-06-24",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -594,17 +594,11 @@
         }
       ],
       "latest_news": {
-        "summary": "2 new find(s) - Annual Knights Dressing Room Sale to Run May 7th-9th - OurSports Central",
-        "url": "https://www.oursportscentral.com/services/releases/annual-knights-dressing-room-sale-to-run-may-7th-9th/n-4962477",
-        "detected_at": "2026-06-17",
+        "summary": "1 new find(s) - Instagram",
+        "url": "https://www.instagram.com/p/DYUmG07jqAU",
+        "detected_at": "2026-06-24",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Just a quick reminder the Battle-Worn Authentics Equipment S",
-            "url": "https://www.instagram.com/p/C8m2ekfPliZ?hl=en"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       }
     },
     {
