@@ -16,11 +16,11 @@
         }
       ],
       "predicted_window": {
-        "start": "05-15",
-        "end": "06-15",
-        "confidence": "low"
+        "start": "07-01",
+        "end": "08-31",
+        "confidence": "medium"
       },
-      "notes": "Annual sale documented but recent dates not publicized publicly. Watch @DetroitRedWings and @shophockeytown.",
+      "notes": "Annual sale typically runs July–August based on recent seasons. 2026 sale was announced via Instagram (Stadium Series equipment sale detected June 2026). Watch @DetroitRedWings and @shophockeytown.",
       "watch_urls": [
         "https://www.nhl.com/redwings/news",
         "https://www.instagram.com/shophockeytown/"
@@ -41,7 +41,7 @@
         }
       ],
       "latest_news": {
-        "summary": "5 new find(s) â THIS THURSDAY STADIUM SERIES EQUIPMENT SALE ...",
+        "summary": "5 new find(s) â THIS THURSDAY STADIUM SERIES EQUIPMENT SALE ...",
         "url": "https://www.instagram.com/reel/DHoeoAVvAO9?hl=en",
         "detected_at": "2026-06-15",
         "is_announcement": true,
@@ -104,9 +104,9 @@
         "Walleye Swamp Shop equipment sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Our End of Year Equipment Sale is coming up on July 12 Score ...",
-        "url": "https://www.facebook.com/walleye/posts/our-end-of-year-equipment-sale-is-coming-up-on-july-12-score-helmets-sticks-jers/1338088624989457",
-        "detected_at": "2026-06-23",
+        "summary": "1 new find(s) - ‼️END OF YEAR EQUIPMENT SALE‼️ When: July 12, 10 a.m. ...",
+        "url": "https://x.com/ToledoWalleye/status/1938335217309168101",
+        "detected_at": "2026-06-21",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -195,9 +195,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Anything catch your eye?   Our annual equipment sale opens in one ...",
-        "url": "https://www.instagram.com/p/DYkdtMcASrU",
-        "detected_at": "2026-06-26",
+        "summary": "1 new find(s) - Saginaw - Facebook",
+        "url": "https://www.facebook.com/spirithockey/photos/the-saginaw-spirit-will-host-their-annual-equipment-sale-on-saturday-january-27t/1579170508802810",
+        "detected_at": "2026-06-22",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -266,7 +266,7 @@
         },
         {
           "year": 2024,
-          "date": "June 10–13, June 24–27",
+          "date": "June 18–13, June 24–27",
           "notes": "Honeypot Summer Sale (apparel-leaning), 4–8pm"
         }
       ],
@@ -339,7 +339,7 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) â The equipment sale rolls along this afternoon from 12-8pm! We are ...",
+        "summary": "1 new find(s) â The equipment sale rolls along this afternoon from 12-8pm! We are ...",
         "url": "https://www.facebook.com/USANTDP/posts/the-equipment-sale-rolls-along-this-afternoon-from-12-8pmwe-are-out-of-new-right/4204972026233570",
         "detected_at": "2026-06-15",
         "is_announcement": true,
@@ -427,9 +427,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - MSU Shirts – Page 4",
-        "url": "https://msusurplusstore.com/collections/msu-t-shirts?page=4",
-        "detected_at": "2026-06-26",
+        "summary": "1 new find(s) - Products – Page 278 - MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/all?page=278&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InByb2R1Y3RfdGl0bGUiLCJzdiI6IkxvdCBvZiAzNCBWaW50YWdlIFBvbGl0aWNhbCBidXR0b25zIFwiU3R1ZGVudHMgZm9yIENob2ljZVwiIiwiZCI6ImIiLCJ1aWQiOjc2NDEwMzc4NjUwMDgsImwiOjEyLCJvIjowLCJyIjoiQ1AiLCJ2IjoxfQ.6eNtEv8EfzIilIpMBOq_he8s4bdUQyp34EtGkidNMqA",
+        "detected_at": "2026-06-19",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -594,11 +594,17 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - 2026 Gear Sale? : r/goldenknights - Reddit",
-        "url": "https://www.reddit.com/r/goldenknights/comments/1ucrsss/2026_gear_sale",
-        "detected_at": "2026-06-26",
+        "summary": "2 new find(s) - Annual Knights Dressing Room Sale to Run May 7th-9th - OurSports Central",
+        "url": "https://www.oursportscentral.com/services/releases/annual-knights-dressing-room-sale-to-run-may-7th-9th/n-4962477",
+        "detected_at": "2026-06-17",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "Just a quick reminder the Battle-Worn Authentics Equipment S",
+            "url": "https://www.instagram.com/p/C8m2ekfPliZ?hl=en"
+          }
+        ]
       }
     },
     {
@@ -655,7 +661,7 @@
         "Monsters AHL gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) â Equipment Sale 2026 Our 2026 Equipment Sale will ...",
+        "summary": "1 new find(s) â Equipment Sale 2026 Our 2026 Equipment Sale will ...",
         "url": "https://www.instagram.com/p/DZen6PVuQBb",
         "detected_at": "2026-06-16",
         "is_announcement": true,
@@ -712,7 +718,7 @@
       "name": "MSU Surplus Store — Athletic Apparel",
       "url": "https://msusurplusstore.com/collections/athletic-apparel",
       "team_id": "michigan-state",
-      "notes": "Michigan State athletic apparel surplus — may include team jerseys, practice gear.",
+      "notes": "Michigan State athletic apparel surplus — is may include team jerseys, practice gear.",
       "match_keywords": [
         "hockey",
         "Spartan hockey",
