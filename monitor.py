@@ -11,6 +11,7 @@ Sends one daily summary email (no per-team individual alerts).
 import base64
 import json
 import os
+import re
 import smtplib
 from datetime import date
 from email.header import Header
@@ -84,6 +85,54 @@ def tavily_search(query: str) -> list[dict]:
     )
     r.raise_for_status()
     return r.json().get('results', [])
+
+
+# -- Direct page checks (bypass Tavily indexing lag) ---
+def check_dispo_directly() -> list[dict]:
+    """
+    Directly fetch dispo.umich.edu/sporting-goods.html and scan for hockey items.
+    Tavily can lag days behind new listings — this catches them immediately.
+    """
+    try:
+        r = requests.get(
+            'https://dispo.umich.edu/sporting-goods.html',
+            timeout=20,
+            headers={'User-Agent': 'Mozilla/5.0 (compatible; HockeySaleMonitor/1.0)'},
+        )
+        r.raise_for_status()
+        text = r.text
+
+        finds = []
+        seen_titles: set[str] = set()
+
+        # Extract all links and their anchor text from the page
+        for m in re.finditer(
+            r'href=["\']([^"\']+\.html)["\'][^>]*>(.*?)</a>',
+            text,
+            re.IGNORECASE | re.DOTALL,
+        ):
+            path  = m.group(1)
+            title = re.sub(r'<[^>]+>', '', m.group(2)).strip()
+            if not title or title in seen_titles:
+                continue
+            combined = title.lower()
+            if any(kw in combined for kw in SURPLUS_KEYWORDS):
+                full_url = (
+                    path if path.startswith('http')
+                    else f'https://dispo.umich.edu{path}'
+                )
+                seen_titles.add(title)
+                finds.append({
+                    'url':     full_url,
+                    'title':   title,
+                    'content': f'Found on UM Property Disposition sporting-goods page: {title}',
+                })
+
+        print(f'  [dispo-direct] {len(finds)} hockey item(s) found on page')
+        return finds
+    except Exception as e:
+        print(f'  x  dispo-direct check error: {e}')
+        return []
 
 
 # -- Window status ---
@@ -293,6 +342,11 @@ def main():
                 record(team_id, t.get('name', team_id), t.get('league', ''), r)
         except Exception as e:
             print(f'  x  search error: {e}')
+
+    # Direct page check for dispo.umich.edu — catches new listings before Tavily indexes them
+    print('  [dispo-direct] Checking dispo.umich.edu/sporting-goods.html...')
+    for r in check_dispo_directly():
+        record('michigan', 'Michigan Wolverines', 'NCAA (Big Ten)', r)
 
     sales_found = sum(len(v) for v in finds_by_team.values())
     print(f'\nNew finds: {sales_found}')
