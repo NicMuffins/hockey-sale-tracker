@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hockey Sale Tracker — Detroit / Windsor</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f0f2f5;
+      color: #1a1a1a;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #0d1b2a;
+      color: #fff;
+      padding: 18px 24px 14px;
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    header h1 { font-size: 1.25em; font-weight: 700; letter-spacing: -0.3px; }
+    header .sub { font-size: 0.78em; color: #8899aa; }
+
+    /* ── Summary bar ── */
+    .summary {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 10px 24px;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .summary-chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82em;
+      font-weight: 600;
+    }
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-active   { background: #22a86e; }
+    .dot-upcoming { background: #e6820a; }
+    .dot-waiting  { background: #9eaabb; }
+    .dot-past     { background: #d0d0d0; }
+
+    /* ── Sections ── */
+    .page { padding: 20px 24px; max-width: 1200px; }
+    .section { margin-bottom: 28px; }
+    .section-label {
+      font-size: 0.7em;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #888;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: #e0e0e0;
+    }
+
+    /* ── Grid ── */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 12px;
+    }
+
+    /* ── Cards ── */
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 14px 16px;
+      border-left: 4px solid #ddd;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .card.active   { border-left-color: #22a86e; }
+    .card.upcoming { border-left-color: #e6820a; }
+    .card.waiting  { border-left-color: #9eaabb; }
+    .card.past     { border-left-color: #d8d8d8; opacity: 0.72; }
+
+    /* Card header row */
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 8px;
+    }
+    .team-name  { font-weight: 700; font-size: 0.95em; }
+    .team-league {
+      font-size: 0.68em;
+      color: #888;
+      font-weight: 600;
+      margin-top: 1px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    /* Status badge */
+    .badge {
+      font-size: 0.65em;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-active   { background: #d4f5e5; color: #156b43; }
+    .badge-upcoming { background: #feecd0; color: #8a4d00; }
+    .badge-waiting  { background: #edf0f3; color: #5a6a7a; }
+    .badge-past     { background: #ececec; color: #999; }
+
+    /* Window dates */
+    .window {
+      font-size: 0.76em;
+      color: #555;
+    }
+    .window strong { color: #222; }
+
+    /* Announcement banner */
+    .announcement {
+      background: #fffbea;
+      border: 1px solid #f5d76e;
+      border-radius: 5px;
+      padding: 7px 10px;
+      font-size: 0.74em;
+      line-height: 1.45;
+    }
+    .announcement .ann-label {
+      font-weight: 700;
+      color: #b8860b;
+      font-size: 0.85em;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 3px;
+    }
+    .announcement a {
+      color: #c0392b;
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-word;
+    }
+    .announcement a:hover { text-decoration: underline; }
+    .announcement .ann-date { color: #aaa; font-size: 0.88em; margin-top: 3px; }
+
+    /* Extra sources */
+    .extra-sources { margin-top: 4px; }
+    .extra-sources a {
+      display: block;
+      font-size: 0.88em;
+      color: #777;
+      text-decoration: none;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .extra-sources a:hover { color: #c0392b; text-decoration: underline; }
+
+    /* Watch links */
+    .watch-links {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+      margin-top: 2px;
+    }
+    .watch-link {
+      font-size: 0.68em;
+      padding: 3px 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      color: #555;
+      text-decoration: none;
+      background: #fafafa;
+    }
+    .watch-link:hover { background: #f0f0f0; border-color: #bbb; }
+
+    /* No-news placeholder */
+    .no-news { font-size: 0.73em; color: #bbb; font-style: italic; }
+
+    /* Error / loading */
+    .msg { padding: 40px 24px; color: #888; font-size: 0.9em; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🏒 Hockey Sale Tracker</h1>
+  <span class="sub" id="meta-line">Loading…</span>
+</header>
+
+<div class="summary" id="summary-bar"></div>
+
+<div class="page" id="page">
+  <p class="msg">Loading team data…</p>
+</div>
+
+<script>
+// ── Helpers ──────────────────────────────────────────────────────────────────
+
+function windowStatus(pw) {
+  if (!pw) return 'active';
+  try {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const y = today.getFullYear();
+    const [sm, sd] = pw.start.split('-').map(Number);
+    const [em, ed] = pw.end.split('-').map(Number);
+    let start = new Date(y, sm - 1, sd);
+    let end   = new Date(y, em - 1, ed);
+    if (end < start) end = new Date(y + 1, em - 1, ed);
+    if (today > end)   return 'past';
+    if (today >= start) return 'active';
+    const days = (start - today) / 86400000;
+    return days <= 30 ? 'upcoming' : 'waiting';
+  } catch (e) {
+    return 'active';
+  }
+}
+
+const MONTH = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+
+function fmtWindow(pw, team) {
+  if (team.window_display) return team.window_display;
+  if (!pw) return 'Year-round';
+  const [sm, sd] = pw.start.split('-').map(Number);
+  const [em, ed] = pw.end.split('-').map(Number);
+  return `${MONTH[sm-1]} ${sd} – ${MONTH[em-1]} ${ed}`;
+}
+
+function fmtDate(iso) {
+  if (!iso) return '';
+  const [y, m, d] = iso.split('-').map(Number);
+  return `${MONTH[m-1]} ${d}, ${y}`;
+}
+
+function badgeHTML(status) {
+  const labels = { active: '🟢 Active', upcoming: '🟡 Upcoming', waiting: '⏳ Waiting', past: 'Past' };
+  return `<span class="badge badge-${status}">${labels[status] || status}</span>`;
+}
+
+function escHTML(s) {
+  return String(s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+// ── Card builder ─────────────────────────────────────────────────────────────
+
+function buildCard(team, status) {
+  const news    = team.latest_news;
+  const pw      = team.predicted_window;
+  const links   = team.watch_links || [];
+
+  // Announcement block
+  let annHTML = '';
+  if (news && news.summary) {
+    const label = news.is_announcement ? '📣 Sale Detected' : '📰 Latest News';
+    const extras = (news.extra_sources || []).slice(0, 3);
+    const extraLinks = extras.map(s =>
+      `<a href="${escHTML(s.url)}" target="_blank" rel="noopener">${escHTML(s.label)}</a>`
+    ).join('');
+
+    annHTML = `
+      <div class="announcement">
+        <div class="ann-label">${label}</div>
+        <a href="${escHTML(news.url)}" target="_blank" rel="noopener">${escHTML(news.summary.replace(/^\d+ new find\(s\) - /, ''))}</a>
+        ${extras.length ? `<div class="extra-sources">${extraLinks}</div>` : ''}
+        <div class="ann-date">Detected ${fmtDate(news.detected_at)}</div>
+      </div>`;
+  } else {
+    annHTML = `<p class="no-news">No announcements found yet.</p>`;
+  }
+
+  // Watch links
+  const linkHTML = links.length
+    ? `<div class="watch-links">${links.map(l =>
+        `<a class="watch-link" href="${escHTML(l.url)}" target="_blank" rel="noopener">${escHTML(l.label)}</a>`
+      ).join('')}</div>`
+    : '';
+
+  return `
+    <div class="card ${status}">
+      <div class="card-top">
+        <div>
+          <div class="team-name">${escHTML(team.name)}</div>
+          <div class="team-league">${escHTML(team.league)}</div>
+        </div>
+        ${badgeHTML(status)}
+      </div>
+      <div class="window">Sale window: <strong>${escHTML(fmtWindow(pw, team))}</strong></div>
+      ${annHTML}
+      ${linkHTML}
+    </div>`;
+}
+
+// ── Render ───────────────────────────────────────────────────────────────────
+
+function render(data) {
+  const teams = data.teams || [];
+
+  // Compute statuses
+  const withStatus = teams.map(t => ({
+    team: t,
+    status: windowStatus(t.predicted_window),
+  }));
+
+  // Summary counts
+  const counts = { active: 0, upcoming: 0, waiting: 0, past: 0 };
+  withStatus.forEach(({ status }) => counts[status]++);
+
+  document.getElementById('meta-line').textContent =
+    `Detroit / Windsor Metro  •  Updated ${fmtDate(data.last_updated)}`;
+
+  document.getElementById('summary-bar').innerHTML = `
+    <span class="summary-chip"><span class="dot dot-active"></span> Active: ${counts.active}</span>
+    <span class="summary-chip"><span class="dot dot-upcoming"></span> Upcoming (30 days): ${counts.upcoming}</span>
+    <span class="summary-chip"><span class="dot dot-waiting"></span> Waiting: ${counts.waiting}</span>
+    <span class="summary-chip"><span class="dot dot-past"></span> Window past: ${counts.past}</span>
+  `;
+
+  const sections = [
+    { key: 'active',   label: '🟢 Active — Sale Window Open Now' },
+    { key: 'upcoming', label: '🟡 Upcoming — Window Opens Within 30 Days' },
+    { key: 'waiting',  label: '⏳ Waiting — Window Later This Year' },
+    { key: 'past',     label: 'Past — Window Closed for 2026' },
+  ];
+
+  let html = '';
+  sections.forEach(({ key, label }) => {
+    const group = withStatus.filter(x => x.status === key);
+    if (!group.length) return;
+    html += `
+      <div class="section">
+        <div class="section-label">${label}</div>
+        <div class="grid">
+          ${group.map(({ team }) => buildCard(team, key)).join('')}
+        </div>
+      </div>`;
+  });
+
+  document.getElementById('page').innerHTML = html || '<p class="msg">No teams to display.</p>';
+}
+
+// ── Load data ─────────────────────────────────────────────────────────────────
+
+fetch('./teams_data.json')
+  .then(r => {
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    return r.json();
+  })
+  .then(render)
+  .catch(err => {
+    document.getElementById('page').innerHTML =
+      `<p class="msg">Could not load team data: ${escHTML(err.message)}</p>`;
+  });
+</script>
+</body>
+</html>
