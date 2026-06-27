@@ -33,3 +33,4 @@
 2026-06-24 | run_count=33 | teams_searched=11 | sales_found=2
 2026-06-25 | run_count=34 | teams_searched=11 | sales_found=0
 2026-06-26 | run_count=35 | teams_searched=11 | sales_found=3
+2026-06-27 | run_count=36 | teams_searched=12 | sales_found=21
