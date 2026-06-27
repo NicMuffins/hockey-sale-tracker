@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-26",
+  "last_updated": "2026-06-27",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -41,27 +41,15 @@
         }
       ],
       "latest_news": {
-        "summary": "5 new find(s) â THIS THURSDAY STADIUM SERIES EQUIPMENT SALE ...",
-        "url": "https://www.instagram.com/reel/DHoeoAVvAO9?hl=en",
-        "detected_at": "2026-06-15",
+        "summary": "2 new find(s) - Little Caesars Arena Team Store (@shophockeytown) - Instagram",
+        "url": "https://www.instagram.com/shophockeytown?hl=en",
+        "detected_at": "2026-06-27",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "Red Wings Equipment Sale 2026 - Instagram",
-            "url": "https://www.instagram.com/popular/red-wings-equipment-sale-2026"
-          },
-          {
-            "label": "Mark your calendars ! The @detroitredwings Annual Equipment ",
-            "url": "https://www.instagram.com/p/DMadkaJNmLo"
-          },
-          {
-            "label": "Detroit - 6pm UWM Garage (128 W. Fisher Service Dr.) | Faceb",
-            "url": "https://www.facebook.com/DETROITREDWINGS/photos/join-us-this-saturday-for-our-annual-equipment-sale-featuring-game-worn-jerseys-/254438170603587"
-          },
-          {
-            "label": "The 2025 equipment sale : r/DetroitRedWings - Reddit",
-            "url": "https://www.reddit.com/r/DetroitRedWings/comments/1lhuz3s/the_2025_equipment_sale"
+            "label": "Detroit Red Wings annual equipment sale on August 2nd - Face",
+            "url": "https://www.facebook.com/shophockeytown/posts/mark-your-calendars-the-detroit-red-wings-annual-equipment-sale-is-saturday-augu/1169626938538643"
           }
         ]
       }
@@ -195,9 +183,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Saginaw - Facebook",
-        "url": "https://www.facebook.com/spirithockey/photos/the-saginaw-spirit-will-host-their-annual-equipment-sale-on-saturday-january-27t/1579170508802810",
-        "detected_at": "2026-06-22",
+        "summary": "1 new find(s) - June 15 - Instagram",
+        "url": "https://www.instagram.com/p/DZmasDyEtQt",
+        "detected_at": "2026-06-27",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -388,11 +376,77 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - Nike-Hockey-Pants-Medium-Navy-Blue - Dispo Direct",
-        "url": "https://dispo.umich.edu/nike-hockey-pants-medium-navy-blue.html",
-        "detected_at": "2026-06-21",
+        "summary": "17 new find(s) - Sporting Goods - Dispo Direct - University of Michigan",
+        "url": "https://dispo.umich.edu/sporting-goods.html",
+        "detected_at": "2026-06-27",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "Dispo Direct",
+            "url": "https://dispo.umich.edu"
+          },
+          {
+            "label": "30 Rolls) of Renfrew 153414 Hockey Tape Gauze Blue 1.5\"x360\"",
+            "url": "https://dispo.umich.edu/sporting-goods/renfrew-153414-case-30-of-hockey-tape-gauze-blue-1-5-x360.html"
+          },
+          {
+            "label": "Bauer-Vapor-Hyperlite-High-Hockey-Skates-Men's-R=8-3/4",
+            "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-high-hockey-skates-men-s-r-8-3-4-l-8-1-2-ls-pulse-ti-blade-l-280-multi-colored-56469.html"
+          },
+          {
+            "label": "Bauer-Pro-Goal-Fit2-Hockey-Skates-Men's-11-LS-PULSE-Ti-Goali",
+            "url": "https://dispo.umich.edu/bauer-pro-goal-fit2-hockey-skates-men-s-11-ls-pulse-ti-goalie-blade-l-standard-multi-colored.html"
+          },
+          {
+            "label": "Punisher-Beginner-Skateboard-Multi-Colored-7.5\"x31\" - Dispo ",
+            "url": "https://dispo.umich.edu/punisher-beginner-skateboard-multi-colored-7-5-x31.html"
+          },
+          {
+            "label": "TRUE-Custom-(Skates)-Hockey-Skates-No-Holder/Blade",
+            "url": "https://dispo.umich.edu/true-custom-skates-hockey-skates-no-holder-blade.html"
+          },
+          {
+            "label": "Tex-Style-Hockey-Skate-Laces-96\"-Waxed-White ... - Dispo Dir",
+            "url": "https://dispo.umich.edu/tex-style-hockey-skate-laces-96-waxed-white-pattern-96.html"
+          },
+          {
+            "label": "Bauer-Supreme-Mach-Hockey-Skates-Men's-9-3/4-LS-PULSE-Ti ...",
+            "url": "https://dispo.umich.edu/bauer-supreme-mach-hockey-skates-men-s-9-3-4-ls-pulse-ti-blade-l-288-multi-colored.html"
+          },
+          {
+            "label": "Tex-Style-Hockey-Skate-Laces-108\"-No-Wax-White-Pattern-108\"",
+            "url": "https://dispo.umich.edu/tex-style-hockey-skate-laces-108-no-wax-white-pattern-108.html"
+          },
+          {
+            "label": "Johnson 36\" Aluminum Yardstick Model J236/40-0554 - Dispo Di",
+            "url": "https://dispo.umich.edu/johnson-j236-40-0554-yard-stick-36.html"
+          },
+          {
+            "label": "Steelcase Jersey Conversation/Side Chair Gray ... - Dispo Di",
+            "url": "https://dispo.umich.edu/steelcase-jersey-side-chair-conversation-side-chair-gray-pattern-fabric-with-arms-with-wheels.html"
+          },
+          {
+            "label": "Steelcase Jersey Office Chair Brown Pattern Fabric - Dispo D",
+            "url": "https://dispo.umich.edu/steelcase-jersey-office-chair-office-chair-brown-pattern-fabric-adjustable-with-arms-with-wheels-249884-0.html"
+          },
+          {
+            "label": "Furniture - Dispo Direct - University of Michigan",
+            "url": "https://dispo.umich.edu/furniture.html?p=2"
+          },
+          {
+            "label": "U-M 4orte Helmet Bag 17\"X1\"x18\"",
+            "url": "https://dispo.umich.edu/4orte-helmet-bag-17-x1-x18.html"
+          },
+          {
+            "label": "Steelcase-Jersey-(Stacking-Chair)-Stacking-Chair-Blue-Patter",
+            "url": "https://dispo.umich.edu/steelcase-jersey-stacking-chair-stacking-chair-blue-pattern-fabric-with-arms-with-wheels-251279-0.html"
+          },
+          {
+            "label": "Steelcase Jersey Stacking Chair, Teal Fabric, with Arms & Wh",
+            "url": "https://dispo.umich.edu/steelcase-jersey-stacking-chair-stacking-chair-teal-fabric-with-arms-with-wheels.html"
+          }
+        ]
       },
       "watch_links": [
         {
@@ -594,17 +648,11 @@
         }
       ],
       "latest_news": {
-        "summary": "2 new find(s) - Annual Knights Dressing Room Sale to Run May 7th-9th - OurSports Central",
-        "url": "https://www.oursportscentral.com/services/releases/annual-knights-dressing-room-sale-to-run-may-7th-9th/n-4962477",
-        "detected_at": "2026-06-17",
+        "summary": "1 new find(s) - Just a quick reminder the Battle-Worn Authentics Equipment Sale is ...",
+        "url": "https://www.instagram.com/p/C8m2ekfPliZ",
+        "detected_at": "2026-06-27",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Just a quick reminder the Battle-Worn Authentics Equipment S",
-            "url": "https://www.instagram.com/p/C8m2ekfPliZ?hl=en"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       }
     },
     {
