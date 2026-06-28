@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-27",
+  "last_updated": "2026-06-28",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -41,17 +41,11 @@
         }
       ],
       "latest_news": {
-        "summary": "2 new find(s) - Little Caesars Arena Team Store (@shophockeytown) - Instagram",
-        "url": "https://www.instagram.com/shophockeytown?hl=en",
-        "detected_at": "2026-06-27",
+        "summary": "1 new find(s) - Equipment & memorabilia sale set for Saturday at Hockeytown ...",
+        "url": "https://www.nhl.com/redwings/news/equipment-and-memorabilia-sale-set-for-saturday-at-hockeytown-authenti-307698068",
+        "detected_at": "2026-06-28",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Detroit Red Wings annual equipment sale on August 2nd - Face",
-            "url": "https://www.facebook.com/shophockeytown/posts/mark-your-calendars-the-detroit-red-wings-annual-equipment-sale-is-saturday-augu/1169626938538643"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       }
     },
     {
@@ -183,9 +177,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - June 15 - Instagram",
-        "url": "https://www.instagram.com/p/DZmasDyEtQt",
-        "detected_at": "2026-06-27",
+        "summary": "1 new find(s) - The Saginaw Spirit will host their annual Equipment Sale on ...",
+        "url": "https://www.facebook.com/spirithockey/posts/the-saginaw-spirit-will-host-their-annual-equipment-sale-on-saturday-january-27t/1579175935468934",
+        "detected_at": "2026-06-28",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -376,77 +370,11 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "17 new find(s) - Sporting Goods - Dispo Direct - University of Michigan",
-        "url": "https://dispo.umich.edu/sporting-goods.html",
-        "detected_at": "2026-06-27",
+        "summary": "1 new find(s) - Stacking-Chair-Purple-Pattern-Fabric-with-Arms - Dispo Direct",
+        "url": "https://dispo.umich.edu/steelcase-jersey-stacking-chair-stacking-chair-purple-pattern-fabric-with-arms.html",
+        "detected_at": "2026-06-28",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Dispo Direct",
-            "url": "https://dispo.umich.edu"
-          },
-          {
-            "label": "30 Rolls) of Renfrew 153414 Hockey Tape Gauze Blue 1.5\"x360\"",
-            "url": "https://dispo.umich.edu/sporting-goods/renfrew-153414-case-30-of-hockey-tape-gauze-blue-1-5-x360.html"
-          },
-          {
-            "label": "Bauer-Vapor-Hyperlite-High-Hockey-Skates-Men's-R=8-3/4",
-            "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-high-hockey-skates-men-s-r-8-3-4-l-8-1-2-ls-pulse-ti-blade-l-280-multi-colored-56469.html"
-          },
-          {
-            "label": "Bauer-Pro-Goal-Fit2-Hockey-Skates-Men's-11-LS-PULSE-Ti-Goali",
-            "url": "https://dispo.umich.edu/bauer-pro-goal-fit2-hockey-skates-men-s-11-ls-pulse-ti-goalie-blade-l-standard-multi-colored.html"
-          },
-          {
-            "label": "Punisher-Beginner-Skateboard-Multi-Colored-7.5\"x31\" - Dispo ",
-            "url": "https://dispo.umich.edu/punisher-beginner-skateboard-multi-colored-7-5-x31.html"
-          },
-          {
-            "label": "TRUE-Custom-(Skates)-Hockey-Skates-No-Holder/Blade",
-            "url": "https://dispo.umich.edu/true-custom-skates-hockey-skates-no-holder-blade.html"
-          },
-          {
-            "label": "Tex-Style-Hockey-Skate-Laces-96\"-Waxed-White ... - Dispo Dir",
-            "url": "https://dispo.umich.edu/tex-style-hockey-skate-laces-96-waxed-white-pattern-96.html"
-          },
-          {
-            "label": "Bauer-Supreme-Mach-Hockey-Skates-Men's-9-3/4-LS-PULSE-Ti ...",
-            "url": "https://dispo.umich.edu/bauer-supreme-mach-hockey-skates-men-s-9-3-4-ls-pulse-ti-blade-l-288-multi-colored.html"
-          },
-          {
-            "label": "Tex-Style-Hockey-Skate-Laces-108\"-No-Wax-White-Pattern-108\"",
-            "url": "https://dispo.umich.edu/tex-style-hockey-skate-laces-108-no-wax-white-pattern-108.html"
-          },
-          {
-            "label": "Johnson 36\" Aluminum Yardstick Model J236/40-0554 - Dispo Di",
-            "url": "https://dispo.umich.edu/johnson-j236-40-0554-yard-stick-36.html"
-          },
-          {
-            "label": "Steelcase Jersey Conversation/Side Chair Gray ... - Dispo Di",
-            "url": "https://dispo.umich.edu/steelcase-jersey-side-chair-conversation-side-chair-gray-pattern-fabric-with-arms-with-wheels.html"
-          },
-          {
-            "label": "Steelcase Jersey Office Chair Brown Pattern Fabric - Dispo D",
-            "url": "https://dispo.umich.edu/steelcase-jersey-office-chair-office-chair-brown-pattern-fabric-adjustable-with-arms-with-wheels-249884-0.html"
-          },
-          {
-            "label": "Furniture - Dispo Direct - University of Michigan",
-            "url": "https://dispo.umich.edu/furniture.html?p=2"
-          },
-          {
-            "label": "U-M 4orte Helmet Bag 17\"X1\"x18\"",
-            "url": "https://dispo.umich.edu/4orte-helmet-bag-17-x1-x18.html"
-          },
-          {
-            "label": "Steelcase-Jersey-(Stacking-Chair)-Stacking-Chair-Blue-Patter",
-            "url": "https://dispo.umich.edu/steelcase-jersey-stacking-chair-stacking-chair-blue-pattern-fabric-with-arms-with-wheels-251279-0.html"
-          },
-          {
-            "label": "Steelcase Jersey Stacking Chair, Teal Fabric, with Arms & Wh",
-            "url": "https://dispo.umich.edu/steelcase-jersey-stacking-chair-stacking-chair-teal-fabric-with-arms-with-wheels.html"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
@@ -481,9 +409,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Products – Page 278 - MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/all?page=278&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InByb2R1Y3RfdGl0bGUiLCJzdiI6IkxvdCBvZiAzNCBWaW50YWdlIFBvbGl0aWNhbCBidXR0b25zIFwiU3R1ZGVudHMgZm9yIENob2ljZVwiIiwiZCI6ImIiLCJ1aWQiOjc2NDEwMzc4NjUwMDgsImwiOjEyLCJvIjowLCJyIjoiQ1AiLCJ2IjoxfQ.6eNtEv8EfzIilIpMBOq_he8s4bdUQyp34EtGkidNMqA",
-        "detected_at": "2026-06-19",
+        "summary": "1 new find(s) - Sporting Goods - MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/sporting-goods",
+        "detected_at": "2026-06-28",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
