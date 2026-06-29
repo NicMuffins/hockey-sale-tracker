@@ -155,6 +155,9 @@ def is_find(result: dict) -> bool:
 
     if any(d in url for d in SKIP_DOMAINS):
         return False
+    # Skip results mentioning European teams with no relevance to this region
+    if 'cardiff' in combined:
+        return False
     # Skip results older than 90 days (stale content re-crawled by search engines)
     pub = result.get('published_date', '')
     if pub:
