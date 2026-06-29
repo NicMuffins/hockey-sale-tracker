@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-28",
+  "last_updated": "2026-06-29",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -227,9 +227,9 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Flint Firebirds on Instagram",
-        "url": "https://www.instagram.com/p/DZu348dEupd",
-        "detected_at": "2026-06-20",
+        "summary": "1 new find(s) - The Bird's Nest - Flint Firebirds Merchandise Store | - Instagram",
+        "url": "https://www.instagram.com/p/DMa3u39uDbJ",
+        "detected_at": "2026-06-29",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       }
@@ -409,9 +409,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Sporting Goods - MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/sporting-goods",
-        "detected_at": "2026-06-28",
+        "summary": "1 new find(s) - Products – Page 308 - MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/all?page=308&phcursor=eyJhbGciOiJIUzI1NiJ9.eyJzayI6InRpdGxlIiwic3YiOiJNU1UgQ3J5c3RhbCBQYXBlcndlaWdodCAjMyIsImQiOiJiIiwidWlkIjo3NTk3OTg2MDU0MTkyLCJsIjoxMiwibyI6MCwiciI6IkNQIn0.fng01NPHMZqzfkrwpyHNIqYPMr2HfgW3mQLGXiFUtQI",
+        "detected_at": "2026-06-29",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
