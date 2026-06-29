@@ -60,7 +60,7 @@
         "start": "05-01",
         "end": "06-30"
       },
-      "search_query": "Sarnia Sting equipment sale 2026"
+      "search_query": "Sarnia Sting equipment sale 2026 -Cardiff"
     },
     {
       "id": "usa-ntdp",
@@ -156,24 +156,24 @@
   "meta_sources": [
     {
       "id": "sports2k-pro-equipment-sales",
-      "name": "Sports2K â Pro Equipment Sales forum",
+      "name": "Sports2K Ã¢ Pro Equipment Sales forum",
       "search_query": "site:sports2k.com/forum \"equipment sale\" Detroit OR Windsor OR Toledo OR \"Grand Rapids\" OR Kalamazoo OR Cleveland OR Flint OR Saginaw OR \"Ann Arbor\""
     },
     {
       "id": "umich-property-disposition",
-      "name": "U-M Property Disposition â Sporting Goods",
+      "name": "U-M Property Disposition Ã¢ Sporting Goods",
       "team_id": "michigan",
       "search_query": "site:dispo.umich.edu hockey OR skate OR stick OR helmet OR jersey OR pants"
     },
     {
       "id": "msu-surplus-sporting-goods",
-      "name": "MSU Surplus Store â Sporting Goods",
+      "name": "MSU Surplus Store Ã¢ Sporting Goods",
       "team_id": "michigan-state",
       "search_query": "site:msusurplusstore.com/collections/sporting-goods hockey OR skate OR stick OR helmet OR ice"
     },
     {
       "id": "msu-surplus-athletic-apparel",
-      "name": "MSU Surplus Store â Athletic Apparel",
+      "name": "MSU Surplus Store Ã¢ Athletic Apparel",
       "team_id": "michigan-state",
       "search_query": "site:msusurplusstore.com/collections/athletic-apparel hockey OR \"Spartan hockey\" OR jersey"
     }
