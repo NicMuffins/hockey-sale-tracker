@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-monitor.py -- Hockey Sale Tracker (GitHub Actions edition)
+monitor.py — Hockey Sale Tracker (GitHub Actions edition)
 Runs on GitHub's servers on a daily schedule. No computer required.
 
 Searches all teams whose sale window is active or upcoming.
@@ -11,16 +11,15 @@ Sends one daily summary email (no per-team individual alerts).
 import base64
 import json
 import os
-import re
 import smtplib
-from datetime import date
+from datetime import date, datetime
 from email.header import Header
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 import requests
 
-# -- Config ---
+# ── Config ────────────────────────────────────────────────────────────────────
 REPO       = 'NicMuffins/hockey-sale-tracker'
 BRANCH     = 'main'
 ALERT_TO   = 'noknic@gmail.com'
@@ -38,7 +37,7 @@ GH_HEADERS = {
 }
 
 
-# -- GitHub helpers ---
+# ── GitHub helpers ─────────────────────────────────────────────────────────────
 def gh_get(path: str) -> tuple[str, str]:
     """Fetch a repo file. Returns (text, sha)."""
     r = requests.get(
@@ -69,7 +68,7 @@ def gh_put(path: str, text: str, sha: str, message: str) -> str:
     return r.json()['content']['sha']
 
 
-# -- Search ---
+# ── Search ─────────────────────────────────────────────────────────────────────
 def tavily_search(query: str) -> list[dict]:
     """Run a Tavily web search. Returns list of result dicts."""
     r = requests.post(
@@ -79,7 +78,7 @@ def tavily_search(query: str) -> list[dict]:
             'query':        query,
             'search_depth': 'basic',
             'max_results':  8,
-            'days_back':    30,
+            'days_back':    30,   # only results from the last 30 days
         },
         timeout=30,
     )
@@ -87,39 +86,25 @@ def tavily_search(query: str) -> list[dict]:
     return r.json().get('results', [])
 
 
-# -- Direct page checks ---
-def check_dispo_directly() -> list[dict]:
-    """
-    Search Tavily specifically for dispo.umich.edu hockey items.
-    We use Tavily here (not requests.get) because the dispo site is
-    JavaScript-rendered — a raw HTTP fetch only gets a page shell with
-    no product listings.  Tavily indexes the rendered pages and can
-    surface items within a day of them appearing.
-    """
-    queries = [
-        'site:dispo.umich.edu hockey',
-        'site:dispo.umich.edu skate',
-        'site:dispo.umich.edu stick OR helmet OR jersey OR puck',
-    ]
-    finds = []
-    seen_urls: set[str] = set()
-    for q in queries:
-        try:
-            for r in tavily_search(q):
-                url = r.get('url', '')
-                if url in seen_urls:
-                    continue
-                combined = (r.get('title', '') + ' ' + r.get('content', '')).lower()
-                if any(kw in combined for kw in SURPLUS_KEYWORDS):
-                    seen_urls.add(url)
-                    finds.append(r)
-        except Exception as e:
-            print(f'  x  dispo-direct search error ({q}): {e}')
-    print(f'  [dispo-direct] {len(finds)} hockey item(s) found via Tavily')
-    return finds
+def tavily_search_social(query: str) -> list[dict]:
+    """Search X/Twitter and Facebook only. Returns list of result dicts."""
+    r = requests.post(
+        'https://api.tavily.com/search',
+        json={
+            'api_key':         TAVILY_KEY,
+            'query':           query,
+            'search_depth':    'basic',
+            'max_results':     5,
+            'days_back':       60,
+            'include_domains': ['x.com', 'twitter.com', 'facebook.com'],
+        },
+        timeout=30,
+    )
+    r.raise_for_status()
+    return r.json().get('results', [])
 
 
-# -- Window status ---
+# ── Window status ──────────────────────────────────────────────────────────────
 def window_status(pw: dict | None) -> str:
     if not pw:
         return 'active'
@@ -130,7 +115,7 @@ def window_status(pw: dict | None) -> str:
         em, ed = map(int, pw['end'].split('-'))
         start  = date(y, sm, sd)
         end    = date(y, em, ed)
-        if end < start:
+        if end < start:               # window spans year boundary
             end = date(y + 1, em, ed)
         if today > end:               return 'past'
         if today >= start:            return 'active'
@@ -139,7 +124,7 @@ def window_status(pw: dict | None) -> str:
         return 'active'
 
 
-# -- Result evaluation ---
+# ── Result evaluation ──────────────────────────────────────────────────────────
 SALE_KEYWORDS = [
     'equipment sale', 'gear sale', 'equipment and clothing sale',
     'pro stock', 'game-used', 'game used', 'used equipment',
@@ -156,7 +141,7 @@ SKIP_DOMAINS = [
     'hockeyworld.com', 'shopncaasports.com', 'shop.nhl.com',
     'picclick.com', 'vividseats.com', 'seatgeek.com', 'ticketmaster.com',
     'vividseat', 'axs.com', 'stubhub.com',
-    '.co.uk',
+    '.co.uk',     # excludes UK hockey clubs (e.g. Coventry, Whitley)
     '.org.uk',
 ]
 SURPLUS_DOMAINS  = ['dispo.umich.edu', 'msusurplusstore.com']
@@ -170,18 +155,29 @@ def is_find(result: dict) -> bool:
 
     if any(d in url for d in SKIP_DOMAINS):
         return False
+    # Skip results older than 90 days (stale content re-crawled by search engines)
+    pub = result.get('published_date', '')
+    if pub:
+        try:
+            if (date.today() - datetime.fromisoformat(pub[:10]).date()).days > 90:
+                return False
+        except Exception:
+            pass
+    # Surplus sites: any hockey-relevant item counts
     if any(d in url for d in SURPLUS_DOMAINS):
         return any(kw in combined for kw in SURPLUS_KEYWORDS)
+    # General: must contain a sale keyword
     return any(kw in combined for kw in SALE_KEYWORDS)
 
 
-# -- Email ---
+# ── Email ──────────────────────────────────────────────────────────────────────
 def send_daily_summary(today: str, run_count: int,
                        teams_searched: list[dict], skipped_teams: list[dict],
                        finds_by_team: dict):
-    """Send one daily digest email -- always, regardless of finds."""
+    """Send one daily digest email — always, regardless of finds."""
     sales_found = sum(len(v) for v in finds_by_team.values())
 
+    # Teams searched table
     team_rows = ''.join(
         f'<tr><td style="padding:3px 8px">{t["name"]}</td>'
         f'<td style="padding:3px 8px;color:#888">{t.get("league","")}</td>'
@@ -191,6 +187,7 @@ def send_daily_summary(today: str, run_count: int,
         for t in teams_searched
     )
 
+    # Skipped teams (window past or waiting)
     skipped_rows = ''.join(
         f'<tr style="color:#aaa"><td style="padding:3px 8px">{t["name"]}</td>'
         f'<td style="padding:3px 8px">{t.get("league","")}</td>'
@@ -198,6 +195,7 @@ def send_daily_summary(today: str, run_count: int,
         for t in skipped_teams
     )
 
+    # Finds detail (if any)
     if finds_by_team:
         find_items = ''.join(
             f'<li style="margin-bottom:10px">'
@@ -217,7 +215,7 @@ def send_daily_summary(today: str, run_count: int,
             'Nothing new found &mdash; no sales announced yet.</p>'
         )
 
-    html = f"""
+    html = f\'\'\'
 <h2 style="margin-bottom:4px">Hockey Sale Monitor &mdash; Daily Summary</h2>
 <p style="color:#888;margin-top:0">{today} &nbsp;|&nbsp; Run #{run_count}</p>
 
@@ -238,7 +236,7 @@ def send_daily_summary(today: str, run_count: int,
 <p style="font-size:12px;color:#888;margin-top:20px">
 Dashboard: <a href="https://nicmuffins.github.io/hockey-sale-tracker/">nicmuffins.github.io/hockey-sale-tracker/</a>
 </p>
-"""
+\'\'\'
 
     subject = (
         f'Hockey monitor: {sales_found} new find(s) - {today}'
@@ -250,7 +248,7 @@ Dashboard: <a href="https://nicmuffins.github.io/hockey-sale-tracker/">nicmuffin
     msg['Subject'] = Header(subject, 'utf-8')
     msg['From']    = GMAIL_USER
     msg['To']      = ALERT_TO
-    msg.attach(MIMEText(html, 'html', 'utf-8'))
+    msg.attach(MIMEText(html, 'html', 'utf-8'))   # charset declared — no more garbled text
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as s:
         s.login(GMAIL_USER, GMAIL_PASS)
@@ -258,11 +256,12 @@ Dashboard: <a href="https://nicmuffins.github.io/hockey-sale-tracker/">nicmuffin
     print(f'  [email] Daily summary sent ({sales_found} find(s))')
 
 
-# -- Main ---
+# ── Main ───────────────────────────────────────────────────────────────────────
 def main():
     today = date.today().isoformat()
     print(f'\n=== Hockey Sale Monitor - {today} ===')
 
+    # Step 1 - Load state
     ms_txt,   ms_sha   = gh_get('monitor_state.json')
     seen_txt, seen_sha = gh_get('seen_announcements.json')
     log_txt,  log_sha  = gh_get('monitor_log.txt')
@@ -272,6 +271,7 @@ def main():
     run_count = ms.get('run_count', 0)
     print(f'run_count={run_count}')
 
+    # Step 2 - Determine teams to search (active/upcoming windows only)
     team_lookup = {t['id']: t for t in ms['teams']}
     to_search = [
         t for t in ms['teams']
@@ -282,14 +282,16 @@ def main():
         if window_status(t.get('predicted_window')) in ('past', 'waiting')
     ]
     print(f'Teams to search: {[t["id"] for t in to_search]}')
-    print(f'Teams skipped: {[t["id"] for t in skipped]}')
+    print(f'Teams skipped (window closed/waiting): {[t["id"] for t in skipped]}')
 
+    # Step 3 - Collect known URLs (to avoid re-reporting)
     seen_urls: set[str] = {
         e['url']
         for entries in seen.values()
         for e in entries
     }
 
+    # Step 4 - Search and evaluate
     finds_by_team: dict[str, list[dict]] = {}
 
     def record(team_id: str, team_name: str, team_league: str, result: dict):
@@ -306,6 +308,7 @@ def main():
         })
         print(f'    + {url}')
 
+    # Per-team searches
     for team in to_search:
         q = team['search_query']
         if '2026' not in q:
@@ -317,6 +320,16 @@ def main():
         except Exception as e:
             print(f'  x  search error: {e}')
 
+        # Social search — X/Twitter + Facebook
+        social_q = f'"{team["name"]}" sale 2026'
+        print(f'  [{team["id"]}:social] {social_q}')
+        try:
+            for r in tavily_search_social(social_q):
+                record(team['id'], team['name'], team['league'], r)
+        except Exception as e:
+            print(f'  x  social search error: {e}')
+
+    # Meta-source searches (always run)
     for meta in ms.get('meta_sources', []):
         print(f'  [meta:{meta["id"]}]')
         team_id = meta.get('team_id', meta['id'])
@@ -327,15 +340,12 @@ def main():
         except Exception as e:
             print(f'  x  search error: {e}')
 
-    # Direct page check for dispo.umich.edu â catches new listings before Tavily indexes them
-    print('  [dispo-direct] Checking dispo.umich.edu/sporting-goods.html...')
-    for r in check_dispo_directly():
-        record('michigan', 'Michigan Wolverines', 'NCAA (Big Ten)', r)
-
     sales_found = sum(len(v) for v in finds_by_team.values())
     print(f'\nNew finds: {sales_found}')
 
+    # Step 5 - Commit finds (only if any)
     if finds_by_team:
+        # Update seen_announcements.json
         for team_id, items in finds_by_team.items():
             seen.setdefault(team_id, []).extend(
                 {'title': f['title'], 'url': f['url'], 'detected_at': today}
@@ -349,6 +359,7 @@ def main():
         )
         print('  Committed seen_announcements.json')
 
+        # Update teams_data.json
         td_txt, td_sha = gh_get('teams_data.json')
         td = json.loads(td_txt)
         td['last_updated'] = today
@@ -374,8 +385,10 @@ def main():
         )
         print('  Committed teams_data.json')
 
-        # Individual per-team alert emails removed -- one daily summary only.
+        # NOTE: Individual per-team alert emails removed.
+        # Only the daily summary (Step 7) is sent — one email per day, always.
 
+    # Step 6 - Always update monitor_state.json
     ms['run_count']      = run_count + 1
     ms['last_monitored'] = today
     gh_put(
@@ -386,6 +399,7 @@ def main():
     )
     print(f'  Committed monitor_state.json (run_count={run_count + 1})')
 
+    # Step 7 - Append to log
     log_line = (
         f'{today} | run_count={run_count + 1}'
         f' | teams_searched={len(to_search)} | sales_found={sales_found}\n'
@@ -398,6 +412,7 @@ def main():
     )
     print(f'  Logged: {log_line.strip()}')
 
+    # Step 8 - Send one daily summary email
     try:
         send_daily_summary(today, run_count + 1, to_search, skipped, finds_by_team)
     except Exception as e:
