@@ -166,6 +166,12 @@ def is_find(result: dict) -> bool:
                 return False
         except Exception:
             pass
+    else:
+        # No publish date — reject if content mentions a prior year but NOT the current year
+        current_year = str(date.today().year)
+        prior_years  = [str(date.today().year - i) for i in range(1, 5)]
+        if any(y in combined for y in prior_years) and current_year not in combined:
+            return False
     # Surplus sites: any hockey-relevant item counts
     if any(d in url for d in SURPLUS_DOMAINS):
         return any(kw in combined for kw in SURPLUS_KEYWORDS)
