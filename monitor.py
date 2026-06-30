@@ -11,6 +11,7 @@ Sends one daily summary email (no per-team individual alerts).
 import base64
 import json
 import os
+import re
 import smtplib
 from datetime import date, datetime
 from email.header import Header
@@ -149,16 +150,49 @@ SURPLUS_KEYWORDS = ['hockey', 'skate', 'stick', 'helmet', 'jersey',
                     'pants', 'glove', 'puck', 'ice']
 
 
+NON_SALE_EVENTS = [
+    'book signing', 'autograph signing', 'autograph session',
+    'signing session', 'meet and greet', 'meet & greet',
+]
+
+
+_MONTH_PATTERN = (
+    r'(?:January|February|March|April|May|June|July|August|September|'
+    r'October|November|December)\s+\d{1,2},?\s+(\d{4})'
+)
+_DATE_RE = re.compile(_MONTH_PATTERN, re.IGNORECASE)
+
+
+def _content_year(result: dict) -> int | None:
+    """Extract the most likely publication year from article content.
+
+    Looks for explicit 'Month DD, YYYY' date patterns in the title and body.
+    This avoids false positives from '2025-26 season' references in body text.
+    """
+    for field in ('title', 'content'):
+        m = _DATE_RE.search(result.get(field, ''))
+        if m:
+            return int(m.group(1))
+    return None
+
+
 def is_find(result: dict) -> bool:
     url      = result.get('url', '').lower()
-    combined = (result.get('title', '') + ' ' + result.get('content', '')).lower()
+    title    = result.get('title', '').lower()
+    combined = (title + ' ' + result.get('content', '')).lower()
 
     if any(d in url for d in SKIP_DOMAINS):
         return False
     # Skip results mentioning unrelated teams
     if 'cardiff' in combined or 'golden knights' in combined or 'covington blaze' in combined:
         return False
-    # Skip results older than 90 days (stale content re-crawled by search engines)
+    # Skip non-equipment-sale events (book signings, autograph sessions, etc.)
+    if any(e in combined for e in NON_SALE_EVENTS):
+        return False
+    # Date staleness checks
+    current_year = date.today().year
+    prior_years  = [current_year - i for i in range(1, 5)]
+    # 1. Tavily published_date (when present)
     pub = result.get('published_date', '')
     if pub:
         try:
@@ -166,12 +200,19 @@ def is_find(result: dict) -> bool:
                 return False
         except Exception:
             pass
-    else:
-        # No publish date — reject if content mentions a prior year but NOT the current year
-        current_year = str(date.today().year)
-        prior_years  = [str(date.today().year - i) for i in range(1, 5)]
-        if any(y in combined for y in prior_years) and current_year not in combined:
+    # 2. Explicit "Month DD, YYYY" date extracted from article content
+    cy = _content_year(result)
+    if cy is not None and cy in prior_years:
+        return False
+    # 3. URL year check — news URLs often encode publication year in path
+    for yr in prior_years:
+        s = str(yr)
+        if f'/{s}/' in url or f'/{s}-' in url or f'-{s}/' in url:
             return False
+    # 4. Title year check — reject if title cites only a prior year
+    #    (avoids "2025-26 season" false positives in body text)
+    if any(str(yr) in title for yr in prior_years) and str(current_year) not in title:
+        return False
     # Surplus sites: any hockey-relevant item counts
     if any(d in url for d in SURPLUS_DOMAINS):
         return any(kw in combined for kw in SURPLUS_KEYWORDS)
