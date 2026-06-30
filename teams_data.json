@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-29",
+  "last_updated": "2026-06-30",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -41,9 +41,9 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Equipment & memorabilia sale set for Saturday at Hockeytown ...",
-        "url": "https://www.nhl.com/redwings/news/equipment-and-memorabilia-sale-set-for-saturday-at-hockeytown-authenti-307698068",
-        "detected_at": "2026-06-28",
+        "summary": "1 new find(s) - Grand Rapids Griffins | GRIFFINS TO HOST ANNUAL TEAM EQUIPMENT SALE",
+        "url": "https://griffinshockey.com/news/griffins-to-host-annual-team-equipment-sale",
+        "detected_at": "2026-06-30",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       }
@@ -177,9 +177,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - The Saginaw Spirit will host their annual Equipment Sale on ...",
-        "url": "https://www.facebook.com/spirithockey/posts/the-saginaw-spirit-will-host-their-annual-equipment-sale-on-saturday-january-27t/1579175935468934",
-        "detected_at": "2026-06-28",
+        "summary": "1 new find(s) - Saginaw Spirit - Facebook",
+        "url": "https://www.facebook.com/spirithockey/posts/%EF%B8%8Ftonight%EF%B8%8Fmeet-dennis-and-get-your-copy-signed-tonight-21026-from-430630-pm-at-th/1339573731500650",
+        "detected_at": "2026-06-30",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
