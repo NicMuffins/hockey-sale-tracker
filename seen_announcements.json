@@ -206,6 +206,11 @@
       "title": "eBids - Dispo Direct - University of Michigan",
       "url": "https://dispo.umich.edu/lofauction/bid/all/status/starting_soon?p=4&price_range=501+-+1000&product_list_dir=asc&product_list_order=ending_soon&status=starting_soon",
       "detected_at": "2026-07-01"
+    },
+    {
+      "title": "eBids - Dispo Direct - University of Michigan",
+      "url": "https://dispo.umich.edu/lofauction/bid/index?category=457&price_range=0-100&product_list_dir=desc&product_list_order=ending_soon",
+      "detected_at": "2026-07-02"
     }
   ],
   "michigan-state": [
@@ -522,6 +527,11 @@
       "title": "Just a quick reminder the Battle-Worn Authentics Equipment Sale is ...",
       "url": "https://www.instagram.com/p/C8m2ekfPliZ",
       "detected_at": "2026-06-27"
+    },
+    {
+      "title": "Your closet could use more green and gold ⚔️ End of Season Sale",
+      "url": "https://x.com/LondonKnights/status/2054926202721227067",
+      "detected_at": "2026-07-02"
     }
   ],
   "cleveland-monsters": [
