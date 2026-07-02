@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01",
+  "last_updated": "2026-07-02",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -371,8 +371,8 @@
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
         "summary": "1 new find(s) - eBids - Dispo Direct - University of Michigan",
-        "url": "https://dispo.umich.edu/lofauction/bid/all/status/starting_soon?p=4&price_range=501+-+1000&product_list_dir=asc&product_list_order=ending_soon&status=starting_soon",
-        "detected_at": "2026-07-01",
+        "url": "https://dispo.umich.edu/lofauction/bid/index?category=457&price_range=0-100&product_list_dir=desc&product_list_order=ending_soon",
+        "detected_at": "2026-07-02",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -576,9 +576,9 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Just a quick reminder the Battle-Worn Authentics Equipment Sale is ...",
-        "url": "https://www.instagram.com/p/C8m2ekfPliZ",
-        "detected_at": "2026-06-27",
+        "summary": "1 new find(s) - Your closet could use more green and gold ⚔️ End of Season Sale",
+        "url": "https://x.com/LondonKnights/status/2054926202721227067",
+        "detected_at": "2026-07-02",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       }
