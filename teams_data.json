@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-02",
+  "last_updated": "2026-07-03",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -177,9 +177,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - ‼️End of season sale - TOMORROW‼️ Saturday, April 25 11am",
-        "url": "https://www.facebook.com/spirithockey/posts/%EF%B8%8Fend-of-season-sale-tomorrow%EF%B8%8F-saturday-april-2511am-3pm6321-state-streetwhos-goi/1398603232264366",
-        "detected_at": "2026-07-01",
+        "summary": "1 new find(s) - Saginaw Spirit - Facebook",
+        "url": "https://www.facebook.com/spirithockey?locale=he_IL",
+        "detected_at": "2026-07-03",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -370,9 +370,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - eBids - Dispo Direct - University of Michigan",
-        "url": "https://dispo.umich.edu/lofauction/bid/index?category=457&price_range=0-100&product_list_dir=desc&product_list_order=ending_soon",
-        "detected_at": "2026-07-02",
+        "summary": "1 new find(s) - Lot-of-10-Bauer-Left-Handed-Hockey-Sticks-Various-Models",
+        "url": "https://dispo.umich.edu/b110588.html",
+        "detected_at": "2026-07-03",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
