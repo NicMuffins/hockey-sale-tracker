@@ -133,6 +133,11 @@
           "year": "Recent",
           "date": "Late May (Tue–Sat)",
           "notes": "Multi-day gear sale at The Crease / Blades, often around spring mini-camp"
+        },
+        {
+          "year": 2026,
+          "date": "June 13",
+          "notes": "WFCU Centre FanZone, 9AM–Noon, merch/jerseys/equipment. Announced May 21 via @SpitsHockey on X."
         }
       ],
       "predicted_window": {
@@ -169,11 +174,11 @@
         }
       ],
       "last_confirmed_sale": {
-        "year": 2016,
-        "date": "Spring — Saturday with mini-camp",
-        "notes": "Mini-camp + equipment + Spits Gear blowout combined",
-        "verified_at": null,
-        "source": "historical_sales"
+        "year": 2026,
+        "date": "June 13",
+        "notes": "WFCU Centre FanZone, 9AM–Noon, merch/jerseys/equipment. Announced May 21 via @SpitsHockey on X.",
+        "verified_at": "2026-07-06",
+        "source": "restored_by_nic"
       }
     },
     {
@@ -604,7 +609,13 @@
       "league": "OHL",
       "venue": "Canada Life Place (Budweiser Gardens), London, ON",
       "season_ends": "Late March; playoffs / Memorial Cup through May/June",
-      "historical_sales": [],
+      "historical_sales": [
+        {
+          "year": 2025,
+          "date": "June 24",
+          "notes": "Canada Life Place, game-used uniforms and equipment. Announced day-before via Facebook — very short notice."
+        }
+      ],
       "predicted_window": {
         "start": "05-15",
         "end": "07-15",
@@ -636,7 +647,13 @@
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
-      "last_confirmed_sale": null
+      "last_confirmed_sale": {
+        "year": 2025,
+        "date": "June 24",
+        "notes": "Canada Life Place, game-used uniforms and equipment. Announced day-before via Facebook — very short notice.",
+        "verified_at": "2026-07-06",
+        "source": "restored_by_nic"
+      }
     },
     {
       "id": "kalamazoo-wings",
