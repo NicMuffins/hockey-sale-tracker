@@ -13,6 +13,11 @@
           "year": 2010,
           "date": "May 21–22",
           "notes": "Friday STH preview, Saturday public"
+        },
+        {
+          "year": 2025,
+          "date": "August 2",
+          "notes": "Confirmed by Nic"
         }
       ],
       "predicted_window": {
@@ -48,11 +53,11 @@
         "source": "GitHub Actions Monitor"
       },
       "last_confirmed_sale": {
-        "year": 2010,
-        "date": "May 21–22",
-        "notes": "Friday STH preview, Saturday public",
-        "verified_at": null,
-        "source": "historical_sales"
+        "year": 2025,
+        "date": "August 2",
+        "notes": "Confirmed by Nic",
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
       }
     },
     {
@@ -113,8 +118,8 @@
         "year": 2025,
         "date": "July 12",
         "notes": "Saturday at Swamp Shop, 10am–12pm",
-        "verified_at": null,
-        "source": "historical_sales"
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
       }
     },
     {
@@ -178,7 +183,7 @@
         "date": "June 13",
         "notes": "WFCU Centre FanZone, 9AM–Noon, merch/jerseys/equipment. Announced May 21 via @SpitsHockey on X.",
         "verified_at": "2026-07-06",
-        "source": "restored_by_nic"
+        "source": "nic_verified"
       }
     },
     {
@@ -187,7 +192,13 @@
       "league": "OHL",
       "venue": "Dow Event Center, Saginaw, MI",
       "season_ends": "Late March; playoffs through May",
-      "historical_sales": [],
+      "historical_sales": [
+        {
+          "year": 2026,
+          "date": "April 24",
+          "notes": "Confirmed by Nic"
+        }
+      ],
       "predicted_window": {
         "start": "05-01",
         "end": "07-15",
@@ -219,7 +230,13 @@
           "url": "https://www.facebook.com/spirithockey/"
         }
       ],
-      "last_confirmed_sale": null
+      "last_confirmed_sale": {
+        "year": 2026,
+        "date": "April 24",
+        "notes": "Confirmed by Nic",
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
+      }
     },
     {
       "id": "flint-firebirds",
@@ -227,7 +244,13 @@
       "league": "OHL",
       "venue": "Dort Financial Center, Flint, MI",
       "season_ends": "Late March; playoffs through May",
-      "historical_sales": [],
+      "historical_sales": [
+        {
+          "year": 2025,
+          "date": "July 22",
+          "notes": "Confirmed by Nic"
+        }
+      ],
       "predicted_window": {
         "start": "05-01",
         "end": "07-15",
@@ -260,7 +283,13 @@
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
-      "last_confirmed_sale": null
+      "last_confirmed_sale": {
+        "year": 2025,
+        "date": "July 22",
+        "notes": "Confirmed by Nic",
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
+      }
     },
     {
       "id": "sarnia-sting",
@@ -317,10 +346,10 @@
       ],
       "last_confirmed_sale": {
         "year": 2024,
-        "date": "June 10–13, June 24–27",
+        "date": "June 27",
         "notes": "Honeypot Summer Sale (apparel-leaning), 4–8pm",
-        "verified_at": null,
-        "source": "historical_sales"
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
       }
     },
     {
@@ -329,7 +358,13 @@
       "league": "USHL",
       "venue": "USA Hockey Arena, Plymouth, MI",
       "season_ends": "April",
-      "historical_sales": [],
+      "historical_sales": [
+        {
+          "year": 2021,
+          "date": "June 11",
+          "notes": "Confirmed by Nic"
+        }
+      ],
       "predicted_window": {
         "start": "04-15",
         "end": "06-30",
@@ -362,7 +397,13 @@
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
-      "last_confirmed_sale": null
+      "last_confirmed_sale": {
+        "year": 2021,
+        "date": "June 11",
+        "notes": "Confirmed by Nic",
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
+      }
     },
     {
       "id": "michigan",
@@ -420,10 +461,10 @@
       ],
       "last_confirmed_sale": {
         "year": 2025,
-        "date": "October 22",
+        "date": "October 20",
         "notes": "Hockey gear listed on UM Property Disposition (purchased by Nic)",
-        "verified_at": null,
-        "source": "historical_sales"
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
       }
     },
     {
@@ -476,7 +517,13 @@
       "league": "NCAA (NCHC)",
       "venue": "Lawson Arena, Kalamazoo",
       "season_ends": "March/April",
-      "historical_sales": [],
+      "historical_sales": [
+        {
+          "year": 2014,
+          "date": "May 19",
+          "notes": "Confirmed by Nic"
+        }
+      ],
       "predicted_window": {
         "start": "04-15",
         "end": "06-30",
@@ -502,7 +549,13 @@
           "url": "https://shopwmubroncos.com/"
         }
       ],
-      "last_confirmed_sale": null
+      "last_confirmed_sale": {
+        "year": 2014,
+        "date": "May 19",
+        "notes": "Confirmed by Nic",
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
+      }
     },
     {
       "id": "bowling-green",
@@ -599,8 +652,8 @@
         "year": 2026,
         "date": "April 10",
         "notes": "Annual Team Equipment Sale at Van Andel Arena banquet rooms, 6pm to end of 2nd period. Sticks, pants, jerseys, and more. Required game ticket to enter.",
-        "verified_at": null,
-        "source": "historical_sales"
+        "verified_at": "2026-07-06",
+        "source": "nic_verified"
       }
     },
     {
@@ -649,10 +702,10 @@
       },
       "last_confirmed_sale": {
         "year": 2025,
-        "date": "June 24",
+        "date": "July 24",
         "notes": "Canada Life Place, game-used uniforms and equipment. Announced day-before via Facebook — very short notice.",
         "verified_at": "2026-07-06",
-        "source": "restored_by_nic"
+        "source": "nic_verified"
       }
     },
     {
