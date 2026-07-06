@@ -46,6 +46,13 @@
         "detected_at": "2026-06-30",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
+      },
+      "last_confirmed_sale": {
+        "year": 2010,
+        "date": "May 21–22",
+        "notes": "Friday STH preview, Saturday public",
+        "verified_at": null,
+        "source": "historical_sales"
       }
     },
     {
@@ -101,7 +108,14 @@
           "label": "Walleye.com",
           "url": "https://www.toledowalleye.com/"
         }
-      ]
+      ],
+      "last_confirmed_sale": {
+        "year": 2025,
+        "date": "July 12",
+        "notes": "Saturday at Swamp Shop, 10am–12pm",
+        "verified_at": null,
+        "source": "historical_sales"
+      }
     },
     {
       "id": "windsor-spitfires",
@@ -153,7 +167,14 @@
           "label": "Facebook",
           "url": "https://www.facebook.com/WindsorSpitfiresHockey/"
         }
-      ]
+      ],
+      "last_confirmed_sale": {
+        "year": 2016,
+        "date": "Spring — Saturday with mini-camp",
+        "notes": "Mini-camp + equipment + Spits Gear blowout combined",
+        "verified_at": null,
+        "source": "historical_sales"
+      }
     },
     {
       "id": "saginaw-spirit",
@@ -192,7 +213,8 @@
           "label": "Facebook",
           "url": "https://www.facebook.com/spirithockey/"
         }
-      ]
+      ],
+      "last_confirmed_sale": null
     },
     {
       "id": "flint-firebirds",
@@ -232,7 +254,8 @@
         "detected_at": "2026-06-29",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
-      }
+      },
+      "last_confirmed_sale": null
     },
     {
       "id": "sarnia-sting",
@@ -248,7 +271,7 @@
         },
         {
           "year": 2024,
-          "date": "June 18–13, June 24–27",
+          "date": "June 10–13, June 24–27",
           "notes": "Honeypot Summer Sale (apparel-leaning), 4–8pm"
         }
       ],
@@ -286,7 +309,14 @@
           "label": "X/Twitter",
           "url": "https://x.com/StingHockey"
         }
-      ]
+      ],
+      "last_confirmed_sale": {
+        "year": 2024,
+        "date": "June 10–13, June 24–27",
+        "notes": "Honeypot Summer Sale (apparel-leaning), 4–8pm",
+        "verified_at": null,
+        "source": "historical_sales"
+      }
     },
     {
       "id": "usa-ntdp",
@@ -326,7 +356,8 @@
         "detected_at": "2026-06-15",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
-      }
+      },
+      "last_confirmed_sale": null
     },
     {
       "id": "michigan",
@@ -381,7 +412,14 @@
           "label": "UM Dispo — Sporting Goods",
           "url": "https://dispo.umich.edu/sporting-goods.html"
         }
-      ]
+      ],
+      "last_confirmed_sale": {
+        "year": 2025,
+        "date": "October 22",
+        "notes": "Hockey gear listed on UM Property Disposition (purchased by Nic)",
+        "verified_at": null,
+        "source": "historical_sales"
+      }
     },
     {
       "id": "michigan-state",
@@ -424,7 +462,8 @@
           "label": "Athletic Apparel",
           "url": "https://msusurplusstore.com/collections/athletic-apparel"
         }
-      ]
+      ],
+      "last_confirmed_sale": null
     },
     {
       "id": "western-michigan",
@@ -457,7 +496,8 @@
           "label": "Shop WMU",
           "url": "https://shopwmubroncos.com/"
         }
-      ]
+      ],
+      "last_confirmed_sale": null
     },
     {
       "id": "bowling-green",
@@ -491,7 +531,14 @@
           "label": "BGSU Hockey",
           "url": "https://bgsufalcons.com/sports/mens-ice-hockey"
         }
-      ]
+      ],
+      "last_confirmed_sale": {
+        "year": 2025,
+        "date": "March 22",
+        "notes": "CCHA Playoff-themed auction with LiveSource (online auction, not in-person)",
+        "verified_at": null,
+        "source": "historical_sales"
+      }
     },
     {
       "id": "grand-rapids-griffins",
@@ -542,7 +589,14 @@
       "search_queries": [
         "Grand Rapids Griffins equipment sale",
         "Griffins annual team equipment sale Van Andel"
-      ]
+      ],
+      "last_confirmed_sale": {
+        "year": 2026,
+        "date": "April 10",
+        "notes": "Annual Team Equipment Sale at Van Andel Arena banquet rooms, 6pm to end of 2nd period. Sticks, pants, jerseys, and more. Required game ticket to enter.",
+        "verified_at": null,
+        "source": "historical_sales"
+      }
     },
     {
       "id": "london-knights",
@@ -581,7 +635,8 @@
         "detected_at": "2026-07-02",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
-      }
+      },
+      "last_confirmed_sale": null
     },
     {
       "id": "kalamazoo-wings",
@@ -613,7 +668,8 @@
           "label": "Hockey Services",
           "url": "https://www.hockeyservices.com/product-category/k-wings/"
         }
-      ]
+      ],
+      "last_confirmed_sale": null
     },
     {
       "id": "cleveland-monsters",
@@ -648,7 +704,8 @@
           "label": "Monsters News",
           "url": "https://clevelandmonsters.com/news"
         }
-      ]
+      ],
+      "last_confirmed_sale": null
     }
   ],
   "meta_sources": [
