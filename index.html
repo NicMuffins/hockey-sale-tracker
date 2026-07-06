@@ -3,378 +3,404 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hockey Sale Tracker — Detroit / Windsor</title>
+  <title>Hockey Sale Tracker — Detroit/Windsor</title>
   <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --surface2: #222535;
+      --border: #2e3248;
+      --text: #e8eaf0;
+      --muted: #7b8099;
+      --active: #2dd4a0;
+      --active-bg: #0a2419;
+      --upcoming: #f59e0b;
+      --upcoming-bg: #271d08;
+      --past: #6b7280;
+      --past-bg: #18191f;
+      --waiting: #60a5fa;
+      --waiting-bg: #0b1929;
+      --warn-color: #f87171;
+      --warn-bg: #2a1010;
+      --confirm-color: #4ade80;
+      --candidate-color: #fbbf24;
+      --candidate-bg: #2a2108;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: #f0f2f5;
-      color: #1a1a1a;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, sans-serif;
       font-size: 14px;
       line-height: 1.5;
     }
 
     /* ── Header ── */
     header {
-      background: #0d1b2a;
-      color: #fff;
-      padding: 18px 24px 14px;
+      padding: 20px 24px 14px;
+      border-bottom: 1px solid var(--border);
       display: flex;
-      align-items: baseline;
-      gap: 16px;
       flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
     }
-    header h1 { font-size: 1.25em; font-weight: 700; letter-spacing: -0.3px; }
-    header .sub { font-size: 0.78em; color: #8899aa; }
+    .header-title { flex: 1; min-width: 180px; }
+    .header-title h1 { font-size: 18px; font-weight: 700; }
+    .header-title p { font-size: 12px; color: var(--muted); margin-top: 2px; }
+    .header-meta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 3px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+    .header-meta span { white-space: nowrap; }
+    .header-meta .monitored { color: var(--active); font-weight: 500; }
+    .refresh-btn {
+      margin-top: 4px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      padding: 5px 11px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 12px;
+      transition: color .15s, border-color .15s;
+    }
+    .refresh-btn:hover { color: var(--active); border-color: var(--active); }
 
-    /* ── Summary bar ── */
-    .summary {
-      background: #fff;
-      border-bottom: 1px solid #e0e0e0;
-      padding: 10px 24px;
-      display: flex;
-      gap: 24px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    .summary-chip {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.82em;
+    /* ── Main ── */
+    main { padding: 18px 24px 40px; max-width: 1120px; margin: 0 auto; }
+
+    .section-header {
+      font-size: 11px;
       font-weight: 600;
-    }
-    .dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      flex-shrink: 0;
-    }
-    .dot-active   { background: #22a86e; }
-    .dot-upcoming { background: #e6820a; }
-    .dot-waiting  { background: #9eaabb; }
-    .dot-past     { background: #d0d0d0; }
-
-    /* ── Sections ── */
-    .page { padding: 20px 24px; max-width: 1200px; }
-    .section { margin-bottom: 28px; }
-    .section-label {
-      font-size: 0.7em;
-      font-weight: 700;
       text-transform: uppercase;
-      letter-spacing: 1.2px;
-      color: #888;
-      margin-bottom: 10px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin: 28px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
     }
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: #e0e0e0;
-    }
+    .section-header:first-child { margin-top: 4px; }
 
-    /* ── Grid ── */
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
       gap: 12px;
     }
 
     /* ── Cards ── */
     .card {
-      background: #fff;
-      border-radius: 8px;
-      padding: 14px 16px;
-      border-left: 4px solid #ddd;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.07);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 15px 16px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 9px;
+      transition: border-color .15s;
     }
-    .card.active   { border-left-color: #22a86e; }
-    .card.upcoming { border-left-color: #e6820a; }
-    .card.waiting  { border-left-color: #9eaabb; }
-    .card.past     { border-left-color: #d8d8d8; opacity: 0.72; }
+    .card.has-news      { border-color: var(--active); }
+    .card.has-warn      { border-color: var(--warn-color); }
+    .card.has-confirm   { border-color: var(--confirm-color); }
+    .card.has-candidate { border-color: var(--candidate-color); }
+    .card.past          { opacity: .55; }
 
-    /* Card header row */
-    .card-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 8px;
-    }
-    .team-name  { font-weight: 700; font-size: 0.95em; }
-    .team-league {
-      font-size: 0.68em;
-      color: #888;
-      font-weight: 600;
-      margin-top: 1px;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-    }
+    .card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+    .card-name { font-weight: 600; font-size: 15px; }
+    .card-meta { font-size: 11px; color: var(--muted); margin-top: 1px; }
 
-    /* Status badge */
     .badge {
-      font-size: 0.65em;
+      font-size: 10px;
       font-weight: 700;
-      padding: 3px 9px;
-      border-radius: 20px;
       text-transform: uppercase;
-      letter-spacing: 0.6px;
+      letter-spacing: .04em;
+      padding: 3px 8px;
+      border-radius: 20px;
       white-space: nowrap;
       flex-shrink: 0;
     }
-    .badge-active   { background: #d4f5e5; color: #156b43; }
-    .badge-upcoming { background: #feecd0; color: #8a4d00; }
-    .badge-waiting  { background: #edf0f3; color: #5a6a7a; }
-    .badge-past     { background: #ececec; color: #999; }
+    .badge-active   { background: var(--active-bg);   color: var(--active); }
+    .badge-upcoming { background: var(--upcoming-bg); color: var(--upcoming); }
+    .badge-past     { background: var(--past-bg);     color: var(--past); }
+    .badge-waiting  { background: var(--waiting-bg);  color: var(--waiting); }
 
-    /* Window dates */
-    .window {
-      font-size: 0.76em;
-      color: #555;
-    }
-    .window strong { color: #222; }
+    .detail-row { font-size: 12px; color: var(--muted); }
+    .detail-row strong { color: var(--text); font-weight: 500; }
 
-    /* Announcement banner */
-    .announcement {
-      background: #fffbea;
-      border: 1px solid #f5d76e;
-      border-radius: 5px;
-      padding: 7px 10px;
-      font-size: 0.74em;
-      line-height: 1.45;
+    /* ── Last confirmed sale row ── */
+    .last-sale-row {
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--surface2);
+      border-radius: 6px;
+      padding: 6px 10px;
     }
-    .announcement .ann-label {
+    .last-sale-row strong { color: var(--confirm-color); font-weight: 600; }
+    .last-sale-row.unverified { color: var(--muted); font-style: italic; }
+
+    /* ── News box ── */
+    .news-box {
+      background: var(--surface2);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 13px;
+      border-left: 3px solid var(--active);
+    }
+    .news-box.warn      { border-left-color: var(--warn-color); }
+    .news-box.confirm   { border-left-color: var(--confirm-color); }
+    .news-box.candidate { border-left-color: var(--candidate-color); }
+
+    .news-label {
+      font-size: 10px;
       font-weight: 700;
-      color: #b8860b;
-      font-size: 0.85em;
       text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 3px;
+      letter-spacing: .06em;
+      color: var(--active);
+      margin-bottom: 5px;
     }
-    .announcement a {
-      color: #c0392b;
-      font-weight: 600;
-      text-decoration: none;
-      word-break: break-word;
-    }
-    .announcement a:hover { text-decoration: underline; }
-    .announcement .ann-date { color: #aaa; font-size: 0.88em; margin-top: 3px; }
+    .news-box.warn      .news-label { color: var(--warn-color); }
+    .news-box.confirm   .news-label { color: var(--confirm-color); }
+    .news-box.candidate .news-label { color: var(--candidate-color); }
 
-    /* Extra sources */
-    .extra-sources { margin-top: 4px; }
-    .extra-sources a {
-      display: block;
-      font-size: 0.88em;
-      color: #777;
-      text-decoration: none;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .extra-sources a:hover { color: #c0392b; text-decoration: underline; }
+    .news-text { line-height: 1.45; }
+    .news-text a { color: #93c5fd; }
 
-    /* Watch links */
-    .watch-links {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-top: 2px;
-    }
-    .watch-link {
-      font-size: 0.68em;
-      padding: 3px 8px;
-      border: 1px solid #ddd;
+    .news-detected { font-size: 11px; color: var(--muted); margin-top: 6px; }
+
+    .news-sources { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 7px; }
+    .news-sources a {
+      font-size: 11px;
+      color: var(--muted);
+      border: 1px solid var(--border);
       border-radius: 4px;
-      color: #555;
+      padding: 1px 7px;
       text-decoration: none;
-      background: #fafafa;
+      transition: color .12s, border-color .12s;
     }
-    .watch-link:hover { background: #f0f0f0; border-color: #bbb; }
+    .news-sources a:hover { color: var(--text); border-color: var(--muted); }
 
-    /* No-news placeholder */
-    .no-news { font-size: 0.73em; color: #bbb; font-style: italic; }
+    /* ── Watch links ── */
+    .watch-links { display: flex; flex-wrap: wrap; gap: 5px; }
+    .watch-links a {
+      font-size: 11px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 2px 8px;
+      text-decoration: none;
+      transition: color .12s, border-color .12s;
+    }
+    .watch-links a:hover { color: var(--text); border-color: var(--muted); }
 
-    /* Error / loading */
-    .msg { padding: 40px 24px; color: #888; font-size: 0.9em; }
+    /* ── States ── */
+    #loading { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 15px; }
+    .error   { color: var(--warn-color); padding: 20px; }
+
+    @media (max-width: 540px) {
+      header { padding: 14px 14px 10px; }
+      main   { padding: 12px 14px 30px; }
+      .grid  { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>🏒 Hockey Sale Tracker</h1>
-  <span class="sub" id="meta-line">Loading…</span>
+  <div class="header-title">
+    <h1>🏒 Detroit / Windsor Hockey Sale Tracker</h1>
+    <p>Monitors equipment sales across pro, junior, and college teams in the region</p>
+  </div>
+  <div class="header-meta">
+    <span class="monitored" id="last-monitored">Last monitored: —</span>
+    <span id="last-updated">Last data change: —</span>
+    <button class="refresh-btn" onclick="loadData()">↻ Refresh</button>
+  </div>
 </header>
 
-<div class="summary" id="summary-bar"></div>
-
-<div class="page" id="page">
-  <p class="msg">Loading team data…</p>
-</div>
+<main id="app">
+  <div id="loading">Loading team data…</div>
+</main>
 
 <script>
-// ── Helpers ──────────────────────────────────────────────────────────────────
+const RAW = 'https://raw.githubusercontent.com/NicMuffins/hockey-sale-tracker/main/';
+const MONTHS = ['','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 
-function windowStatus(pw) {
+function computeStatus(pw) {
   if (!pw) return 'active';
   try {
-    const today = new Date();
-    today.setHours(0, 0, 0, 0);
-    const y = today.getFullYear();
+    const now = new Date(); now.setHours(0,0,0,0);
+    const y = now.getFullYear();
     const [sm, sd] = pw.start.split('-').map(Number);
     const [em, ed] = pw.end.split('-').map(Number);
-    let start = new Date(y, sm - 1, sd);
-    let end   = new Date(y, em - 1, ed);
-    if (end < start) end = new Date(y + 1, em - 1, ed);
-    if (today > end)   return 'past';
-    if (today >= start) return 'active';
-    const days = (start - today) / 86400000;
-    return days <= 30 ? 'upcoming' : 'waiting';
-  } catch (e) {
-    return 'active';
+    let start = new Date(y, sm-1, sd);
+    let end   = new Date(y, em-1, ed);
+    if (end < start) end = new Date(y+1, em-1, ed);
+    if (now > end)   return 'past';
+    if (now >= start) return 'active';
+    return ((start - now) / 86400000) <= 30 ? 'upcoming' : 'waiting';
+  } catch(e) { return 'active'; }
+}
+
+function formatWindow(pw, override) {
+  if (override) return override;
+  if (!pw) return null;
+  try {
+    const [sm, sd] = pw.start.split('-').map(Number);
+    const [em, ed] = pw.end.split('-').map(Number);
+    const conf = pw.confidence && pw.confidence !== 'high' ? ` <span style="color:var(--muted)">(${pw.confidence} confidence)</span>` : '';
+    return `${MONTHS[sm]}&nbsp;${sd} – ${MONTHS[em]}&nbsp;${ed}${conf}`;
+  } catch(e) { return null; }
+}
+
+function badge(status) {
+  const map = {
+    active:   ['Active',   'badge-active'],
+    upcoming: ['Upcoming', 'badge-upcoming'],
+    past:     ['Past',     'badge-past'],
+    waiting:  ['Waiting',  'badge-waiting'],
+  };
+  const [label, cls] = map[status] || ['—', 'badge-past'];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+// Renders the persistent "last confirmed sale" line. This only ever reflects
+// dates Nic has personally verified — never an auto-detected find.
+function renderLastSale(lcs) {
+  if (!lcs) {
+    return `<div class="last-sale-row unverified">Last confirmed sale: not yet verified</div>`;
   }
+  const yearStr = lcs.year ? `, ${esc(lcs.year)}` : '';
+  return `<div class="last-sale-row">Last confirmed sale: <strong>${esc(lcs.date)}${yearStr}</strong></div>`;
 }
 
-const MONTH = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-
-function fmtWindow(pw, team) {
-  if (team.window_display) return team.window_display;
-  if (!pw) return 'Year-round';
-  const [sm, sd] = pw.start.split('-').map(Number);
-  const [em, ed] = pw.end.split('-').map(Number);
-  return `${MONTH[sm-1]} ${sd} – ${MONTH[em-1]} ${ed}`;
+function renderNews(ln) {
+  if (!ln) return '';
+  const isWarn      = !!ln.news_warn;
+  const isVerified  = !!ln.verified && !isWarn;
+  const isCandidate = !!ln.is_announcement && !isWarn && !isVerified;
+  const boxCls = isVerified ? 'confirm' : isWarn ? 'warn' : isCandidate ? 'candidate' : '';
+  const label = ln.news_label
+    || (isVerified ? '✅ Verified Sale'
+      : isWarn ? '⚠ Watch Closely'
+      : isCandidate ? '🔍 Possible Sale — Needs Your OK'
+      : 'Latest News');
+  const bodyHtml  = ln.news_html
+    ? `<div class="news-text">${ln.news_html}</div>`
+    : `<div class="news-text">${ln.summary || ''}</div>`;
+  const detected  = ln.detected_display || ln.detected_at || '';
+  const detHtml   = detected ? `<div class="news-detected">Detected: ${detected}</div>` : '';
+  const srcs = [];
+  if (ln.source && ln.url) srcs.push(`<a href="${escHref(ln.url)}" target="_blank" rel="noopener">${esc(ln.source)}</a>`);
+  (ln.extra_sources || []).forEach(s => srcs.push(`<a href="${escHref(s.url)}" target="_blank" rel="noopener">${esc(s.label)}</a>`));
+  const srcHtml = srcs.length ? `<div class="news-sources">${srcs.join('')}</div>` : '';
+  return `<div class="news-box ${boxCls}"><div class="news-label">${label}</div>${bodyHtml}${detHtml}${srcHtml}</div>`;
 }
 
-function fmtDate(iso) {
-  if (!iso) return '';
-  const [y, m, d] = iso.split('-').map(Number);
-  return `${MONTH[m-1]} ${d}, ${y}`;
-}
-
-function badgeHTML(status) {
-  const labels = { active: '🟢 Active', upcoming: '🟡 Upcoming', waiting: '⏳ Waiting', past: 'Past' };
-  return `<span class="badge badge-${status}">${labels[status] || status}</span>`;
-}
-
-function escHTML(s) {
-  return String(s)
-    .replace(/&/g, '&amp;').replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-// ── Card builder ─────────────────────────────────────────────────────────────
-
-function buildCard(team, status) {
-  const news    = team.latest_news;
-  const pw      = team.predicted_window;
-  const links   = team.watch_links || [];
-
-  // Announcement block
-  let annHTML = '';
-  if (news && news.summary) {
-    const label = news.is_announcement ? '📣 Sale Detected' : '📰 Latest News';
-    const extras = (news.extra_sources || []).slice(0, 3);
-    const extraLinks = extras.map(s =>
-      `<a href="${escHTML(s.url)}" target="_blank" rel="noopener">${escHTML(s.label)}</a>`
-    ).join('');
-
-    annHTML = `
-      <div class="announcement">
-        <div class="ann-label">${label}</div>
-        <a href="${escHTML(news.url)}" target="_blank" rel="noopener">${escHTML(news.summary.replace(/^\d+ new find\(s\) - /, ''))}</a>
-        ${extras.length ? `<div class="extra-sources">${extraLinks}</div>` : ''}
-        <div class="ann-date">Detected ${fmtDate(news.detected_at)}</div>
-      </div>`;
-  } else {
-    annHTML = `<p class="no-news">No announcements found yet.</p>`;
-  }
-
-  // Watch links
-  const linkHTML = links.length
-    ? `<div class="watch-links">${links.map(l =>
-        `<a class="watch-link" href="${escHTML(l.url)}" target="_blank" rel="noopener">${escHTML(l.label)}</a>`
-      ).join('')}</div>`
-    : '';
-
+function renderCard(team) {
+  const status    = computeStatus(team.predicted_window);
+  const windowStr = formatWindow(team.predicted_window, team.window_display);
+  const newsHtml  = renderNews(team.latest_news);
+  const lastSaleHtml = renderLastSale(team.last_confirmed_sale);
+  const ln = team.latest_news;
+  const hasWarn      = ln?.news_warn;
+  const hasConfirm   = !!ln?.verified && !hasWarn;
+  const hasCandidate = !!ln?.is_announcement && !hasWarn && !hasConfirm;
+  const hasNews      = !!ln;
+  const cardCls = ['card',
+    status === 'past' ? 'past' : '',
+    hasWarn      ? 'has-warn'      : '',
+    hasConfirm   ? 'has-confirm'   : '',
+    hasCandidate ? 'has-candidate' : '',
+    hasNews && !hasWarn && !hasConfirm && !hasCandidate ? 'has-news' : '',
+  ].filter(Boolean).join(' ');
+  const venueHtml  = team.venue  ? `<div class="detail-row">${esc(team.venue)}</div>` : '';
+  const windowHtml = windowStr   ? `<div class="detail-row">Window: <strong>${windowStr}</strong></div>` : '';
+  const links = (team.watch_links || []).map(l =>
+    `<a href="${escHref(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join('');
+  const watchHtml = links ? `<div class="watch-links">${links}</div>` : '';
   return `
-    <div class="card ${status}">
-      <div class="card-top">
-        <div>
-          <div class="team-name">${escHTML(team.name)}</div>
-          <div class="team-league">${escHTML(team.league)}</div>
-        </div>
-        ${badgeHTML(status)}
-      </div>
-      <div class="window">Sale window: <strong>${escHTML(fmtWindow(pw, team))}</strong></div>
-      ${annHTML}
-      ${linkHTML}
-    </div>`;
+<div class="${cardCls}">
+  <div class="card-top">
+    <div>
+      <div class="card-name">${esc(team.name)}</div>
+      <div class="card-meta">${esc(team.league)}</div>
+    </div>
+    ${badge(status)}
+  </div>
+  ${venueHtml}
+  ${windowHtml}
+  ${lastSaleHtml}
+  ${newsHtml}
+  ${watchHtml}
+</div>`;
 }
 
-// ── Render ───────────────────────────────────────────────────────────────────
-
-function render(data) {
-  const teams = data.teams || [];
-
-  // Compute statuses
-  const withStatus = teams.map(t => ({
-    team: t,
-    status: windowStatus(t.predicted_window),
-  }));
-
-  // Summary counts
-  const counts = { active: 0, upcoming: 0, waiting: 0, past: 0 };
-  withStatus.forEach(({ status }) => counts[status]++);
-
-  document.getElementById('meta-line').textContent =
-    `Detroit / Windsor Metro  •  Updated ${fmtDate(data.last_updated)}`;
-
-  document.getElementById('summary-bar').innerHTML = `
-    <span class="summary-chip"><span class="dot dot-active"></span> Active: ${counts.active}</span>
-    <span class="summary-chip"><span class="dot dot-upcoming"></span> Upcoming (30 days): ${counts.upcoming}</span>
-    <span class="summary-chip"><span class="dot dot-waiting"></span> Waiting: ${counts.waiting}</span>
-    <span class="summary-chip"><span class="dot dot-past"></span> Window past: ${counts.past}</span>
-  `;
-
-  const sections = [
-    { key: 'active',   label: '🟢 Active — Sale Window Open Now' },
-    { key: 'upcoming', label: '🟡 Upcoming — Window Opens Within 30 Days' },
-    { key: 'waiting',  label: '⏳ Waiting — Window Later This Year' },
-    { key: 'past',     label: 'Past — Window Closed for 2026' },
-  ];
-
-  let html = '';
-  sections.forEach(({ key, label }) => {
-    const group = withStatus.filter(x => x.status === key);
-    if (!group.length) return;
-    html += `
-      <div class="section">
-        <div class="section-label">${label}</div>
-        <div class="grid">
-          ${group.map(({ team }) => buildCard(team, key)).join('')}
-        </div>
-      </div>`;
-  });
-
-  document.getElementById('page').innerHTML = html || '<p class="msg">No teams to display.</p>';
+function esc(s) {
+  return String(s ?? '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+function escHref(u) {
+  try { return new URL(u).href; } catch(e) { return '#'; }
 }
 
-// ── Load data ─────────────────────────────────────────────────────────────────
+async function loadData() {
+  document.getElementById('app').innerHTML = '<div id="loading">Refreshing…</div>';
+  try {
+    const bust = '?t=' + Date.now();
+    const [tdRes, msRes] = await Promise.all([
+      fetch(RAW + 'teams_data.json' + bust),
+      fetch(RAW + 'monitor_state.json' + bust),
+    ]);
+    if (!tdRes.ok) throw new Error(`teams_data.json: HTTP ${tdRes.status}`);
+    if (!msRes.ok) throw new Error(`monitor_state.json: HTTP ${msRes.status}`);
+    const td = await tdRes.json();
+    const ms = await msRes.json();
 
-fetch('./teams_data.json')
-  .then(r => {
-    if (!r.ok) throw new Error(`HTTP ${r.status}`);
-    return r.json();
-  })
-  .then(render)
-  .catch(err => {
-    document.getElementById('page').innerHTML =
-      `<p class="msg">Could not load team data: ${escHTML(err.message)}</p>`;
-  });
+    document.getElementById('last-monitored').textContent = `Last monitored: ${ms.last_monitored || '—'}`;
+    document.getElementById('last-updated').textContent   = `Last data change: ${td.last_updated || '—'}`;
+
+    const groups = { active: [], upcoming: [], waiting: [], past: [] };
+    for (const team of (td.teams || [])) {
+      const s = computeStatus(team.predicted_window);
+      groups[s].push(team);
+    }
+
+    const ORDER  = ['active', 'upcoming', 'waiting', 'past'];
+    const LABELS = {
+      active:   '🟢 Active Window',
+      upcoming: '🟡 Window Opening Soon (≤ 30 days)',
+      waiting:  '🔵 Future Window',
+      past:     '⚪ Window Passed',
+    };
+
+    let html = '';
+    for (const status of ORDER) {
+      const teams = groups[status];
+      if (!teams.length) continue;
+      // Sort: verified sales first, then candidates needing review, then warns, then others with news, then alphabetical
+      teams.sort((a, b) => {
+        const score = t => {
+          const ln = t.latest_news;
+          if (!ln) return 0;
+          if (ln.verified && !ln.news_warn) return 4;
+          if (ln.news_warn) return 3;
+          if (ln.is_announcement) return 2;
+          return 1;
+        };
+        return score(b) - score(a) || a.name.localeCompare(b.name);
+      });
+      html += `<div class="section-header">${LABELS[status]} &nbsp;·&nbsp; ${teams.length} team${teams.length > 1 ? 's' : ''}</div>`;
+      html += `<div class="grid">${teams.map(renderCard).join('')}</div>`;
+    }
+    document.getElementById('app').innerHTML = html;
+  } catch(e) {
+    document.getElementById('app').innerHTML = `<div class="error">⚠ Failed to load: ${esc(e.message)}</div>`;
+  }
+}
+
+loadData();
 </script>
 </body>
 </html>
