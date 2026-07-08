@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-08",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -694,9 +694,9 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Your closet could use more green and gold ⚔️ End of Season Sale",
-        "url": "https://x.com/LondonKnights/status/2054926202721227067",
-        "detected_at": "2026-07-02",
+        "summary": "1 new find(s) - Reporting isn't easy",
+        "url": "https://www.instagram.com/reel/DH9EPhsxSvL?hl=en",
+        "detected_at": "2026-07-08",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
