@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-14",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -214,9 +214,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - The Saginaw Spirit Store will be closed today from 12:00–1:00 PM ...",
-        "url": "https://www.facebook.com/spirithockey/posts/the-saginaw-spirit-store-will-be-closed-today-from-1200100-pm-while-we-take-our-/1332588688865821",
-        "detected_at": "2026-07-06",
+        "summary": "1 new find(s) - Saginaw - We're having so much fun at the End of Year Sale!! ...",
+        "url": "https://m.facebook.com/spirithockey/photos/were-having-so-much-fun-at-the-end-of-year-sale-what-goodies-did-you-score-well-/1115337607257598",
+        "detected_at": "2026-07-14",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
