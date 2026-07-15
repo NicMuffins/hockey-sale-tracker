@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-14",
+  "last_updated": "2026-07-15",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -98,9 +98,9 @@
         "Walleye Swamp Shop equipment sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - ‼️END OF YEAR EQUIPMENT SALE‼️ When: July 12, 10 a.m. ...",
-        "url": "https://x.com/ToledoWalleye/status/1938335217309168101",
-        "detected_at": "2026-06-21",
+        "summary": "1 new find(s) - Game-used sticks, helmets, gloves, and more will be available ...",
+        "url": "https://www.facebook.com/walleye/videos/walleye-equipment-sale-june-10/1423374288483848",
+        "detected_at": "2026-07-15",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -214,9 +214,9 @@
         "Saginaw Spirit gear sale"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Saginaw - We're having so much fun at the End of Year Sale!! ...",
-        "url": "https://m.facebook.com/spirithockey/photos/were-having-so-much-fun-at-the-end-of-year-sale-what-goodies-did-you-score-well-/1115337607257598",
-        "detected_at": "2026-07-14",
+        "summary": "1 new find(s) - Saginaw - 📆 SAVE THE DATE! The end of year sale is ...",
+        "url": "https://www.facebook.com/spirithockey/photos/-save-the-date-the-end-of-year-sale-is-saturday-may-3rd-from-11am-to-4pm-locatio/1106790864778939",
+        "detected_at": "2026-07-15",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
