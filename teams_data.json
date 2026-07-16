@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-15",
+  "last_updated": "2026-07-16",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -447,9 +447,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - Discounts - Dispo Direct - University of Michigan",
-        "url": "https://dispo.umich.edu/discounts.html?color=13227&configuration=10614&manufacturer=13228&type=13232",
-        "detected_at": "2026-07-10",
+        "summary": "1 new find(s) - U-M Nike Hockey Pants Small Navy Blue - Dispo Direct",
+        "url": "https://dispo.umich.edu/sporting-goods/nike-hockey-pants-small-navy-blue.html",
+        "detected_at": "2026-07-16",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
