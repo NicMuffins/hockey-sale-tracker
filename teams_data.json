@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-18",
+  "last_updated": "2026-07-19",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -493,17 +493,11 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "2 new find(s) - Products – Page 354",
-        "url": "https://msusurplusstore.com/collections/all?page=354",
-        "detected_at": "2026-07-18",
+        "summary": "1 new find(s) - Athletic Apparel – Page 7",
+        "url": "https://msusurplusstore.com/collections/athletic-apparel?page=",
+        "detected_at": "2026-07-19",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "MSU Surplus Store holds annual bike sale",
-            "url": "https://www.wilx.com/video/2026/05/28/msu-surplus-store-holds-annual-bike-sale"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
