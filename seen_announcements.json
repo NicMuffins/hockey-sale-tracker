@@ -226,6 +226,11 @@
       "title": "U-M Nike Hockey Pants Small Navy Blue - Dispo Direct",
       "url": "https://dispo.umich.edu/sporting-goods/nike-hockey-pants-small-navy-blue.html",
       "detected_at": "2026-07-16"
+    },
+    {
+      "title": "eBids",
+      "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&category=274&limit=150&price_range=501-1000",
+      "detected_at": "2026-07-21"
     }
   ],
   "michigan-state": [
@@ -328,6 +333,11 @@
       "title": "Athletic Apparel – Page 7",
       "url": "https://msusurplusstore.com/collections/athletic-apparel?page=",
       "detected_at": "2026-07-19"
+    },
+    {
+      "title": "Antiques & Collectibles",
+      "url": "https://msusurplusstore.com/collections/collectible-antique/category-report_antiques-collectibles",
+      "detected_at": "2026-07-21"
     }
   ],
   "red-wings": [
@@ -651,6 +661,11 @@
       "title": "Pro Stock Hockey - Sports2k.com",
       "url": "https://www.sports2k.com/forum",
       "detected_at": "2026-07-13"
+    },
+    {
+      "title": "Gloves - For Sale - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Fforum%2F20-gloves-for-sale%2Fpage-46%3Fprune_day=100&sort_by=Z-A&sort_key=posts&topicfilter=all",
+      "detected_at": "2026-07-21"
     }
   ]
 }
