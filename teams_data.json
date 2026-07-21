@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-19",
+  "last_updated": "2026-07-21",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -447,9 +447,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - U-M Nike Hockey Pants Small Navy Blue - Dispo Direct",
-        "url": "https://dispo.umich.edu/sporting-goods/nike-hockey-pants-small-navy-blue.html",
-        "detected_at": "2026-07-16",
+        "summary": "1 new find(s) - eBids",
+        "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&category=274&limit=150&price_range=501-1000",
+        "detected_at": "2026-07-21",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -493,9 +493,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Athletic Apparel – Page 7",
-        "url": "https://msusurplusstore.com/collections/athletic-apparel?page=",
-        "detected_at": "2026-07-19",
+        "summary": "1 new find(s) - Antiques & Collectibles",
+        "url": "https://msusurplusstore.com/collections/collectible-antique/category-report_antiques-collectibles",
+        "detected_at": "2026-07-21",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
