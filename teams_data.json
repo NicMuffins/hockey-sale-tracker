@@ -263,11 +263,11 @@
       },
       "notes": "2026 sale ran July 14–23 (confirmed by email alert received the final day, 2026-07-23 — missed while Nic was at work). Monitor Bird's Nest and team socials, and check email alerts more frequently next year.",
       "latest_news": {
-        "summary": "2026 sale ran July 14–23 — caught via email notification on the last day (2026-07-23).",
-        "url": "https://www.officialbirdsnest.com/",
+        "summary": "1 new find(s) - Flint Firebirds",
+        "url": "https://www.facebook.com/FlintFirebirds/posts/%EF%B8%8F-our-summer-sale-is-here-tomorrow-%EF%B8%8Fthe-birds-nest-is-packed-with-deals-on-fireb/1545627960685745",
         "detected_at": "2026-07-23",
         "is_announcement": true,
-        "source": "Email alert"
+        "source": "GitHub Actions Monitor"
       },
       "watch_urls": [
         "https://chl.ca/ohl-firebirds/",
@@ -288,18 +288,11 @@
           "url": "https://www.facebook.com/FlintFirebirds/"
         }
       ],
-      "latest_news": {
-        "summary": "1 new find(s) - Flint Firebirds",
-        "url": "https://www.facebook.com/FlintFirebirds/posts/%EF%B8%8F-our-summer-sale-is-here-tomorrow-%EF%B8%8Fthe-birds-nest-is-packed-with-deals-on-fireb/1545627960685745",
-        "detected_at": "2026-07-23",
-        "is_announcement": true,
-        "source": "GitHub Actions Monitor"
-      },
       "last_confirmed_sale": {
-        "year": 2025,
-        "date": "July 22",
-        "notes": "Confirmed by Nic",
-        "verified_at": "2026-07-06",
+        "year": 2026,
+        "date": "July 14–23",
+        "notes": "Confirmed by Nic via email notification received on the last day of the sale",
+        "verified_at": "2026-07-23",
         "source": "nic_verified"
       }
     },
