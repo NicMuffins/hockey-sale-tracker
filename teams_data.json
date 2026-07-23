@@ -249,14 +249,26 @@
           "year": 2025,
           "date": "July 22",
           "notes": "Confirmed by Nic"
+        },
+        {
+          "year": 2026,
+          "date": "July 14–23",
+          "notes": "Confirmed via email notification received 2026-07-23 (last day of sale). Exact daily hours/details not yet verified."
         }
       ],
       "predicted_window": {
-        "start": "05-01",
-        "end": "07-15",
-        "confidence": "low"
+        "start": "07-01",
+        "end": "07-31",
+        "confidence": "high"
       },
-      "notes": "No documented public equipment sale on record — monitor Bird's Nest and team socials.",
+      "notes": "2026 sale ran July 14–23 (confirmed by email alert received the final day, 2026-07-23 — missed while Nic was at work). Monitor Bird's Nest and team socials, and check email alerts more frequently next year.",
+      "latest_news": {
+        "summary": "2026 sale ran July 14–23 — caught via email notification on the last day (2026-07-23).",
+        "url": "https://www.officialbirdsnest.com/",
+        "detected_at": "2026-07-23",
+        "is_announcement": true,
+        "source": "Email alert"
+      },
       "watch_urls": [
         "https://chl.ca/ohl-firebirds/",
         "https://www.officialbirdsnest.com/",
