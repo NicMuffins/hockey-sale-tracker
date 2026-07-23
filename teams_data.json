@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-21",
+  "last_updated": "2026-07-23",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -277,9 +277,9 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - The Top-5 'Must-Haves' At The Flames Equipment Sale",
-        "url": "https://www.nhl.com/flames/news/the-top-5-must-haves-at-the-flames-equipment-sale",
-        "detected_at": "2026-07-09",
+        "summary": "1 new find(s) - Flint Firebirds",
+        "url": "https://www.facebook.com/FlintFirebirds/posts/%EF%B8%8F-our-summer-sale-is-here-tomorrow-%EF%B8%8Fthe-birds-nest-is-packed-with-deals-on-fireb/1545627960685745",
+        "detected_at": "2026-07-23",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -447,9 +447,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - eBids",
-        "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&category=274&limit=150&price_range=501-1000",
-        "detected_at": "2026-07-21",
+        "summary": "1 new find(s) - Renfrew-181365-Case-(~30)-of-Hockey-Tape-Stretch-Rap-White",
+        "url": "https://dispo.umich.edu/renfrew-181365-case-30-of-hockey-tape-stretch-rap-white.html",
+        "detected_at": "2026-07-23",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -493,9 +493,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Antiques & Collectibles",
-        "url": "https://msusurplusstore.com/collections/collectible-antique/category-report_antiques-collectibles",
-        "detected_at": "2026-07-21",
+        "summary": "1 new find(s) - Products – Page 322",
+        "url": "https://msusurplusstore.com/collections/all?page=322",
+        "detected_at": "2026-07-23",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
