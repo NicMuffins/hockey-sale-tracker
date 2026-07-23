@@ -231,6 +231,11 @@
       "title": "eBids",
       "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&category=274&limit=150&price_range=501-1000",
       "detected_at": "2026-07-21"
+    },
+    {
+      "title": "Renfrew-181365-Case-(~30)-of-Hockey-Tape-Stretch-Rap-White",
+      "url": "https://dispo.umich.edu/renfrew-181365-case-30-of-hockey-tape-stretch-rap-white.html",
+      "detected_at": "2026-07-23"
     }
   ],
   "michigan-state": [
@@ -338,6 +343,11 @@
       "title": "Antiques & Collectibles",
       "url": "https://msusurplusstore.com/collections/collectible-antique/category-report_antiques-collectibles",
       "detected_at": "2026-07-21"
+    },
+    {
+      "title": "Products – Page 322",
+      "url": "https://msusurplusstore.com/collections/all?page=322",
+      "detected_at": "2026-07-23"
     }
   ],
   "red-wings": [
@@ -548,6 +558,11 @@
       "title": "The Top-5 'Must-Haves' At The Flames Equipment Sale",
       "url": "https://www.nhl.com/flames/news/the-top-5-must-haves-at-the-flames-equipment-sale",
       "detected_at": "2026-07-09"
+    },
+    {
+      "title": "Flint Firebirds",
+      "url": "https://www.facebook.com/FlintFirebirds/posts/%EF%B8%8F-our-summer-sale-is-here-tomorrow-%EF%B8%8Fthe-birds-nest-is-packed-with-deals-on-fireb/1545627960685745",
+      "detected_at": "2026-07-23"
     }
   ],
   "usa-ntdp": [
@@ -666,6 +681,11 @@
       "title": "Gloves - For Sale - Pro Stock Hockey - Sports2k.com",
       "url": "https://www.sports2k.com/forum/index.php?%2Fforum%2F20-gloves-for-sale%2Fpage-46%3Fprune_day=100&sort_by=Z-A&sort_key=posts&topicfilter=all",
       "detected_at": "2026-07-21"
+    },
+    {
+      "title": "Tackla, Montreal, Eagle? Can Someone explain? - Hockey Gear - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Ftopic%2F34027-tackla-montreal-eagle-can-someone-explain%2F=",
+      "detected_at": "2026-07-23"
     }
   ]
 }
