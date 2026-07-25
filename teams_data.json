@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-24",
+  "last_updated": "2026-07-25",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,9 +452,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - Renfrew-181365-Case-(~30)-of-Hockey-Tape-Stretch-Rap-White",
-        "url": "https://dispo.umich.edu/renfrew-181365-case-30-of-hockey-tape-stretch-rap-white.html",
-        "detected_at": "2026-07-23",
+        "summary": "1 new find(s) - eBids - Dispo Direct - University of Michigan",
+        "url": "https://dispo.umich.edu/lofauction/bid/all/status/starting_soon",
+        "detected_at": "2026-07-25",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
