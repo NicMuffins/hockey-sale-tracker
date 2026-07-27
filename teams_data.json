@@ -21,11 +21,11 @@
         }
       ],
       "predicted_window": {
-        "start": "07-01",
-        "end": "08-31",
-        "confidence": "medium"
+        "start": "08-01",
+        "end": "08-01",
+        "confidence": "high"
       },
-      "notes": "Annual sale typically runs July–August based on recent seasons. 2026 sale was announced via Instagram (Stadium Series equipment sale detected June 2026). Watch @DetroitRedWings and @shophockeytown.",
+      "notes": "2026 sale CONFIRMED: Saturday, August 1, 2026, 9am-5pm EST, Little Caesars Arena. Announced via @shophockeytown (Instagram/Facebook); verified against official flyer image shared on r/DetroitRedWings. Watch @DetroitRedWings and @shophockeytown for future years.",
       "watch_urls": [
         "https://www.nhl.com/redwings/news",
         "https://www.instagram.com/shophockeytown/"
@@ -46,11 +46,11 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Detroit Red Wings (@DETROITREDWINGS) - Facebook",
-        "url": "https://www.facebook.com/DETROITREDWINGS",
-        "detected_at": "2026-07-10",
+        "summary": "Red Wings 2026 Equipment Sale CONFIRMED - Saturday, August 1, 9am-5pm EST, Little Caesars Arena",
+        "url": "https://www.reddit.com/r/DetroitRedWings/comments/1v6erjd/red_wings_2026_equipment_sale_announced/",
+        "detected_at": "2026-07-27",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "Nic + Claude verified (official flyer image)"
       },
       "last_confirmed_sale": {
         "year": 2025,
