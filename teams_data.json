@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-27",
+  "last_updated": "2026-07-28",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -498,9 +498,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - MSU Surplus Store",
-        "url": "https://msusurplusstore.com",
-        "detected_at": "2026-07-26",
+        "summary": "1 new find(s) - Home Decor – Page 3",
+        "url": "https://msusurplusstore.com/collections/home-decor?page=3",
+        "detected_at": "2026-07-28",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
