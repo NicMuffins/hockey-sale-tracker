@@ -241,6 +241,11 @@
       "title": "eBids - Dispo Direct - University of Michigan",
       "url": "https://dispo.umich.edu/lofauction/bid/all/status/starting_soon",
       "detected_at": "2026-07-25"
+    },
+    {
+      "title": "steelcase-ts38308-jersey-guest-chair-blue-fabric-arms-casters",
+      "url": "https://dispo.umich.edu/steelcase-ts38308-jersey-guest-chair-blue-fabric-arms-casters.html",
+      "detected_at": "2026-07-30"
     }
   ],
   "michigan-state": [
@@ -368,6 +373,16 @@
       "title": "Home Decor – Page 3",
       "url": "https://msusurplusstore.com/collections/home-decor?page=3",
       "detected_at": "2026-07-28"
+    },
+    {
+      "title": "Sporting Goods – Page 2",
+      "url": "https://msusurplusstore.com/collections/sporting-goods?page=2",
+      "detected_at": "2026-07-30"
+    },
+    {
+      "title": "Athletic Apparel – Page 20",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel?page=20",
+      "detected_at": "2026-07-30"
     }
   ],
   "red-wings": [
