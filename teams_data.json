@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-30",
+  "last_updated": "2026-07-31",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -46,11 +46,11 @@
         }
       ],
       "latest_news": {
-        "summary": "Red Wings 2026 Equipment Sale CONFIRMED - Saturday, August 1, 9am-5pm EST, Little Caesars Arena",
-        "url": "https://www.reddit.com/r/DetroitRedWings/comments/1v6erjd/red_wings_2026_equipment_sale_announced/",
-        "detected_at": "2026-07-27",
+        "summary": "1 new find(s) - Shop Hockeytown - The Detroit Red Wings Equipment Sale is...",
+        "url": "https://www.facebook.com/shophockeytown/posts/the-detroit-red-wings-equipment-sale-is-almost-here-saturday-august-1-900-am-500/1492442576257076",
+        "detected_at": "2026-07-31",
         "is_announcement": true,
-        "source": "Nic + Claude verified (official flyer image)"
+        "source": "GitHub Actions Monitor"
       },
       "last_confirmed_sale": {
         "year": 2025,
@@ -498,17 +498,11 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "2 new find(s) - Sporting Goods – Page 2",
-        "url": "https://msusurplusstore.com/collections/sporting-goods?page=2",
-        "detected_at": "2026-07-30",
+        "summary": "1 new find(s) - Household – Page 6",
+        "url": "https://msusurplusstore.com/collections/household?page=6",
+        "detected_at": "2026-07-31",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Athletic Apparel – Page 20",
-            "url": "https://msusurplusstore.com/collections/athletic-apparel?page=20"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
