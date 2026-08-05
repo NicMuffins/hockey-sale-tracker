@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04",
+  "last_updated": "2026-08-05",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,9 +452,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - steelcase-ts38308-jersey-guest-chair-blue-fabric-arms-casters",
-        "url": "https://dispo.umich.edu/steelcase-ts38308-jersey-guest-chair-blue-fabric-arms-casters.html",
-        "detected_at": "2026-07-30",
+        "summary": "1 new find(s) - eBids",
+        "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&p=5&product_list_dir=desc&product_list_order=ending_soon&status=processing",
+        "detected_at": "2026-08-05",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -498,17 +498,11 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "2 new find(s) - Hours & Location – MSU Surplus Store",
-        "url": "https://msusurplusstore.com/pages/hours-location",
-        "detected_at": "2026-08-04",
+        "summary": "1 new find(s) - Products – Page 331",
+        "url": "https://msusurplusstore.com/collections/all?page=331",
+        "detected_at": "2026-08-05",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "MSU Collectibles – Page 10",
-            "url": "https://msusurplusstore.com/collections/msu-collectibles?page=10"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
