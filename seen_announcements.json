@@ -246,6 +246,11 @@
       "title": "steelcase-ts38308-jersey-guest-chair-blue-fabric-arms-casters",
       "url": "https://dispo.umich.edu/steelcase-ts38308-jersey-guest-chair-blue-fabric-arms-casters.html",
       "detected_at": "2026-07-30"
+    },
+    {
+      "title": "eBids",
+      "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&p=5&product_list_dir=desc&product_list_order=ending_soon&status=processing",
+      "detected_at": "2026-08-05"
     }
   ],
   "michigan-state": [
@@ -398,6 +403,11 @@
       "title": "MSU Collectibles – Page 10",
       "url": "https://msusurplusstore.com/collections/msu-collectibles?page=10",
       "detected_at": "2026-08-04"
+    },
+    {
+      "title": "Products – Page 331",
+      "url": "https://msusurplusstore.com/collections/all?page=331",
+      "detected_at": "2026-08-05"
     }
   ],
   "red-wings": [
