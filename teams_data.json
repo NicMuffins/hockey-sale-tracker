@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-08",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,11 +452,21 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - eBids",
-        "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&p=5&product_list_dir=desc&product_list_order=ending_soon&status=processing",
-        "detected_at": "2026-08-05",
+        "summary": "3 new find(s) - 50% Discount - Dispo Direct - University of Michigan",
+        "url": "https://dispo.umich.edu/discounts/50-discount.html",
+        "detected_at": "2026-08-08",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "Furniture - Dispo Direct - University of Michigan",
+            "url": "https://dispo.umich.edu/furniture.html"
+          },
+          {
+            "label": "Chairs - Furniture - Dispo Direct",
+            "url": "https://dispo.umich.edu/furniture/chairs.html"
+          }
+        ]
       },
       "watch_links": [
         {
