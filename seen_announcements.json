@@ -251,6 +251,21 @@
       "title": "eBids",
       "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&p=5&product_list_dir=desc&product_list_order=ending_soon&status=processing",
       "detected_at": "2026-08-05"
+    },
+    {
+      "title": "50% Discount - Dispo Direct - University of Michigan",
+      "url": "https://dispo.umich.edu/discounts/50-discount.html",
+      "detected_at": "2026-08-08"
+    },
+    {
+      "title": "Furniture - Dispo Direct - University of Michigan",
+      "url": "https://dispo.umich.edu/furniture.html",
+      "detected_at": "2026-08-08"
+    },
+    {
+      "title": "Chairs - Furniture - Dispo Direct",
+      "url": "https://dispo.umich.edu/furniture/chairs.html",
+      "detected_at": "2026-08-08"
     }
   ],
   "michigan-state": [
