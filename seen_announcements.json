@@ -271,6 +271,11 @@
       "title": "eBids - University of Michigan",
       "url": "https://dispo.umich.edu/lofauction/bid/all/status/processing?bid_count=0&category=274",
       "detected_at": "2026-08-09"
+    },
+    {
+      "title": "Michigan Men's Basketball (@umichbball) / X",
+      "url": "https://x.com/umichbball",
+      "detected_at": "2026-08-10"
     }
   ],
   "michigan-state": [
@@ -428,6 +433,11 @@
       "title": "Products – Page 331",
       "url": "https://msusurplusstore.com/collections/all?page=331",
       "detected_at": "2026-08-05"
+    },
+    {
+      "title": "Antiques & Collectibles – Page 14",
+      "url": "https://msusurplusstore.com/collections/collectible-antique?page=14",
+      "detected_at": "2026-08-10"
     }
   ],
   "red-wings": [
@@ -821,6 +831,11 @@
       "title": "The Goon Collection - Hockey Gear - Pro Stock Hockey - Sports2k.com",
       "url": "https://www.sports2k.com/forum/index.php?%2Ftopic%2F21107-the-goon-collection%2Fpage-8=",
       "detected_at": "2026-08-02"
+    },
+    {
+      "title": "What is going on with sideline swap shipping? - Off Topic - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Ftopic%2F46220-what-is-going-on-with-sideline-swap-shipping%2F=",
+      "detected_at": "2026-08-10"
     }
   ]
 }
