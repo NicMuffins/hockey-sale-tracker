@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-12",
+  "last_updated": "2026-08-13",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -46,9 +46,9 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Detroit hockey fans, this is one you do not want to miss. ...",
-        "url": "https://www.instagram.com/reel/DVq2wdNDlVa",
-        "detected_at": "2026-08-12",
+        "summary": "1 new find(s) - The Wings are officially back as they open their 100th ...",
+        "url": "https://www.instagram.com/p/DPkwRKFjFwv",
+        "detected_at": "2026-08-13",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -452,27 +452,15 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "5 new find(s) - Discounts",
-        "url": "https://dispo.umich.edu/discounts.html?configuration=10614&price=-100&type=21155",
-        "detected_at": "2026-08-11",
+        "summary": "2 new find(s) - steelcase-jersey-guest-chair-armless-mesh-back-gray-fabric ...",
+        "url": "https://dispo.umich.edu/steelcase-jersey-guest-chair-armless-mesh-back-gray-fabric-seat.html",
+        "detected_at": "2026-08-13",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "Discounts",
-            "url": "https://dispo.umich.edu/discounts.html?configuration=12591&type=24682"
-          },
-          {
-            "label": "Discounts",
-            "url": "https://dispo.umich.edu/discounts.html?configuration=10662&type=25589"
-          },
-          {
-            "label": "50% Discount - Discounts",
-            "url": "https://dispo.umich.edu/discounts/50-discount.html?configuration=10614&type=25538"
-          },
-          {
-            "label": "Discounts",
-            "url": "https://dispo.umich.edu/discounts.html?configuration=10662&p=4"
+            "label": "Urbane-2035-Scrub-Pants-Fabric-Navy-Blue-Ladies-Small",
+            "url": "https://dispo.umich.edu/urbane-2035-scrub-pants-fabric-navy-blue-ladies-small.html"
           }
         ]
       },
