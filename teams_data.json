@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-21",
+  "last_updated": "2026-08-22",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -46,11 +46,17 @@
         }
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Made in Hockeytown Collection dropping 3.28",
-        "url": "https://www.facebook.com/shophockeytown/videos/made-in-hockeytown-collection-dropping-328-/24159783247052566",
-        "detected_at": "2026-08-20",
+        "summary": "2 new find(s) - r/DetroitRedWings - Red Wings 2026 Equipment Sale Announced - Reddit",
+        "url": "https://www.reddit.com/r/DetroitRedWings/comments/1v6erjd/red_wings_2026_equipment_sale_announced",
+        "detected_at": "2026-08-22",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "Red Wings fans, it's auction time We're going LIVE on ... - ",
+            "url": "https://www.instagram.com/reel/DU6Hc0uCU_V"
+          }
+        ]
       },
       "last_confirmed_sale": {
         "year": 2025,
