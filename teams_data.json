@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22",
+  "last_updated": "2026-08-23",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -46,17 +46,11 @@
         }
       ],
       "latest_news": {
-        "summary": "2 new find(s) - r/DetroitRedWings - Red Wings 2026 Equipment Sale Announced - Reddit",
-        "url": "https://www.reddit.com/r/DetroitRedWings/comments/1v6erjd/red_wings_2026_equipment_sale_announced",
-        "detected_at": "2026-08-22",
+        "summary": "1 new find(s) - The Team Store Summer Sale begins... - Detroit Red Wings",
+        "url": "https://www.facebook.com/DETROITREDWINGS/posts/the-team-store-summer-sale-begins-friday-july-10-stop-by-shop-hockeytown-for-big/1047366987977364",
+        "detected_at": "2026-08-23",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Red Wings fans, it's auction time We're going LIVE on ... - ",
-            "url": "https://www.instagram.com/reel/DU6Hc0uCU_V"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "last_confirmed_sale": {
         "year": 2025,
@@ -458,15 +452,19 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "2 new find(s) - steelcase-jersey-guest-chair-armless-mesh-back-gray-fabric ...",
-        "url": "https://dispo.umich.edu/steelcase-jersey-guest-chair-armless-mesh-back-gray-fabric-seat.html",
-        "detected_at": "2026-08-13",
+        "summary": "3 new find(s) - Bauer Vapor Hyperlite Hockey Skates, Men's 6.5, Never Used",
+        "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-hockey-skates-men-s-6-5-never-used.html",
+        "detected_at": "2026-08-23",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "Urbane-2035-Scrub-Pants-Fabric-Navy-Blue-Ladies-Small",
-            "url": "https://dispo.umich.edu/urbane-2035-scrub-pants-fabric-navy-blue-ladies-small.html"
+            "label": "Bauer Pro Goal Fit 1 Hockey Skates, Men's 9, Never Used",
+            "url": "https://dispo.umich.edu/bauer-pro-goal-fit-1-hockey-skates-men-s-9-never-used.html"
+          },
+          {
+            "label": "Bauer Supreme Shadow Hockey Skates, Men's 6.5, Fly-Ti ...",
+            "url": "https://dispo.umich.edu/bauer-supreme-shadow-hockey-skates-men-s-6-5-fly-ti-blades-never-used.html"
           }
         ]
       },
