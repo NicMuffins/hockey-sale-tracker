@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25",
+  "last_updated": "2026-08-26",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -498,17 +498,11 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "2 new find(s) - MSU Munn Ice Hockey Arena Benches – MSU Surplus Store",
-        "url": "https://msusurplusstore.com/products/msu-munn-ice-hockey-arena-benches",
-        "detected_at": "2026-08-25",
+        "summary": "1 new find(s) - Athletic Apparel – Page 13 – MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/athletic-apparel?page=13",
+        "detected_at": "2026-08-26",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Ice Warehouse",
-            "url": "https://www.icewarehouse.com"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
