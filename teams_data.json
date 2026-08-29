@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-27",
+  "last_updated": "2026-08-29",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,9 +452,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - bauer-vapor-hyperlite-2-hockey-skates-men-s-r-7-5-l-7-75 ...",
-        "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-2-hockey-skates-men-s-r-7-5-l-7-75-never-used.html",
-        "detected_at": "2026-08-25",
+        "summary": "1 new find(s) - Discounts - Dispo Direct - University of Michigan",
+        "url": "https://dispo.umich.edu/discounts.html?configuration=10614&type=13232",
+        "detected_at": "2026-08-29",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -498,9 +498,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - MSU Collectibles – Page 10",
-        "url": "https://msusurplusstore.com/collections/msu-collectibles?page=",
-        "detected_at": "2026-08-27",
+        "summary": "1 new find(s) - Hockey Plus - Hockey Equipment and Accessories Store",
+        "url": "https://www.hockeyplusinc.com",
+        "detected_at": "2026-08-29",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
