@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-29",
+  "last_updated": "2026-08-30",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,9 +452,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - Discounts - Dispo Direct - University of Michigan",
-        "url": "https://dispo.umich.edu/discounts.html?configuration=10614&type=13232",
-        "detected_at": "2026-08-29",
+        "summary": "1 new find(s) - bauer-qualifier-25-custom-hockey-skates-108-fusion-flex-fly-ti-never-used",
+        "url": "https://dispo.umich.edu/bauer-qualifier-25-custom-hockey-skates-108-fusion-flex-fly-ti-never-used.html",
+        "detected_at": "2026-08-30",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
