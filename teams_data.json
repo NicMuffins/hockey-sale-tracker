@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-31",
+  "last_updated": "2026-09-01",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -498,9 +498,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - MSU Collectibles – Page 4",
-        "url": "https://msusurplusstore.com/collections/msu-collectibles?page=4",
-        "detected_at": "2026-08-31",
+        "summary": "1 new find(s) - Athletic Apparel – Page 21 – MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/athletic-apparel?page=21",
+        "detected_at": "2026-09-01",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
