@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01",
+  "last_updated": "2026-09-04",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,11 +452,17 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - bauer-qualifier-25-custom-hockey-skates-108-fusion-flex-fly-ti-never-used",
-        "url": "https://dispo.umich.edu/bauer-qualifier-25-custom-hockey-skates-108-fusion-flex-fly-ti-never-used.html",
-        "detected_at": "2026-08-30",
+        "summary": "2 new find(s) - Bauer Supreme Mach Hockey Skates, Men's 7.5, Never Used",
+        "url": "https://dispo.umich.edu/bauer-supreme-mach-hockey-skates-men-s-7-5-never-used.html",
+        "detected_at": "2026-09-04",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "Bauer Nexus Tracer Hockey Stick, Left Hand, 82 Flex - Dispo ",
+            "url": "https://dispo.umich.edu/bauer-nexus-tracer-hockey-stick-left-handed-82-flex-154320-5-82-tracer-black.html"
+          }
+        ]
       },
       "watch_links": [
         {
@@ -498,9 +504,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Athletic Apparel – Page 21 – MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/athletic-apparel?page=21",
-        "detected_at": "2026-09-01",
+        "summary": "1 new find(s) - MSU Collectibles – Page 11 – MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/msu-collectibles?page=11",
+        "detected_at": "2026-09-04",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
