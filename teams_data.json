@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-15",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,15 +452,23 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "2 new find(s) - Bauer Supreme Mach Hockey Skates, Men's 7.5, Never Used",
-        "url": "https://dispo.umich.edu/bauer-supreme-mach-hockey-skates-men-s-7-5-never-used.html",
-        "detected_at": "2026-09-04",
+        "summary": "4 new find(s) - Bauer-Pulse-Hockey-Stick-Left-Handed-82-Flex-1852-2A-0002-82-PULSE-Blue",
+        "url": "https://dispo.umich.edu/bauer-pulse-hockey-stick-left-handed-82-flex-1852-2a-0002-82-pulse-blue.html",
+        "detected_at": "2026-09-15",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "Bauer Nexus Tracer Hockey Stick, Left Hand, 82 Flex - Dispo ",
-            "url": "https://dispo.umich.edu/bauer-nexus-tracer-hockey-stick-left-handed-82-flex-154320-5-82-tracer-black.html"
+            "label": "Bauer-Vapor-Flylite-Hockey-Stick-Left-Handed-82-Flex-8248-2A",
+            "url": "https://dispo.umich.edu/bauer-vapor-flylite-hockey-stick-left-handed-82-flex-8248-2a-0005-82-proto2-yellow.html"
+          },
+          {
+            "label": "CCM-XF-Ghost-Hockey-Stick-Left-Handed-80-Flex-80-EC-E531373-",
+            "url": "https://dispo.umich.edu/ccm-xf-ghost-hockey-stick-left-handed-80-flex-80-ec-e531373-v01-black.html"
+          },
+          {
+            "label": "Bauer-Vapor-Flylite-Hockey-Stick-Left-Handed-82-Flex-163756-",
+            "url": "https://dispo.umich.edu/bauer-vapor-flylite-hockey-stick-left-handed-82-flex-163756-11-82-protor-yellow.html"
           }
         ]
       },
