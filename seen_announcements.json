@@ -578,6 +578,26 @@
       "title": "MSU Collectibles – Page 11 – MSU Surplus Store",
       "url": "https://msusurplusstore.com/collections/msu-collectibles?page=11",
       "detected_at": "2026-09-04"
+    },
+    {
+      "title": "Athletic Apparel – Page 12 - MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel?page=12",
+      "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Athletic Apparel – tagged \"Type_Jersey\" - MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel/type_jersey",
+      "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Athletic Apparel – Page 23 - MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel?page=23",
+      "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Athletic Apparel – Page 26 - MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel?page=26",
+      "detected_at": "2026-09-18"
     }
   ],
   "red-wings": [
@@ -1096,6 +1116,31 @@
       "title": "Equipment listings For Sale Near Washington Dc, District Of...",
       "url": "https://www.equipmenttrader.com/Washington-Dc/equipment-for-sale?city=washington+dc&state=District+Of+Columbia%7CDC",
       "detected_at": "2026-09-17"
+    },
+    {
+      "title": "San Jose Sharks Equipment Sale - Pro Equipment Sales - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Ftopic%2F18199-san-jose-sharks-equipment-sale%2Fpage-23=",
+      "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Seattle Kraken - Pro Equipment Sales - Pro Stock Hockey - Sports2k.com",
+      "url": "https://sports2k.com/forum/index.php?%2Ftopic%2F45945-seattle-kraken%2F=",
+      "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Washington Capitals Equipment Sale - Pro Equipment Sales - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Ftopic%2F61-washington-capitals-equipment-sale%2Fpage-11=",
+      "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Sticks - For Sale - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Fforum%2F23-sticks-for-sale%2F=",
+      "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Gloves - For Sale - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Fforum%2F20-gloves-for-sale%2Fpage-9=",
+      "detected_at": "2026-09-18"
     }
   ]
 }
