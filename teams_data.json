@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18",
+  "last_updated": "2026-09-19",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -512,25 +512,11 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "4 new find(s) - Athletic Apparel – Page 12 - MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/athletic-apparel?page=12",
-        "detected_at": "2026-09-18",
+        "summary": "1 new find(s) - Products – Page 297 – MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/all?page=297",
+        "detected_at": "2026-09-19",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Athletic Apparel – tagged \"Type_Jersey\" - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/athletic-apparel/type_jersey"
-          },
-          {
-            "label": "Athletic Apparel – Page 23 - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/athletic-apparel?page=23"
-          },
-          {
-            "label": "Athletic Apparel – Page 26 - MSU Surplus Store",
-            "url": "https://msusurplusstore.com/collections/athletic-apparel?page=26"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
