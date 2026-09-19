@@ -598,6 +598,11 @@
       "title": "Athletic Apparel – Page 26 - MSU Surplus Store",
       "url": "https://msusurplusstore.com/collections/athletic-apparel?page=26",
       "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Products – Page 297 – MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/all?page=297",
+      "detected_at": "2026-09-19"
     }
   ],
   "red-wings": [
@@ -1141,6 +1146,11 @@
       "title": "Gloves - For Sale - Pro Stock Hockey - Sports2k.com",
       "url": "https://www.sports2k.com/forum/index.php?%2Fforum%2F20-gloves-for-sale%2Fpage-9=",
       "detected_at": "2026-09-18"
+    },
+    {
+      "title": "Pants - For Sale - Pro Stock Hockey - Sports2k.com",
+      "url": "https://www.sports2k.com/forum/index.php?%2Fforum%2F21-pants-for-sale%2Fpage-3=",
+      "detected_at": "2026-09-19"
     }
   ]
 }
