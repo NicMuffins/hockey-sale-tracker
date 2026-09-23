@@ -603,6 +603,21 @@
       "title": "Products – Page 297 – MSU Surplus Store",
       "url": "https://msusurplusstore.com/collections/all?page=297",
       "detected_at": "2026-09-19"
+    },
+    {
+      "title": "Athletic Apparel – Page 5 – MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel?page=5",
+      "detected_at": "2026-09-23"
+    },
+    {
+      "title": "Athletic Apparel – Page 6 – MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel?page=6",
+      "detected_at": "2026-09-23"
+    },
+    {
+      "title": "Athletic Apparel – tagged \"Size_Large\" – MSU Surplus Store",
+      "url": "https://msusurplusstore.com/collections/athletic-apparel/size_large",
+      "detected_at": "2026-09-23"
     }
   ],
   "red-wings": [
@@ -1156,6 +1171,16 @@
       "title": "Prostockhockeysticks out of stock. - Pro Stock Hockey Gear - Pro Stock Hockey - Sports2k.com",
       "url": "https://www.sports2k.com/forum/index.php?%2Ftopic%2F47643-prostockhockeysticks-out-of-stock%2F=",
       "detected_at": "2026-09-20"
+    },
+    {
+      "title": "New & Used Heavy Equipment for Sale or Rent | Equipment Trader",
+      "url": "https://www.equipmenttrader.com",
+      "detected_at": "2026-09-23"
+    },
+    {
+      "title": "Cutting Sticks - Hockey Gear - Pro Stock Hockey - Sports2k.com",
+      "url": "https://sports2k.com/forum/index.php?%2Ftopic%2F39312-cutting-sticks%2F=",
+      "detected_at": "2026-09-23"
     }
   ]
 }
