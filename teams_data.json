@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24",
+  "last_updated": "2026-09-26",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -498,9 +498,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Products – Page 313 – MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/all?page=313&phcursor=eyJzayI6InRpdGxlIiwic3YiOiJOaWtlIFdoaXRlIDIwMjIgTVNVIEZvb3RiYWxsIFQtU2hpcnQgTWVuJ3MgU2l6ZSBYTCIsImQiOiJiIiwidWlkIjo3MzU0NzkyNjA3NzkyLCJsIjoxMiwibyI6MH0",
-        "detected_at": "2026-09-24",
+        "summary": "1 new find(s) - Athletic Apparel – tagged \"Sport_Volleyball\" – MSU Surplus Store",
+        "url": "https://msusurplusstore.com/collections/athletic-apparel/sport_volleyball",
+        "detected_at": "2026-09-26",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
