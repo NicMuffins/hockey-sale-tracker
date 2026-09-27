@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26",
+  "last_updated": "2026-09-27",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,11 +452,17 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - bauer-vapor-hyper2lite-hockey-stick-right-hand-77-flex-p28-never-used",
-        "url": "https://dispo.umich.edu/bauer-vapor-hyper2lite-hockey-stick-right-hand-77-flex-p28-never-used.html",
-        "detected_at": "2026-09-24",
+        "summary": "2 new find(s) - bauer-supreme-shadow-goalie-stick-87-flex-u-sonic-never-used",
+        "url": "https://dispo.umich.edu/bauer-supreme-shadow-goalie-stick-87-flex-u-sonic-never-used.html",
+        "detected_at": "2026-09-27",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "bauer-vapor-hyp2rlite-hockey-stick-right-hand-70-flex-pastrn",
+            "url": "https://dispo.umich.edu/bauer-vapor-hyp2rlite-hockey-stick-right-hand-70-flex-pastrnak.html"
+          }
+        ]
       },
       "watch_links": [
         {
@@ -498,11 +504,21 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Athletic Apparel – tagged \"Sport_Volleyball\" – MSU Surplus Store",
-        "url": "https://msusurplusstore.com/collections/athletic-apparel/sport_volleyball",
-        "detected_at": "2026-09-26",
+        "summary": "3 new find(s) - Sporting Goods – Page 4",
+        "url": "https://msusurplusstore.com/collections/sporting-goods?page=4",
+        "detected_at": "2026-09-27",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor"
+        "source": "GitHub Actions Monitor",
+        "extra_sources": [
+          {
+            "label": "Sporting Goods – tagged \"SJH\"",
+            "url": "https://msusurplusstore.com/collections/sporting-goods/sjh"
+          },
+          {
+            "label": "Athletic Apparel – Page 24",
+            "url": "https://msusurplusstore.com/collections/athletic-apparel?page=24"
+          }
+        ]
       },
       "watch_links": [
         {
