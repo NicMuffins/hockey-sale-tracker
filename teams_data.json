@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27",
+  "last_updated": "2026-09-29",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -504,19 +504,15 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "3 new find(s) - Sporting Goods – Page 4",
-        "url": "https://msusurplusstore.com/collections/sporting-goods?page=4",
-        "detected_at": "2026-09-27",
+        "summary": "2 new find(s) - New Products",
+        "url": "https://msusurplusstore.com/collections/new-listings",
+        "detected_at": "2026-09-29",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "Sporting Goods – tagged \"SJH\"",
-            "url": "https://msusurplusstore.com/collections/sporting-goods/sjh"
-          },
-          {
-            "label": "Athletic Apparel – Page 24",
-            "url": "https://msusurplusstore.com/collections/athletic-apparel?page=24"
+            "label": "Home Decor",
+            "url": "https://msusurplusstore.com/collections/home-decor"
           }
         ]
       },
