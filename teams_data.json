@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29",
+  "last_updated": "2026-09-30",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,17 +452,11 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "2 new find(s) - bauer-supreme-shadow-goalie-stick-87-flex-u-sonic-never-used",
-        "url": "https://dispo.umich.edu/bauer-supreme-shadow-goalie-stick-87-flex-u-sonic-never-used.html",
-        "detected_at": "2026-09-27",
+        "summary": "1 new find(s) - Ice Sports - Sporting Goods - Dispo Direct",
+        "url": "https://dispo.umich.edu/sporting-goods/ice-skates.html",
+        "detected_at": "2026-09-30",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "bauer-vapor-hyp2rlite-hockey-stick-right-hand-70-flex-pastrn",
-            "url": "https://dispo.umich.edu/bauer-vapor-hyp2rlite-hockey-stick-right-hand-70-flex-pastrnak.html"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
@@ -504,17 +498,11 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "2 new find(s) - New Products",
-        "url": "https://msusurplusstore.com/collections/new-listings",
-        "detected_at": "2026-09-29",
+        "summary": "1 new find(s) - Auctions",
+        "url": "https://msusurplusstore.com/collections/bid-items",
+        "detected_at": "2026-09-30",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "Home Decor",
-            "url": "https://msusurplusstore.com/collections/home-decor"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
