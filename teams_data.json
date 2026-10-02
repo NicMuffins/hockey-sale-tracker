@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-02",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,9 +452,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - Ice Sports - Sporting Goods - Dispo Direct",
-        "url": "https://dispo.umich.edu/sporting-goods/ice-skates.html",
-        "detected_at": "2026-09-30",
+        "summary": "1 new find(s) - bauer-vapor-hyperlite-2-hockey-skates-used - Dispo Direct",
+        "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-2-hockey-skates-used.html",
+        "detected_at": "2026-10-02",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
