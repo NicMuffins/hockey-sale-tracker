@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02",
+  "last_updated": "2026-10-03",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,9 +452,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - bauer-vapor-hyperlite-2-hockey-skates-used - Dispo Direct",
-        "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-2-hockey-skates-used.html",
-        "detected_at": "2026-10-02",
+        "summary": "1 new find(s) - bauer-supreme-shadow-goalie-stick-p31-26-never-used",
+        "url": "https://dispo.umich.edu/bauer-supreme-shadow-goalie-stick-p31-26-never-used-83414.html",
+        "detected_at": "2026-10-03",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
@@ -498,9 +498,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - Auctions",
-        "url": "https://msusurplusstore.com/collections/bid-items",
-        "detected_at": "2026-09-30",
+        "summary": "1 new find(s) - Products on Auction – MSU Surplus Store",
+        "url": "https://msusurplusstore.com/pages/products-on-auction",
+        "detected_at": "2026-10-03",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
