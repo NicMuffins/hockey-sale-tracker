@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-05",
+  "last_updated": "2026-10-06",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,15 +452,15 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "2 new find(s) - Discounts - Dispo Direct - University of Michigan",
-        "url": "https://dispo.umich.edu/discounts.html?configuration=10614&style=30458&type=6338",
-        "detected_at": "2026-10-04",
+        "summary": "2 new find(s) - bauer-vapor-hyperlite-hockey-stick-left-hand-82-flex ... - Dispo Direct",
+        "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-hockey-stick-left-hand-82-flex-p28-l-blue-never-used.html",
+        "detected_at": "2026-10-06",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "mixed-lot-of-9-ccm-hockey-sticks-assorted-sizes - Dispo Dire",
-            "url": "https://dispo.umich.edu/b110635.html"
+            "label": "lot-of-12-various-used-right-hand-hockey-sticks",
+            "url": "https://dispo.umich.edu/b110634.html"
           }
         ]
       },
