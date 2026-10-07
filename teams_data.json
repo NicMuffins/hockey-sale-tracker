@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,15 +452,15 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "2 new find(s) - bauer-vapor-hyperlite-hockey-stick-left-hand-82-flex ... - Dispo Direct",
-        "url": "https://dispo.umich.edu/bauer-vapor-hyperlite-hockey-stick-left-hand-82-flex-p28-l-blue-never-used.html",
-        "detected_at": "2026-10-06",
+        "summary": "2 new find(s) - bauer-supreme-shadow-goalie-stick-p31-26-never-used",
+        "url": "https://dispo.umich.edu/bauer-supreme-shadow-goalie-stick-p31-26-never-used.html",
+        "detected_at": "2026-10-07",
         "is_announcement": true,
         "source": "GitHub Actions Monitor",
         "extra_sources": [
           {
-            "label": "lot-of-12-various-used-right-hand-hockey-sticks",
-            "url": "https://dispo.umich.edu/b110634.html"
+            "label": "bauer-vapor-flylite-hockey-stick-left-hand-77-flex-hl2 ... -",
+            "url": "https://dispo.umich.edu/bauer-vapor-flylite-hockey-stick-left-hand-77-flex-hl2-blue-never-used.html"
           }
         ]
       },
