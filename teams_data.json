@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,17 +452,11 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "2 new find(s) - bauer-supreme-shadow-goalie-stick-p31-26-never-used",
-        "url": "https://dispo.umich.edu/bauer-supreme-shadow-goalie-stick-p31-26-never-used.html",
-        "detected_at": "2026-10-07",
+        "summary": "1 new find(s) - Mixed Lot of Children's Clothing, Tops, Pants & Costume",
+        "url": "https://dispo.umich.edu/b120404.html",
+        "detected_at": "2026-10-08",
         "is_announcement": true,
-        "source": "GitHub Actions Monitor",
-        "extra_sources": [
-          {
-            "label": "bauer-vapor-flylite-hockey-stick-left-hand-77-flex-hl2 ... -",
-            "url": "https://dispo.umich.edu/bauer-vapor-flylite-hockey-stick-left-hand-77-flex-hl2-blue-never-used.html"
-          }
-        ]
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
