@@ -743,6 +743,11 @@
       "title": "Sporting Goods – tagged \"MAC\" – MSU Surplus Store",
       "url": "https://msusurplusstore.com/collections/sporting-goods/mac",
       "detected_at": "2026-10-13"
+    },
+    {
+      "title": "Spartan Spirit Shop | East Lansing MI",
+      "url": "https://www.facebook.com/SpartanSpiritShop",
+      "detected_at": "2026-10-15"
     }
   ],
   "red-wings": [
@@ -1321,6 +1326,16 @@
       "title": "PRICE DROP. MIA Hockey Gloves - Gloves - For Sale - Pro Stock Hockey - Sports2k.com",
       "url": "https://www.sports2k.com/forum/index.php?%2Ftopic%2F5161-price-drop-mia-hockey-gloves%2F=",
       "detected_at": "2026-10-07"
+    },
+    {
+      "title": "Equipment listings For Sale Near Chehalis, Washington - Equipment...",
+      "url": "https://www.equipmenttrader.com/Chehalis/equipment-for-sale?city=chehalis&state=Washington%7CWA",
+      "detected_at": "2026-10-15"
+    },
+    {
+      "title": "Heavy Equipment, Cat Parts & Service - Chehalis | N C Machinery",
+      "url": "https://www.ncmachinery.com/company/locations/chehalis",
+      "detected_at": "2026-10-15"
     }
   ]
 }
