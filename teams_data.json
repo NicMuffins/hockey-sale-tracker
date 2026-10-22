@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21",
+  "last_updated": "2026-10-22",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -498,9 +498,9 @@
         "Michigan State Surplus hockey"
       ],
       "latest_news": {
-        "summary": "1 new find(s) - MSU Surplus Store (@MSU_Surplus) / X",
-        "url": "https://x.com/MSU_Surplus?lang=en",
-        "detected_at": "2026-10-21",
+        "summary": "1 new find(s) - MSU Hockey National Title Trophies Picture",
+        "url": "https://msusurplusstore.com/products/msu-hockey-national-title-trophies-picture",
+        "detected_at": "2026-10-22",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
