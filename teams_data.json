@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-10-30",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -452,9 +452,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - steelcase-jersey-office-chair-blue-fabric-seat-black-mesh-back",
-        "url": "https://dispo.umich.edu/steelcase-jersey-office-chair-blue-fabric-seat-black-mesh-back.html",
-        "detected_at": "2026-10-21",
+        "summary": "1 new find(s) - steelcase-jersey-stacking-side-chair-gray-pattern-fabric-with ...",
+        "url": "https://dispo.umich.edu/steelcase-jersey-stacking-side-chair-gray-pattern-fabric-with-arms.html",
+        "detected_at": "2026-10-30",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
