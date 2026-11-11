@@ -176,6 +176,12 @@
       "name": "MSU Surplus Store ÃÂÃÂ¢ Athletic Apparel",
       "team_id": "michigan-state",
       "search_query": "site:msusurplusstore.com/collections/athletic-apparel hockey OR \"Spartan hockey\" OR jersey"
+    },
+    {
+      "id": "wmu-athletics-auctions",
+      "name": "WMU Athletics Auctions",
+      "team_id": "western-michigan",
+      "search_query": "site:wmubroncos.com/auctions hockey OR jersey OR stick OR helmet OR skate OR \"game-worn\""
     }
   ]
 }
