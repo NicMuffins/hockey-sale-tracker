@@ -18,7 +18,7 @@
       "league": "ECHL",
       "predicted_window": {
         "start": "06-01",
-        "end": "07-20"
+        "end": "10-31"
       },
       "search_query": "Toledo Walleye equipment sale 2026"
     },
@@ -37,7 +37,7 @@
       "name": "Saginaw Spirit",
       "league": "OHL",
       "predicted_window": {
-        "start": "05-01",
+        "start": "04-15",
         "end": "07-15"
       },
       "search_query": "Saginaw Spirit equipment sale 2026"
@@ -127,7 +127,7 @@
       "name": "London Knights",
       "league": "OHL",
       "predicted_window": {
-        "start": "06-01",
+        "start": "05-15",
         "end": "07-15"
       },
       "search_query": "London Knights equipment sale -Vegas -\"Golden Knights\""
