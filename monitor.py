@@ -5,7 +5,7 @@ Runs on GitHub's servers on a daily schedule. No computer required.
 
 Searches all teams whose sale window is active or upcoming.
 Only reads/writes teams_data.json when a new find is recorded.
-Sends one daily summary email (no per-team individual alerts).
+Sends one daily summary email, only on days with new finds (no per-team alerts).
 """
 
 import base64
@@ -224,7 +224,7 @@ def is_find(result: dict) -> bool:
 def send_daily_summary(today: str, run_count: int,
                        teams_searched: list[dict], skipped_teams: list[dict],
                        finds_by_team: dict):
-    """Send one daily digest email — always, regardless of finds."""
+    """Send one daily digest email. Only called when there are new finds."""
     sales_found = sum(len(v) for v in finds_by_team.values())
 
     # Teams searched table
@@ -436,7 +436,7 @@ def main():
         print('  Committed teams_data.json')
 
         # NOTE: Individual per-team alert emails removed.
-        # Only the daily summary (Step 7) is sent — one email per day, always.
+        # Only the daily summary (Step 8) is sent — and only when there are new finds.
 
     # Step 6 - Always update monitor_state.json
     ms['run_count']      = run_count + 1
@@ -462,11 +462,14 @@ def main():
     )
     print(f'  Logged: {log_line.strip()}')
 
-    # Step 8 - Send one daily summary email
-    try:
-        send_daily_summary(today, run_count + 1, to_search, skipped, finds_by_team)
-    except Exception as e:
-        print(f'  x  summary email error: {e}')
+    # Step 8 - Send the daily summary email, but only if something new was found
+    if sales_found:
+        try:
+            send_daily_summary(today, run_count + 1, to_search, skipped, finds_by_team)
+        except Exception as e:
+            print(f'  x  summary email error: {e}')
+    else:
+        print('  [email] Nothing new found - no email sent')
 
     print('=== Done ===\n')
 
