@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-15",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -460,10 +460,11 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "2026 sale confirmed: August 23, 2026",
-        "detected_at": "2026-11-11",
-        "verified": true,
-        "source": "Confirmed by Nic"
+        "summary": "1 new find(s) - Discounts",
+        "url": "https://dispo.umich.edu/discounts.html?configuration=10614&model=30452&style=30455&type=6338",
+        "detected_at": "2026-11-15",
+        "is_announcement": true,
+        "source": "GitHub Actions Monitor"
       },
       "watch_links": [
         {
