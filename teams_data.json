@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-20",
   "metro": "Detroit / Windsor",
   "teams": [
     {
@@ -460,9 +460,9 @@
       ],
       "hist_label": "Historical Sales (UM Dispo)",
       "latest_news": {
-        "summary": "1 new find(s) - Discounts",
-        "url": "https://dispo.umich.edu/discounts.html?configuration=10614&model=30452&style=30455&type=6338",
-        "detected_at": "2026-11-15",
+        "summary": "1 new find(s) - steelcase-jersey-stacking-chair-green ...",
+        "url": "https://dispo.umich.edu/steelcase-jersey-stacking-chair-green-pattern-fabric-black-mesh.html",
+        "detected_at": "2026-11-20",
         "is_announcement": true,
         "source": "GitHub Actions Monitor"
       },
